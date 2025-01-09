@@ -1,3 +1,3 @@
 "# PDFConverter" 
-\nCreated by Jason
+Created by Jason
 Usage: npm run server
