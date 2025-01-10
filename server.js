@@ -8,6 +8,20 @@ const fs = require('fs');
 const app = express();
 const PORT = 3000;
 
+// Create a writable log file
+const logFile = path.join(__dirname, 'logs.txt');
+
+// Function to write logs to the file
+function logToFile(message) {
+  const timestamp = new Date().toISOString();
+  const logMessage = `[${timestamp}] ${message}\n`;
+  fs.appendFile(logFile, logMessage, (err) => {
+    if (err) {
+      console.error('Error writing to log file:', err);
+    }
+  });
+}
+
 // Storage configuration for multer
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -34,8 +48,9 @@ const upload = multer({
   }
 });
 
-app.use(express.static(path.join(__dirname, 'images')));
-app.use(favicon('staff_icon.ico'));
+// Serve static files and favicon
+app.use(express.static(path.join(__dirname, 'images'))); // Serve images folder
+app.use(favicon(path.join(__dirname, 'images', 'staff_icon.ico'))); // Ensure favicon is in the "images" folder
 
 // Serve the root page with a basic form
 app.get('/', (req, res) => {
@@ -45,7 +60,7 @@ app.get('/', (req, res) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="staff_icon.ico">
+        <link rel="icon" type="image/x-icon" href="/images/staff_icon.ico">
         <title>PDF Converter</title>
         <style>
             body {
@@ -111,7 +126,7 @@ app.get('/', (req, res) => {
                 </a>
             </div>
             <h1>PDF Converter</h1>
-            <p class="remark">Convert PDF Files to unselectable text</p>
+            <p class="remark">Add your remark here...</p>
             <form action="/upload" method="POST" enctype="multipart/form-data">
                 <input type="file" name="pdfs" accept="application/pdf" multiple required>
                 <br>
@@ -145,11 +160,11 @@ app.post('/upload', upload.array('pdfs', 10), (req, res) => {
       const pythonProcess = spawn('python', ['pdf_converter.py', filePath, outputPath]);
 
       pythonProcess.stdout.on('data', (data) => {
-        console.log(`Python script output for ${file.filename}: ${data}`);
+        logToFile(`Python script output for ${file.filename}: ${data}`);
       });
 
       pythonProcess.stderr.on('data', (data) => {
-        console.error(`Python script error for ${file.filename}: ${data}`);
+        logToFile(`Python script error for ${file.filename}: ${data}`);
       });
 
       pythonProcess.on('close', (code) => {
@@ -161,6 +176,7 @@ app.post('/upload', upload.array('pdfs', 10), (req, res) => {
           });
           resolve();
         } else {
+          logToFile(`Python script failed for ${file.filename}`);
           reject(new Error(`Python script failed for file ${file.filename}`));
         }
       });
@@ -177,7 +193,8 @@ app.post('/upload', upload.array('pdfs', 10), (req, res) => {
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Conversion Success</title>
+            <link rel="icon" type="image/x-icon" href="/images/staff_icon.ico">
+            <title>Files Converted Successfully</title>
             <style>
                 body {
                     font-family: Arial, sans-serif;
@@ -212,7 +229,12 @@ app.post('/upload', upload.array('pdfs', 10), (req, res) => {
                 a:hover {
                     text-decoration: underline;
                 }
-                button {
+                footer {
+                    margin-top: 30px;
+                    font-size: 14px;
+                    color: #aaa;
+                }
+                .button {
                     margin-top: 20px;
                     background-color: #007BFF;
                     color: white;
@@ -222,7 +244,7 @@ app.post('/upload', upload.array('pdfs', 10), (req, res) => {
                     border-radius: 5px;
                     cursor: pointer;
                 }
-                button:hover {
+                .button:hover {
                     background-color: #0056b3;
                 }
             </style>
@@ -238,13 +260,13 @@ app.post('/upload', upload.array('pdfs', 10), (req, res) => {
                     </li>
                   `).join('')}
                 </ul>
-                <a href="/" style="display: block; margin-top: 20px;">Convert More PDFs</a>
+                <a href="/" class="button">Convert More PDFs</a>
             </div>
         </body>
         </html>
       `);
     } catch (err) {
-      console.error('Error processing files:', err);
+      logToFile(`Error processing files: ${err.message}`);
       res.status(500).send('Error processing files.');
     }
   };
@@ -260,14 +282,14 @@ app.get('/download/:filename', (req, res) => {
   if (fs.existsSync(filePath)) {
     res.download(filePath, (err) => {
       if (err) {
-        console.error("Error serving file:", err);
+        logToFile(`Error serving file: ${err.message}`);
       } else {
         // Delete the file after serving
         fs.unlink(filePath, (err) => {
           if (err) {
-            console.error("Error deleting file:", err);
+            logToFile(`Error deleting file: ${err.message}`);
           } else {
-            console.log(`File ${filePath} deleted successfully.`);
+            logToFile(`File ${filePath} deleted successfully.`);
           }
         });
       }
@@ -280,4 +302,5 @@ app.get('/download/:filename', (req, res) => {
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running at http://localhost:${PORT}`);
+  logToFile(`Server started on port ${PORT}`);
 });

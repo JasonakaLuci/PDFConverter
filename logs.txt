@@ -1,0 +1,45 @@
+[2025-01-10T01:26:45.854Z] Server started on port 3000
+[2025-01-10T01:27:09.049Z] Python script output for 1736472427425-156042123-INOUE-NIINA_CIF.pdf: Input PDF path: C:\Users\AS 61\Documents\VSCode\uploads\1736472427425-156042123-INOUE-NIINA_CIF.pdf
+Output PDF path: C:\Users\AS 61\Documents\VSCode\uploads\converted_1736472427431_72945186.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-10T01:27:19.391Z] File C:\Users\AS 61\Documents\VSCode\uploads\converted_1736472427431_72945186.pdf deleted successfully.
+[2025-01-10T01:28:29.406Z] Python script output for 1736472506611-740031187-converted_1736472427431_72945186.pdf: Input PDF path: C:\Users\AS 61\Documents\VSCode\uploads\1736472506611-740031187-converted_1736472427431_72945186.pdf
+Output PDF path: C:\Users\AS 61\Documents\VSCode\uploads\converted_1736472506621_891270077.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-10T01:30:56.242Z] Server started on port 3000
+[2025-01-10T01:31:18.237Z] Python script output for 1736472675353-757837169-converted_1736472427431_72945186.pdf: Input PDF path: C:\Users\AS 61\Documents\VSCode\uploads\1736472675353-757837169-converted_1736472427431_72945186.pdf
+Output PDF path: C:\Users\AS 61\Documents\VSCode\uploads\converted_1736472675363_958224599.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-10T01:31:32.582Z] Python script output for 1736472689746-516464089-converted_1736391949832_893100923.pdf: Input PDF path: C:\Users\AS 61\Documents\VSCode\uploads\1736472689746-516464089-converted_1736391949832_893100923.pdf
+Output PDF path: C:\Users\AS 61\Documents\VSCode\uploads\converted_1736472689769_157508787.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+Error during conversion: [WinError 32] The process cannot access the file because it is being used by another process: 'temp_images\\page_3.jpg'
+
+[2025-01-10T01:31:32.662Z] Python script output for 1736472689729-733161277-converted_1736408991440_252126995.pdf: Input PDF path: C:\Users\AS 61\Documents\VSCode\uploads\1736472689729-733161277-converted_1736408991440_252126995.pdf
+Output PDF path: C:\Users\AS 61\Documents\VSCode\uploads\converted_1736472689762_831559172.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+Error during conversion: a bytes-like object is required, not 'str'
+
+[2025-01-10T01:32:23.690Z] Python script output for 1736472742914-36382790-INOUE-NIINA_CIF.pdf: Input PDF path: C:\Users\AS 61\Documents\VSCode\uploads\1736472742914-36382790-INOUE-NIINA_CIF.pdf
+Output PDF path: C:\Users\AS 61\Documents\VSCode\uploads\converted_1736472742917_973414403.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
