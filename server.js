@@ -92,6 +92,7 @@ app.get('/', (req, res) => {
                 margin: 10px 0 30px;
                 font-size: 18px;
                 color: #666;
+                text-align: left;
             }
             form {
                 margin-top: 20px;
@@ -126,16 +127,25 @@ app.get('/', (req, res) => {
                 </a>
             </div>
             <h1>PDF Converter</h1>
-            <p class="remark">Add your remark here...</p>
+            <div style="text-align: center;">
+            <div style="display: inline-block; text-align: left;">
+            <p class="remark">Remarks:<br>
+            1.Upload file and convert pdf text to unselectable<br>
+            2.Usage: Click Choose file, upload file(s) and Click Upload and Convert<br>
+            3.You can upload up to 10 files at once</p>
+            </div>
+            </div>
             <form action="/upload" method="POST" enctype="multipart/form-data">
                 <input type="file" name="pdfs" accept="application/pdf" multiple required>
                 <br>
                 <button type="submit">Upload and Convert</button>
             </form>
         </div>
+        <div style="text-align: center;">
         <footer>
             &copy; ${new Date().getFullYear()} Adminasia Ltd. All Rights Reserved.
         </footer>
+        </div>
     </body>
     </html>
   `);

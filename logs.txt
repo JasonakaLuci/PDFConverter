@@ -43,3 +43,40 @@ Number of pages converted: 4
 Converting images back to PDF...
 PDF successfully converted to images and back to PDF!
 
+[2025-01-10T03:58:28.677Z] Server started on port 3000
+[2025-01-10T04:01:26.040Z] Server started on port 3000
+[2025-01-10T04:02:02.940Z] Server started on port 3000
+[2025-01-10T04:02:10.900Z] Python script output for 1736481730048-634930134-INOUE-NIINA_CIF.pdf: Input PDF path: C:\Users\AS 61\Documents\VSCode\uploads\1736481730048-634930134-INOUE-NIINA_CIF.pdf
+Output PDF path: C:\Users\AS 61\Documents\VSCode\uploads\converted_1736481730053_458987465.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-10T04:02:23.512Z] Python script output for 1736481742791-297255469-INOUE-NIINA_CIF.pdf: Input PDF path: C:\Users\AS 61\Documents\VSCode\uploads\1736481742791-297255469-INOUE-NIINA_CIF.pdf
+Output PDF path: C:\Users\AS 61\Documents\VSCode\uploads\converted_1736481742795_651494696.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-10T04:02:26.030Z] File C:\Users\AS 61\Documents\VSCode\uploads\converted_1736481742795_651494696.pdf deleted successfully.
+[2025-01-10T04:02:34.212Z] Python script output for 1736481753777-920177222-1.478 - ADMIN ITA Third Party Payment Letter.pdf: Input PDF path: C:\Users\AS 61\Documents\VSCode\uploads\1736481753777-920177222-1.478 - ADMIN ITA Third Party Payment Letter.pdf
+Output PDF path: C:\Users\AS 61\Documents\VSCode\uploads\converted_1736481753779_180440591.pdf
+Converting PDF to images...
+Number of pages converted: 1
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-10T04:02:35.896Z] File C:\Users\AS 61\Documents\VSCode\uploads\converted_1736481753779_180440591.pdf deleted successfully.
+[2025-01-13T01:18:39.894Z] Server started on port 3000
+[2025-01-13T02:34:09.558Z] Server started on port 3000
+[2025-01-13T02:34:42.285Z] Server started on port 3000
+[2025-01-13T02:36:15.305Z] Server started on port 3000
+[2025-01-13T02:38:21.084Z] Server started on port 3000
+[2025-01-13T02:38:50.860Z] Server started on port 3000
+[2025-01-13T02:39:59.758Z] Server started on port 3000
+[2025-01-13T02:41:05.651Z] Server started on port 3000
+[2025-01-13T02:43:42.523Z] Server started on port 3000
+[2025-01-13T02:45:20.197Z] Server started on port 3000
+[2025-01-13T02:46:46.590Z] Server started on port 3000
