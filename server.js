@@ -70,7 +70,7 @@ app.get('/', (req, res) => {
                 padding: 0;
             }
             .container {
-                max-width: 800px;
+                max-width: 1000px;
                 margin: 50px auto;
                 text-align: center;
                 padding: 20px;
@@ -213,7 +213,7 @@ app.post('/upload', upload.array('pdfs', 10), (req, res) => {
                     padding: 0;
                 }
                 .container {
-                    max-width: 800px;
+                    max-width: 1000px;
                     margin: 50px auto;
                     text-align: center;
                     padding: 20px;

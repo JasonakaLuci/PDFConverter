@@ -80,3 +80,29 @@ PDF successfully converted to images and back to PDF!
 [2025-01-13T02:43:42.523Z] Server started on port 3000
 [2025-01-13T02:45:20.197Z] Server started on port 3000
 [2025-01-13T02:46:46.590Z] Server started on port 3000
+[2025-01-13T03:26:47.420Z] Python script output for 1736738805548-637204824-IG132-EN Source of Funds Questionnaire (Ver. 12-2024).pdf: Input PDF path: C:\Users\AS 61\Documents\VSCode\uploads\1736738805548-637204824-IG132-EN Source of Funds Questionnaire (Ver. 12-2024).pdf
+Output PDF path: C:\Users\AS 61\Documents\VSCode\uploads\converted_1736738805554_811705731.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-13T03:26:49.939Z] File C:\Users\AS 61\Documents\VSCode\uploads\converted_1736738805554_811705731.pdf deleted successfully.
+[2025-01-13T06:12:52.497Z] Python script output for 1736748771381-945965603-IG132-JA Source of Funds Questionnaire.pdf: Input PDF path: C:\Users\AS 61\Documents\VSCode\uploads\1736748771381-945965603-IG132-JA Source of Funds Questionnaire.pdf
+Output PDF path: C:\Users\AS 61\Documents\VSCode\uploads\converted_1736748771384_927622415.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-13T06:12:54.819Z] File C:\Users\AS 61\Documents\VSCode\uploads\converted_1736748771384_927622415.pdf deleted successfully.
+[2025-01-13T06:15:42.901Z] Server started on port 3000
+[2025-01-13T06:15:52.405Z] Python script output for 1736748951399-581428222-IG132-JA Source of Funds Questionnaire.pdf: Input PDF path: C:\Users\AS 61\Documents\VSCode\uploads\1736748951399-581428222-IG132-JA Source of Funds Questionnaire.pdf
+Output PDF path: C:\Users\AS 61\Documents\VSCode\uploads\converted_1736748951406_62612315.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-13T06:16:23.953Z] Server started on port 3000
+[2025-01-13T09:47:01.389Z] Server started on port 3000
