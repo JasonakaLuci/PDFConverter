@@ -106,3 +106,1117 @@ PDF successfully converted to images and back to PDF!
 
 [2025-01-13T06:16:23.953Z] Server started on port 3000
 [2025-01-13T09:47:01.389Z] Server started on port 3000
+[2025-01-14T07:10:47.925Z] Server started on port 3000
+[2025-01-14T07:11:31.660Z] Python script error for 1736838691518-359243415-T25W047706_IG132_NewPayor.pdf: Traceback (most recent call last):
+
+[2025-01-14T07:11:31.666Z] Python script error for 1736838691518-359243415-T25W047706_IG132_NewPayor.pdf:   File "C:\Users\AS 53\Documents\VScode\PDFConverter\pdf_converter.py", line 2, in <module>
+    from pdf2image import convert_from_path
+ModuleNotFoundError: No module named 'pdf2image'
+
+[2025-01-14T07:11:31.680Z] Python script failed for 1736838691518-359243415-T25W047706_IG132_NewPayor.pdf
+[2025-01-14T07:11:31.681Z] Error processing files: Python script failed for file 1736838691518-359243415-T25W047706_IG132_NewPayor.pdf
+[2025-01-14T07:13:57.931Z] Server started on port 3000
+[2025-01-14T07:14:08.359Z] Python script output for 1736838847760-699049374-T25W047706_IG132_NewPayor.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736838847760-699049374-T25W047706_IG132_NewPayor.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736838847770_823859818.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count. Is poppler installed and in PATH?
+
+[2025-01-14T07:15:10.136Z] Python script output for 1736838909836-441374429-T25W047706_IG132_NewPayor.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736838909836-441374429-T25W047706_IG132_NewPayor.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736838909846_767381239.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count. Is poppler installed and in PATH?
+
+[2025-01-14T07:20:16.718Z] Server started on port 3000
+[2025-01-14T07:20:25.491Z] Python script output for 1736839225119-200465446-T25W047706_IG132_NewPayor.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736839225119-200465446-T25W047706_IG132_NewPayor.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736839225127_784752573.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count. Is poppler installed and in PATH?
+
+[2025-01-14T07:23:01.860Z] Server started on port 3000
+[2025-01-14T07:23:06.135Z] Python script output for 1736839385763-706283134-T25W047706_IG132_NewPayor.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736839385763-706283134-T25W047706_IG132_NewPayor.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736839385773_744136285.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count. Is poppler installed and in PATH?
+
+[2025-01-14T07:23:06.733Z] File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736839385773_744136285.pdf 
+[2025-01-14T07:28:03.290Z] Server started on port 3000
+[2025-01-14T07:28:22.251Z] Python script output for 1736839700787-996386906-T25W047706_IG132_NewPayor.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736839700787-996386906-T25W047706_IG132_NewPayor.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736839700796_762835044.pdf
+Converting PDF to images...
+Number of pages converted: 2
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-14T07:28:23.181Z] File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736839700796_762835044.pdf deleted successfully.
+[2025-01-14T07:28:40.190Z] Python script output for 1736839719545-167571913-T25W047706_IG132_NewPayor.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736839719545-167571913-T25W047706_IG132_NewPayor.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736839719561_171673984.pdf
+Converting PDF to images...
+Number of pages converted: 2
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-14T07:28:41.543Z] File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736839719561_171673984.pdf deleted successfully.
+[2025-01-14T07:30:16.672Z] Server started on port 3000
+[2025-01-14T07:31:34.348Z] Server started on port 3000
+[2025-01-14T07:32:05.983Z] Python script output for 1736839924872-648784485-INOUE-NIINA_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736839924872-648784485-INOUE-NIINA_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736839924889_260747908.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-14T07:32:07.340Z] File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736839924889_260747908.pdf deleted successfully.
+[2025-01-14T07:41:11.530Z] Server started on port 3000
+[2025-01-14T07:41:22.906Z] Python script output for 1736840480863-935070873-converted_1736839700796_762835044.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736840480863-935070873-converted_1736839700796_762835044.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736840480875_365912476.pdf
+Converting PDF to images...
+Number of pages converted: 2
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-14T07:41:22.974Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736840480875_365912476.pdf deleted successfully.
+[2025-01-14T07:42:08.070Z] Python script output for 1736840526158-495852611-IG132-JA Source of Funds Questionnaire.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736840526158-495852611-IG132-JA Source of Funds Questionnaire.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736840526212_496717948.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-14T07:42:08.460Z] Python script output for 1736840526467-645714605-IG132-JA Source of Funds Questionnaire.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736840526467-645714605-IG132-JA Source of Funds Questionnaire.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736840526534_432348638.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-14T07:42:11.567Z] Python script output for 1736840526171-658138973-converted_1736738805554_811705731.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736840526171-658138973-converted_1736738805554_811705731.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736840526220_24976198.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+Error during conversion: [WinError 32] The process cannot access the file because it is being used by another process: 'temp_images\\page_2.jpg'
+
+[2025-01-14T07:42:11.718Z] Python script output for 1736840526077-51685184-converted_1736748771384_927622415.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736840526077-51685184-converted_1736748771384_927622415.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736840526202_944688815.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+Error during conversion: a bytes-like object is required, not 'str'
+
+[2025-01-14T07:42:12.243Z] Python script output for 1736840526479-127792784-converted_1736738805554_811705731.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736840526479-127792784-converted_1736738805554_811705731.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736840526542_986546860.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+Error during conversion: a bytes-like object is required, not 'str'
+
+[2025-01-14T07:42:12.244Z] Python script output for 1736840526371-91534666-converted_1736748771384_927622415.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736840526371-91534666-converted_1736748771384_927622415.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736840526526_437576766.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+Error during conversion: a bytes-like object is required, not 'str'
+
+[2025-01-14T07:42:12.458Z] Error sending zip file for download: Request aborted
+[2025-01-14T07:42:12.519Z] Zip file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_files_1736840532251.zip deleted successfully.
+[2025-01-14T07:42:58.829Z] Python script output for 1736840577984-222793420-ODAKA-HIROTSUGU_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736840577984-222793420-ODAKA-HIROTSUGU_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736840578004_469896570.pdf
+Converting PDF to images...
+Number of pages converted: 3
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-01-14T07:42:58.942Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736840578004_469896570.pdf deleted successfully.
+[2025-01-14T07:43:24.232Z] Python script output for 1736840603180-704480139-ODAKA-HIROTSUGU_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736840603180-704480139-ODAKA-HIROTSUGU_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736840603261_947499740.pdf
+Converting PDF to images...
+Number of pages converted: 3
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-01-14T07:43:24.432Z] Python script output for 1736840603160-466479327-IG132-EN Source of Funds Questionnaire (Ver. 12-2024).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736840603160-466479327-IG132-EN Source of Funds Questionnaire (Ver. 12-2024).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736840603238_202298360.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-14T07:43:26.664Z] Python script output for 1736840603188-144309629-Application for Insurance (Broker version) 01_2025 (1) (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736840603188-144309629-Application for Insurance (Broker version) 01_2025 (1) (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736840603276_263634742.pdf
+Converting PDF to images...
+Number of pages converted: 18
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-14T07:43:27.827Z] Zip file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_files_1736840606687.zip deleted successfully.
+[2025-01-14T09:30:46.122Z] Python script output for 1736847044911-506338500-INOUE-NIINA_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736847044911-506338500-INOUE-NIINA_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736847044933_649322199.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-14T09:30:46.240Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736847044933_649322199.pdf deleted successfully.
+[2025-01-15T01:29:52.445Z] Server started on port 3000
+[2025-01-15T01:30:12.539Z] Python script output for 1736904610234-143961782-IG132-JA Source of Funds Questionnaire.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736904610234-143961782-IG132-JA Source of Funds Questionnaire.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736904610250_47083313.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-15T01:30:12.822Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736904610250_47083313.pdf deleted successfully.
+[2025-01-15T02:05:44.505Z] Server started on port 3000
+[2025-01-15T02:05:44.508Z] Deleted file: 1736904610234-143961782-IG132-JA Source of Funds Questionnaire.pdf
+[2025-01-15T02:06:22.465Z] Python script output for 1736906780872-249660284-KOMADA-Miho_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736906780872-249660284-KOMADA-Miho_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736906780886_422698315.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-15T02:06:22.664Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736906780886_422698315.pdf deleted successfully.
+[2025-01-15T03:05:44.311Z] Deleted file: 1736906780872-249660284-KOMADA-Miho_CIF.pdf
+[2025-01-15T03:57:58.876Z] Python script output for 1736913477769-634471171-ODAKA-HIROTSUGU_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736913477769-634471171-ODAKA-HIROTSUGU_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736913477848_325069858.pdf
+Converting PDF to images...
+Number of pages converted: 3
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-15T03:57:59.009Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736913477848_325069858.pdf deleted successfully.
+[2025-01-15T04:05:44.168Z] Deleted file: 1736913477769-634471171-ODAKA-HIROTSUGU_CIF (1).pdf
+[2025-01-15T04:07:02.536Z] Python script output for 1736914021195-36855336-IG132-JA Source of Funds Questionnaire (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736914021195-36855336-IG132-JA Source of Funds Questionnaire (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736914021219_938454827.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-15T04:07:02.709Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736914021219_938454827.pdf deleted successfully.
+[2025-01-15T04:07:29.030Z] Deletion check at 2025-01-15T04:07:29.029Z: Within working hours. Deleting files.
+[2025-01-15T04:07:29.037Z] Server started on port 3000
+[2025-01-15T04:07:29.037Z] Deleted file: 1736914021195-36855336-IG132-JA Source of Funds Questionnaire (1).pdf
+[2025-01-15T04:07:58.323Z] Python script output for 1736914076999-875969827-IG132-JA Source of Funds Questionnaire (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736914076999-875969827-IG132-JA Source of Funds Questionnaire (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736914077023_621314275.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-15T04:07:58.444Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736914077023_621314275.pdf deleted successfully.
+[2025-01-15T05:07:29.039Z] Deletion check at 2025-01-15T05:07:29.039Z: Within working hours. Deleting files.
+[2025-01-15T05:07:29.043Z] Deleted file: 1736914076999-875969827-IG132-JA Source of Funds Questionnaire (1).pdf
+[2025-01-15T06:07:29.139Z] Deletion check at 2025-01-15T06:07:29.139Z: Within working hours. Deleting files.
+[2025-01-15T07:07:29.140Z] Deletion check at 2025-01-15T07:07:29.140Z: Within working hours. Deleting files.
+[2025-01-15T08:07:29.149Z] Deletion check at 2025-01-15T08:07:29.149Z: Within working hours. Deleting files.
+[2025-01-15T09:04:41.102Z] Python script output for 1736931877370-239473135-Application for Insurance (Broker version) 01_2025 (1) (2).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736931877370-239473135-Application for Insurance (Broker version) 01_2025 (1) (2).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736931877416_943720857.pdf
+Converting PDF to images...
+Number of pages converted: 18
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-15T09:04:41.131Z] Error sending file for download: Request aborted
+[2025-01-15T09:04:44.076Z] Python script output for 1736931880717-881209395-Application for Insurance (Broker version) 01_2025 (1) (2).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1736931880717-881209395-Application for Insurance (Broker version) 01_2025 (1) (2).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736931880760_739316187.pdf
+Converting PDF to images...
+Number of pages converted: 18
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-15T09:04:44.549Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1736931880760_739316187.pdf deleted successfully.
+[2025-01-15T09:07:29.109Z] Deletion check at 2025-01-15T09:07:29.109Z: Within working hours. Deleting files.
+[2025-01-15T09:07:29.112Z] Deleted file: 1736931877370-239473135-Application for Insurance (Broker version) 01_2025 (1) (2).pdf
+[2025-01-15T09:07:29.113Z] Deleted file: 1736931880717-881209395-Application for Insurance (Broker version) 01_2025 (1) (2).pdf
+[2025-01-15T09:07:29.119Z] Deleted file: converted_1736931877416_943720857.pdf
+[2025-01-16T01:10:42.942Z] Deletion check at 2025-01-16T01:10:42.941Z: Within working hours. Deleting files.
+[2025-01-16T02:10:42.596Z] Deletion check at 2025-01-16T02:10:42.596Z: Within working hours. Deleting files.
+[2025-01-16T05:29:14.734Z] Deletion check at 2025-01-16T05:29:14.734Z: Within working hours. Deleting files.
+[2025-01-16T06:29:14.575Z] Deletion check at 2025-01-16T06:29:14.575Z: Within working hours. Deleting files.
+[2025-01-16T07:29:14.411Z] Deletion check at 2025-01-16T07:29:14.411Z: Within working hours. Deleting files.
+[2025-01-16T07:47:18.905Z] Deletion check at 2025-01-16T07:47:18.904Z: Within working hours. Deleting files.
+[2025-01-16T07:47:18.911Z] Server started on port 3000
+[2025-01-16T07:49:16.049Z] Python script output for 1737013752834-650540159-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737013752834-650540159-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737013752854_787921321.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-16T07:49:16.265Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737013752854_787921321.pdf deleted successfully.
+[2025-01-16T08:47:18.910Z] Deletion check at 2025-01-16T08:47:18.910Z: Within working hours. Deleting files.
+[2025-01-16T08:47:18.911Z] Deleted file: 1737013752834-650540159-OKUDA-Ryo_CIF.pdf
+[2025-01-16T09:47:18.920Z] Deletion check at 2025-01-16T09:47:18.920Z: Within working hours. Deleting files.
+[2025-01-16T10:47:19.079Z] Deletion check at 2025-01-16T10:47:19.079Z: Within working hours. Deleting files.
+[2025-01-16T11:47:19.484Z] Deletion check at 2025-01-16T11:47:19.484Z: Outside working hours. Skipping deletion.
+[2025-01-16T12:47:19.612Z] Deletion check at 2025-01-16T12:47:19.612Z: Outside working hours. Skipping deletion.
+[2025-01-16T13:47:19.655Z] Deletion check at 2025-01-16T13:47:19.655Z: Outside working hours. Skipping deletion.
+[2025-01-16T14:47:19.679Z] Deletion check at 2025-01-16T14:47:19.679Z: Outside working hours. Skipping deletion.
+[2025-01-16T15:47:19.733Z] Deletion check at 2025-01-16T15:47:19.733Z: Outside working hours. Skipping deletion.
+[2025-01-16T16:47:19.753Z] Deletion check at 2025-01-16T16:47:19.753Z: Outside working hours. Skipping deletion.
+[2025-01-16T17:47:19.763Z] Deletion check at 2025-01-16T17:47:19.763Z: Outside working hours. Skipping deletion.
+[2025-01-16T18:47:19.783Z] Deletion check at 2025-01-16T18:47:19.783Z: Outside working hours. Skipping deletion.
+[2025-01-16T19:47:19.807Z] Deletion check at 2025-01-16T19:47:19.807Z: Outside working hours. Skipping deletion.
+[2025-01-16T20:47:19.831Z] Deletion check at 2025-01-16T20:47:19.831Z: Outside working hours. Skipping deletion.
+[2025-01-16T21:47:19.850Z] Deletion check at 2025-01-16T21:47:19.850Z: Outside working hours. Skipping deletion.
+[2025-01-16T22:47:19.869Z] Deletion check at 2025-01-16T22:47:19.869Z: Outside working hours. Skipping deletion.
+[2025-01-16T23:47:19.889Z] Deletion check at 2025-01-16T23:47:19.889Z: Outside working hours. Skipping deletion.
+[2025-01-17T00:47:19.922Z] Deletion check at 2025-01-17T00:47:19.922Z: Within working hours. Deleting files.
+[2025-01-17T01:47:19.945Z] Deletion check at 2025-01-17T01:47:19.945Z: Within working hours. Deleting files.
+[2025-01-17T02:47:19.963Z] Deletion check at 2025-01-17T02:47:19.963Z: Within working hours. Deleting files.
+[2025-01-17T03:47:19.979Z] Deletion check at 2025-01-17T03:47:19.979Z: Within working hours. Deleting files.
+[2025-01-17T04:47:20.002Z] Deletion check at 2025-01-17T04:47:20.002Z: Within working hours. Deleting files.
+[2025-01-17T05:47:20.028Z] Deletion check at 2025-01-17T05:47:20.028Z: Within working hours. Deleting files.
+[2025-01-17T06:47:20.046Z] Deletion check at 2025-01-17T06:47:20.046Z: Within working hours. Deleting files.
+[2025-01-17T07:28:43.371Z] Python script output for 1737098919942-692412480-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737098919942-692412480-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737098919966_950044816.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-17T07:28:43.585Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737098919966_950044816.pdf deleted successfully.
+[2025-01-17T07:47:20.061Z] Deletion check at 2025-01-17T07:47:20.061Z: Within working hours. Deleting files.
+[2025-01-17T07:47:20.062Z] Deleted file: 1737098919942-692412480-OKUDA-Ryo_CIF.pdf
+[2025-01-17T08:47:20.077Z] Deletion check at 2025-01-17T08:47:20.077Z: Within working hours. Deleting files.
+[2025-01-17T09:47:20.104Z] Deletion check at 2025-01-17T09:47:20.104Z: Within working hours. Deleting files.
+[2025-01-17T10:01:25.812Z] Python script output for 1737108083281-233363685-HO2556O.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737108083281-233363685-HO2556O.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737108083309_720694595.pdf
+Converting PDF to images...
+Number of pages converted: 5
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-17T10:01:25.971Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737108083309_720694595.pdf deleted successfully.
+[2025-01-17T10:47:20.132Z] Deletion check at 2025-01-17T10:47:20.132Z: Within working hours. Deleting files.
+[2025-01-17T10:47:20.134Z] Deleted file: 1737108083281-233363685-HO2556O.pdf
+[2025-01-20T00:58:11.517Z] Deletion check at 2025-01-20T00:58:11.508Z: Within working hours. Deleting files.
+[2025-01-20T00:58:11.524Z] Server started on port 3000
+[2025-01-20T01:30:02.021Z] Python script output for 1737336599943-850764186-Docusign PH.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737336599943-850764186-Docusign PH.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737336599962_886594391.pdf
+Converting PDF to images...
+Number of pages converted: 1
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-20T01:30:02.064Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737336599962_886594391.pdf deleted successfully.
+[2025-01-20T01:58:11.516Z] Deletion check at 2025-01-20T01:58:11.516Z: Within working hours. Deleting files.
+[2025-01-20T01:58:11.517Z] Deleted file: 1737336599943-850764186-Docusign PH.pdf
+[2025-01-20T02:58:11.537Z] Deletion check at 2025-01-20T02:58:11.537Z: Within working hours. Deleting files.
+[2025-01-20T03:07:32.821Z] Server started on port 3000
+[2025-01-20T03:07:32.815Z] Deletion check at 2025-01-20T03:07:32.814Z: Within working hours. Deleting files.
+[2025-01-20T04:07:32.829Z] Deletion check at 2025-01-20T04:07:32.829Z: Within working hours. Deleting files.
+[2025-01-20T04:17:35.433Z] Deletion check at 2025-01-20T04:17:35.432Z: Within working hours. Deleting files.
+[2025-01-20T04:17:35.439Z] Server started on port 3000
+[2025-01-20T04:47:20.009Z] Python script output for 1737348439089-676525661-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737348439089-676525661-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737348439124_343278048.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T04:47:20.036Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737348439124_343278048.pdf'
+[2025-01-20T04:48:03.793Z] Python script output for 1737348481983-319262108-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737348481983-319262108-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737348482016_477388917.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-20T04:48:03.910Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737348482016_477388917.pdf deleted successfully.
+[2025-01-20T04:48:16.838Z] Python script output for 1737348495366-575806823-HO2556O.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737348495366-575806823-HO2556O.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737348495398_188802343.pdf
+Converting PDF to images...
+Number of pages converted: 5
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-20T04:48:17.004Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737348495398_188802343.pdf deleted successfully.
+[2025-01-20T05:17:35.451Z] Deletion check at 2025-01-20T05:17:35.451Z: Within working hours. Deleting files.
+[2025-01-20T05:17:35.453Z] Deleted file: 1737348439089-676525661-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T05:17:35.453Z] Deleted file: 1737348495366-575806823-HO2556O.pdf
+[2025-01-20T05:17:35.453Z] Deleted file: 1737348481983-319262108-OKUDA-Ryo_CIF.pdf
+[2025-01-20T06:09:53.175Z] Python script output for 1737353392249-389544815-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737353392249-389544815-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737353392287_433920650.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T06:09:53.207Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737353392287_433920650.pdf'
+[2025-01-20T06:10:14.847Z] Python script output for 1737353412967-37549498-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737353412967-37549498-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737353412997_843307459.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-20T06:10:14.979Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737353412997_843307459.pdf deleted successfully.
+[2025-01-20T06:16:43.208Z] Python script output for 1737353801311-625990926-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737353801311-625990926-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737353801343_857413492.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-20T06:16:43.366Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737353801343_857413492.pdf deleted successfully.
+[2025-01-20T06:17:35.498Z] Deletion check at 2025-01-20T06:17:35.498Z: Within working hours. Deleting files.
+[2025-01-20T06:17:35.499Z] Deleted file: 1737353801311-625990926-OKUDA-Ryo_CIF.pdf
+[2025-01-20T06:17:35.499Z] Deleted file: 1737353412967-37549498-OKUDA-Ryo_CIF.pdf
+[2025-01-20T06:17:35.499Z] Deleted file: 1737353392249-389544815-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T06:28:34.079Z] Deletion check at 2025-01-20T06:28:34.079Z: Within working hours. Deleting files.
+[2025-01-20T06:28:34.086Z] Server started on port 3000
+[2025-01-20T06:28:46.645Z] Python script output for 1737354526213-831059071-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354526213-831059071-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354526249_339063773.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T06:28:46.668Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354526249_339063773.pdf'
+[2025-01-20T06:29:02.477Z] Python script output for 1737354542128-637033955-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354542128-637033955-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354542171_883296978.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T06:29:02.500Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354542171_883296978.pdf'
+[2025-01-20T06:29:03.272Z] Python script output for 1737354542935-3833205-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354542935-3833205-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354542992_787877580.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T06:29:03.309Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354542992_787877580.pdf'
+[2025-01-20T06:29:03.635Z] Python script output for 1737354543290-955306082-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354543290-955306082-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354543331_432455936.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T06:29:03.662Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354543331_432455936.pdf'
+[2025-01-20T06:29:03.855Z] Python script output for 1737354543505-806791941-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354543505-806791941-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354543537_757728622.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T06:29:03.883Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354543537_757728622.pdf'
+[2025-01-20T06:29:04.025Z] Python script output for 1737354543680-371298351-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354543680-371298351-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354543719_682378315.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T06:29:04.049Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354543719_682378315.pdf'
+[2025-01-20T06:30:56.733Z] Deletion check at 2025-01-20T06:30:56.732Z: Within working hours. Deleting files.
+[2025-01-20T06:30:56.740Z] Server started on port 3000
+[2025-01-20T06:30:56.741Z] Deleted file: 1737354526213-831059071-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T06:30:56.741Z] Deleted file: 1737354542128-637033955-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T06:30:56.741Z] Deleted file: 1737354542935-3833205-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T06:30:56.741Z] Deleted file: 1737354543290-955306082-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T06:30:56.741Z] Deleted file: 1737354543680-371298351-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T06:30:56.741Z] Deleted file: 1737354543505-806791941-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T06:31:10.374Z] Python script output for 1737354669963-350219705-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354669963-350219705-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354670000_540388222.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T06:31:10.399Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354670000_540388222.pdf'
+[2025-01-20T06:31:50.928Z] Python script output for 1737354710278-103562926-T25W047706_IG132_First.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354710278-103562926-T25W047706_IG132_First.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354710297_617601402.pdf
+Converting PDF to images...
+Number of pages converted: 2
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-20T06:31:50.968Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354710297_617601402.pdf deleted successfully.
+[2025-01-20T06:32:10.848Z] Python script output for 1737354730534-920072130-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354730534-920072130-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354730561_495273953.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T06:32:10.871Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354730561_495273953.pdf'
+[2025-01-20T06:32:49.408Z] Python script output for 1737354769060-594358808-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354769060-594358808-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354769100_622769293.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T06:32:49.439Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354769100_622769293.pdf'
+[2025-01-20T06:32:49.579Z] Python script output for 1737354769214-862909777-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354769214-862909777-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354769251_73925056.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T06:32:49.609Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354769251_73925056.pdf'
+[2025-01-20T06:32:49.748Z] Python script output for 1737354769374-248963945-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354769374-248963945-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354769420_455770773.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T06:32:49.782Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354769420_455770773.pdf'
+[2025-01-20T06:32:49.881Z] Python script output for 1737354769530-569915277-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354769530-569915277-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354769567_550670315.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T06:32:49.908Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354769567_550670315.pdf'
+[2025-01-20T06:32:50.054Z] Python script output for 1737354769715-147034791-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354769715-147034791-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354769757_358962410.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T06:32:50.077Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354769757_358962410.pdf'
+[2025-01-20T06:33:20.920Z] Python script output for 1737354800580-57364874-OKUDA-Ryo_CIF (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354800580-57364874-OKUDA-Ryo_CIF (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354800622_381481672.pdf
+Converting PDF to images...
+Error during conversion: Unable to get page count.
+Command Line Error: Incorrect password
+
+
+[2025-01-20T06:33:20.943Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354800622_381481672.pdf'
+[2025-01-20T06:35:07.655Z] Python script output for 1737354906189-822446554-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737354906189-822446554-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354906217_459410641.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-20T06:35:07.804Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737354906217_459410641.pdf deleted successfully.
+[2025-01-20T07:30:56.757Z] Deletion check at 2025-01-20T07:30:56.757Z: Within working hours. Deleting files.
+[2025-01-20T07:30:56.759Z] Deleted file: 1737354657700-407881799-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T07:30:56.759Z] Deleted file: 1737354657703-560640814-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T07:30:56.759Z] Deleted file: 1737354657702-892217289-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T07:30:56.759Z] Deleted file: 1737354657705-486382853-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T07:30:56.759Z] Deleted file: 1737354657743-682492061-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T07:30:56.759Z] Deleted file: 1737354669963-350219705-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T07:30:56.759Z] Deleted file: 1737354730534-920072130-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T07:30:56.760Z] Deleted file: 1737354769214-862909777-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T07:30:56.760Z] Deleted file: 1737354769060-594358808-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T07:30:56.759Z] Deleted file: 1737354710278-103562926-T25W047706_IG132_First.pdf
+[2025-01-20T07:30:56.759Z] Deleted file: 1737354657779-148505801-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T07:30:56.760Z] Deleted file: 1737354769374-248963945-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T07:30:56.760Z] Deleted file: 1737354769530-569915277-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T07:30:56.760Z] Deleted file: 1737354769715-147034791-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T07:30:56.760Z] Deleted file: 1737354800580-57364874-OKUDA-Ryo_CIF (1).pdf
+[2025-01-20T07:30:56.760Z] Deleted file: 1737354906189-822446554-OKUDA-Ryo_CIF.pdf
+[2025-01-20T08:30:56.770Z] Deletion check at 2025-01-20T08:30:56.770Z: Within working hours. Deleting files.
+[2025-01-20T09:23:11.295Z] Python script output for 1737364989272-128146473-UW Intl Unit Linked Partial Surrender Request_1124.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737364989272-128146473-UW Intl Unit Linked Partial Surrender Request_1124.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737364989305_744003882.pdf
+Converting PDF to images...
+Number of pages converted: 9
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-20T09:23:11.502Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737364989305_744003882.pdf deleted successfully.
+[2025-01-20T09:24:20.396Z] Deletion check at 2025-01-20T09:24:20.395Z: Within working hours. Deleting files.
+[2025-01-20T09:24:20.403Z] Server started on port 3000
+[2025-01-20T09:24:20.404Z] Deleted file: 1737364989272-128146473-UW Intl Unit Linked Partial Surrender Request_1124.pdf
+[2025-01-20T09:24:32.879Z] Python script output for 1737365071127-523273354-UW Intl Unit Linked Partial Surrender Request_1124.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737365071127-523273354-UW Intl Unit Linked Partial Surrender Request_1124.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737365071162_510515543.pdf
+Converting PDF to images...
+Number of pages converted: 9
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-20T09:24:33.218Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737365071162_510515543.pdf deleted successfully.
+[2025-01-20T09:25:00.429Z] Python script output for 1737365098798-555193607-UW Intl Unit Linked Partial Surrender Request_1124.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737365098798-555193607-UW Intl Unit Linked Partial Surrender Request_1124.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737365098837_588672114.pdf
+Converting PDF to images...
+Number of pages converted: 9
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-20T09:25:00.641Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737365098837_588672114.pdf deleted successfully.
+[2025-01-20T09:31:01.447Z] Deletion check at 2025-01-20T09:31:01.446Z: Within working hours. Deleting files.
+[2025-01-20T09:31:01.454Z] Server started on port 3000
+[2025-01-20T09:31:01.455Z] Deleted file: 1737365071127-523273354-UW Intl Unit Linked Partial Surrender Request_1124.pdf
+[2025-01-20T09:31:01.455Z] Deleted file: 1737365098798-555193607-UW Intl Unit Linked Partial Surrender Request_1124.pdf
+[2025-01-20T09:31:14.138Z] Python script output for 1737365472452-670737009-UW Intl Unit Linked Partial Surrender Request_1124 (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737365472452-670737009-UW Intl Unit Linked Partial Surrender Request_1124 (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737365472486_664130211.pdf
+Converting PDF to images...
+Number of pages converted: 9
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-20T09:31:14.349Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737365472486_664130211.pdf deleted successfully.
+[2025-01-20T09:31:48.124Z] Python script output for 1737365506563-360412284-UW Intl Unit Linked Partial Surrender Request_1124 (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737365506563-360412284-UW Intl Unit Linked Partial Surrender Request_1124 (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737365506600_202611419.pdf
+Converting PDF to images...
+Number of pages converted: 9
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-20T09:31:48.353Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737365506600_202611419.pdf deleted successfully.
+[2025-01-20T09:34:18.053Z] Deletion check at 2025-01-20T09:34:18.053Z: Within working hours. Deleting files.
+[2025-01-20T09:34:18.060Z] Server started on port 3000
+[2025-01-20T09:34:18.062Z] Deleted file: 1737365472452-670737009-UW Intl Unit Linked Partial Surrender Request_1124 (1).pdf
+[2025-01-20T09:34:18.062Z] Deleted file: 1737365506563-360412284-UW Intl Unit Linked Partial Surrender Request_1124 (1).pdf
+[2025-01-20T09:34:26.500Z] Python script output for 1737365664854-497188342-UW Intl Unit Linked Partial Surrender Request_1124.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737365664854-497188342-UW Intl Unit Linked Partial Surrender Request_1124.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737365664889_921898712.pdf
+Converting PDF to images...
+Number of pages converted: 9
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-20T09:34:26.718Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737365664889_921898712.pdf deleted successfully.
+[2025-01-20T09:37:07.310Z] Deletion check at 2025-01-20T09:37:07.309Z: Within working hours. Deleting files.
+[2025-01-20T09:37:07.317Z] Server started on port 3000
+[2025-01-20T09:37:07.319Z] Deleted file: 1737365664854-497188342-UW Intl Unit Linked Partial Surrender Request_1124.pdf
+[2025-01-20T09:37:16.829Z] Python script output for 1737365835000-599546911-UW Intl Unit Linked Partial Surrender Request_1124 (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737365835000-599546911-UW Intl Unit Linked Partial Surrender Request_1124 (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737365835031_139822667.pdf
+Converting PDF to images...
+Number of pages converted: 9
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-20T09:37:17.008Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737365835031_139822667.pdf deleted successfully.
+[2025-01-20T09:56:28.061Z] Deletion check at 2025-01-20T09:56:28.060Z: Within working hours. Deleting files.
+[2025-01-20T09:56:28.068Z] Server started on port 3000
+[2025-01-20T09:56:28.070Z] Deleted file: 1737365835000-599546911-UW Intl Unit Linked Partial Surrender Request_1124 (1).pdf
+[2025-01-20T09:56:43.549Z] Python script output for 1737367001708-79109352-UW Intl Unit Linked Partial Surrender Request_1124.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737367001708-79109352-UW Intl Unit Linked Partial Surrender Request_1124.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737367001738_798340345.pdf
+Converting PDF to images...
+Number of pages converted: 9
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-20T09:56:43.905Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737367001738_798340345.pdf deleted successfully.
+[2025-01-20T10:56:28.106Z] Deletion check at 2025-01-20T10:56:28.106Z: Within working hours. Deleting files.
+[2025-01-20T10:56:28.108Z] Deleted file: 1737367001708-79109352-UW Intl Unit Linked Partial Surrender Request_1124.pdf
+[2025-01-20T11:56:28.124Z] Deletion check at 2025-01-20T11:56:28.124Z: Outside working hours. Skipping deletion.
+[2025-01-20T12:56:28.137Z] Deletion check at 2025-01-20T12:56:28.137Z: Outside working hours. Skipping deletion.
+[2025-01-20T13:56:28.151Z] Deletion check at 2025-01-20T13:56:28.151Z: Outside working hours. Skipping deletion.
+[2025-01-20T14:56:28.177Z] Deletion check at 2025-01-20T14:56:28.177Z: Outside working hours. Skipping deletion.
+[2025-01-20T15:56:28.196Z] Deletion check at 2025-01-20T15:56:28.196Z: Outside working hours. Skipping deletion.
+[2025-01-20T16:56:28.215Z] Deletion check at 2025-01-20T16:56:28.215Z: Outside working hours. Skipping deletion.
+[2025-01-20T17:56:28.234Z] Deletion check at 2025-01-20T17:56:28.234Z: Outside working hours. Skipping deletion.
+[2025-01-20T18:56:28.246Z] Deletion check at 2025-01-20T18:56:28.245Z: Outside working hours. Skipping deletion.
+[2025-01-20T19:56:28.282Z] Deletion check at 2025-01-20T19:56:28.282Z: Outside working hours. Skipping deletion.
+[2025-01-20T20:56:28.302Z] Deletion check at 2025-01-20T20:56:28.302Z: Outside working hours. Skipping deletion.
+[2025-01-20T21:56:28.324Z] Deletion check at 2025-01-20T21:56:28.324Z: Outside working hours. Skipping deletion.
+[2025-01-20T22:56:28.346Z] Deletion check at 2025-01-20T22:56:28.346Z: Outside working hours. Skipping deletion.
+[2025-01-20T23:56:28.362Z] Deletion check at 2025-01-20T23:56:28.362Z: Outside working hours. Skipping deletion.
+[2025-01-21T00:56:28.382Z] Deletion check at 2025-01-21T00:56:28.382Z: Within working hours. Deleting files.
+[2025-01-21T01:00:21.051Z] Python script output for 1737421218114-792875060-UW Intl Unit Linked Partial Surrender Request_1124 (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737421218114-792875060-UW Intl Unit Linked Partial Surrender Request_1124 (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737421218160_865599853.pdf
+Converting PDF to images...
+Number of pages converted: 9
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-21T01:00:21.289Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737421218160_865599853.pdf deleted successfully.
+[2025-01-21T01:14:18.746Z] Python script output for 1737422057305-490463307-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737422057305-490463307-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737422057345_183183617.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-21T01:14:18.947Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737422057345_183183617.pdf deleted successfully.
+[2025-01-21T01:54:36.938Z] Deletion check at 2025-01-21T01:54:36.938Z: Within working hours. Deleting files.
+[2025-01-21T01:54:36.946Z] Server started on port 3000
+[2025-01-21T01:54:36.948Z] Deleted file: 1737421218114-792875060-UW Intl Unit Linked Partial Surrender Request_1124 (1).pdf
+[2025-01-21T01:54:36.948Z] Deleted file: 1737422057305-490463307-OKUDA-Ryo_CIF.pdf
+[2025-01-21T01:55:43.939Z] Deletion check at 2025-01-21T01:55:43.939Z: Within working hours. Deleting files.
+[2025-01-21T01:55:43.946Z] Server started on port 3000
+[2025-01-21T01:56:53.677Z] Python script output for 1737424612128-724396239-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737424612128-724396239-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737424612156_203787420.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-21T01:56:53.812Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737424612156_203787420.pdf deleted successfully.
+[2025-01-21T01:59:24.178Z] Deletion check at 2025-01-21T01:59:24.178Z: Within working hours. Deleting files.
+[2025-01-21T01:59:24.186Z] Server started on port 3000
+[2025-01-21T01:59:24.188Z] Deleted file: 1737424612128-724396239-OKUDA-Ryo_CIF.pdf
+[2025-01-21T01:59:41.125Z] Python script output for 1737424772606-918191016-converted_files.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737424772606-918191016-converted_files.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737424772724_522540649.pdf
+Converting PDF to images...
+Number of pages converted: 9
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-21T01:59:41.533Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737424772724_522540649.pdf deleted successfully.
+[2025-01-21T01:59:58.141Z] Python script output for 1737424796810-962915015-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737424796810-962915015-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737424796846_490809686.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-21T01:59:58.307Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737424796846_490809686.pdf deleted successfully.
+[2025-01-21T02:01:06.855Z] Deletion check at 2025-01-21T02:01:06.854Z: Within working hours. Deleting files.
+[2025-01-21T02:01:06.860Z] Server started on port 3000
+[2025-01-21T02:01:06.862Z] Deleted file: 1737424772606-918191016-converted_files.pdf
+[2025-01-21T02:01:06.862Z] Deleted file: 1737424796810-962915015-OKUDA-Ryo_CIF.pdf
+[2025-01-21T02:01:21.418Z] Python script output for 1737424879518-789276726-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737424879518-789276726-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737424879546_13254081.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-21T02:01:21.585Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737424879546_13254081.pdf deleted successfully.
+[2025-01-21T03:01:06.878Z] Deletion check at 2025-01-21T03:01:06.878Z: Within working hours. Deleting files.
+[2025-01-21T03:01:06.880Z] Deleted file: 1737424879518-789276726-OKUDA-Ryo_CIF.pdf
+[2025-01-21T04:01:06.894Z] Deletion check at 2025-01-21T04:01:06.894Z: Within working hours. Deleting files.
+[2025-01-21T04:13:04.086Z] Python script output for 1737432782066-237101550-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737432782066-237101550-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737432782094_620768741.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-01-21T04:13:04.237Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737432782094_620768741.pdf deleted successfully.
+[2025-01-21T04:14:06.491Z] Python script output for 1737432843975-43486674-UW Intl Unit Linked Partial Surrender Request_1124 (1).pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737432843975-43486674-UW Intl Unit Linked Partial Surrender Request_1124 (1).pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737432844049_295314708.pdf
+Converting PDF to images...
+Number of pages converted: 9
+Converting images back to PDF...
+Error during conversion: [WinError 32] The process cannot access the file because it is being used by another process: 'temp_images\\page_1.jpg'
+
+[2025-01-21T04:14:06.644Z] Python script output for 1737432844029-551125178-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737432844029-551125178-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737432844073_350439447.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-01-21T04:14:06.700Z] Python script output for 1737432844013-581621767-UW Intl Unit Linked Partial Surrender Request_1124.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737432844013-581621767-UW Intl Unit Linked Partial Surrender Request_1124.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737432844060_205270403.pdf
+Converting PDF to images...
+Number of pages converted: 9
+Converting images back to PDF...
+Error during conversion: a bytes-like object is required, not 'str'
+
+[2025-01-21T04:14:07.414Z] Zip file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_files_1737432846724.zip deleted successfully.
+[2025-01-21T04:29:01.755Z] Python script output for 1737433739875-392593251-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737433739875-392593251-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737433739894_461619654.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-01-21T04:29:01.896Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737433739894_461619654.pdf deleted successfully.
+[2025-01-21T05:01:06.933Z] Deletion check at 2025-01-21T05:01:06.933Z: Within working hours. Deleting files.
+[2025-01-21T05:01:06.934Z] Deleted file: 1737432782066-237101550-OKUDA-Ryo_CIF.pdf
+[2025-01-21T05:01:06.934Z] Deleted file: 1737432844013-581621767-UW Intl Unit Linked Partial Surrender Request_1124.pdf
+[2025-01-21T05:01:06.935Z] Deleted file: 1737432844029-551125178-OKUDA-Ryo_CIF.pdf
+[2025-01-21T05:01:06.935Z] Deleted file: 1737432843975-43486674-UW Intl Unit Linked Partial Surrender Request_1124 (1).pdf
+[2025-01-21T05:01:06.935Z] Deleted file: 1737433739875-392593251-OKUDA-Ryo_CIF.pdf
+[2025-01-21T06:01:06.953Z] Deletion check at 2025-01-21T06:01:06.953Z: Within working hours. Deleting files.
+[2025-01-21T07:01:06.966Z] Deletion check at 2025-01-21T07:01:06.966Z: Within working hours. Deleting files.
+[2025-01-21T08:01:06.990Z] Deletion check at 2025-01-21T08:01:06.990Z: Within working hours. Deleting files.
+[2025-01-21T08:23:32.963Z] Python script output for 1737447811033-415670213-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737447811033-415670213-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737447811056_438456467.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-01-21T08:23:33.115Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737447811056_438456467.pdf deleted successfully.
+[2025-01-21T09:01:07.007Z] Deletion check at 2025-01-21T09:01:07.007Z: Within working hours. Deleting files.
+[2025-01-21T09:01:07.009Z] Deleted file: 1737447811033-415670213-OKUDA-Ryo_CIF.pdf
+[2025-01-21T09:30:50.614Z] Python script output for 1737451848719-618217053-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737451848719-618217053-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737451848770_473067473.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-01-21T09:30:50.751Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737451848770_473067473.pdf deleted successfully.
+[2025-01-21T10:01:07.029Z] Deletion check at 2025-01-21T10:01:07.029Z: Within working hours. Deleting files.
+[2025-01-21T10:01:07.030Z] Deleted file: 1737451848719-618217053-OKUDA-Ryo_CIF.pdf
+[2025-01-21T10:02:03.238Z] Python script output for 1737453720145-425206607-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737453720145-425206607-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737453720175_886240597.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-01-21T10:02:03.499Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737453720175_886240597.pdf deleted successfully.
+[2025-01-21T11:01:07.051Z] Deletion check at 2025-01-21T11:01:07.051Z: Outside working hours. Skipping deletion.
+[2025-01-21T12:01:07.073Z] Deletion check at 2025-01-21T12:01:07.073Z: Outside working hours. Skipping deletion.
+[2025-01-21T13:01:07.094Z] Deletion check at 2025-01-21T13:01:07.094Z: Outside working hours. Skipping deletion.
+[2025-01-21T14:01:07.121Z] Deletion check at 2025-01-21T14:01:07.121Z: Outside working hours. Skipping deletion.
+[2025-01-21T15:01:07.139Z] Deletion check at 2025-01-21T15:01:07.139Z: Outside working hours. Skipping deletion.
+[2025-01-21T16:01:07.163Z] Deletion check at 2025-01-21T16:01:07.163Z: Outside working hours. Skipping deletion.
+[2025-01-21T17:01:07.184Z] Deletion check at 2025-01-21T17:01:07.184Z: Outside working hours. Skipping deletion.
+[2025-01-21T18:01:07.206Z] Deletion check at 2025-01-21T18:01:07.206Z: Outside working hours. Skipping deletion.
+[2025-01-21T19:01:07.224Z] Deletion check at 2025-01-21T19:01:07.224Z: Outside working hours. Skipping deletion.
+[2025-01-21T20:01:07.240Z] Deletion check at 2025-01-21T20:01:07.240Z: Outside working hours. Skipping deletion.
+[2025-01-21T21:01:07.261Z] Deletion check at 2025-01-21T21:01:07.261Z: Outside working hours. Skipping deletion.
+[2025-01-21T22:01:07.283Z] Deletion check at 2025-01-21T22:01:07.283Z: Outside working hours. Skipping deletion.
+[2025-01-21T23:01:07.304Z] Deletion check at 2025-01-21T23:01:07.304Z: Outside working hours. Skipping deletion.
+[2025-01-22T00:01:07.325Z] Deletion check at 2025-01-22T00:01:07.325Z: Within working hours. Deleting files.
+[2025-01-22T00:01:07.327Z] Deleted file: 1737453720145-425206607-OKUDA-Ryo_CIF.pdf
+[2025-01-22T01:01:07.339Z] Deletion check at 2025-01-22T01:01:07.339Z: Within working hours. Deleting files.
+[2025-01-22T01:06:01.047Z] Python script output for 1737507958174-738845015-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737507958174-738845015-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737507958198_694995395.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-01-22T01:06:01.215Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737507958198_694995395.pdf deleted successfully.
+[2025-01-22T02:01:07.360Z] Deletion check at 2025-01-22T02:01:07.360Z: Within working hours. Deleting files.
+[2025-01-22T02:01:07.361Z] Deleted file: 1737507958174-738845015-OKUDA-Ryo_CIF.pdf
+[2025-01-22T03:01:07.378Z] Deletion check at 2025-01-22T03:01:07.378Z: Within working hours. Deleting files.
+[2025-01-22T04:01:07.403Z] Deletion check at 2025-01-22T04:01:07.403Z: Within working hours. Deleting files.
+[2025-01-22T05:01:07.427Z] Deletion check at 2025-01-22T05:01:07.427Z: Within working hours. Deleting files.
+[2025-01-22T06:01:07.449Z] Deletion check at 2025-01-22T06:01:07.449Z: Within working hours. Deleting files.
+[2025-01-22T07:01:07.462Z] Deletion check at 2025-01-22T07:01:07.462Z: Within working hours. Deleting files.
+[2025-01-22T08:01:07.482Z] Deletion check at 2025-01-22T08:01:07.482Z: Within working hours. Deleting files.
+[2025-01-22T09:01:07.503Z] Deletion check at 2025-01-22T09:01:07.503Z: Within working hours. Deleting files.
+[2025-01-22T10:01:07.518Z] Deletion check at 2025-01-22T10:01:07.518Z: Within working hours. Deleting files.
+[2025-01-22T11:01:07.536Z] Deletion check at 2025-01-22T11:01:07.536Z: Outside working hours. Skipping deletion.
+[2025-01-22T12:01:07.552Z] Deletion check at 2025-01-22T12:01:07.552Z: Outside working hours. Skipping deletion.
+[2025-01-22T13:01:07.579Z] Deletion check at 2025-01-22T13:01:07.579Z: Outside working hours. Skipping deletion.
+[2025-01-22T14:01:07.606Z] Deletion check at 2025-01-22T14:01:07.606Z: Outside working hours. Skipping deletion.
+[2025-01-22T15:01:07.619Z] Deletion check at 2025-01-22T15:01:07.619Z: Outside working hours. Skipping deletion.
+[2025-01-22T16:01:07.638Z] Deletion check at 2025-01-22T16:01:07.638Z: Outside working hours. Skipping deletion.
+[2025-01-22T17:01:07.659Z] Deletion check at 2025-01-22T17:01:07.659Z: Outside working hours. Skipping deletion.
+[2025-01-22T18:01:07.674Z] Deletion check at 2025-01-22T18:01:07.674Z: Outside working hours. Skipping deletion.
+[2025-01-22T19:01:07.687Z] Deletion check at 2025-01-22T19:01:07.687Z: Outside working hours. Skipping deletion.
+[2025-01-22T20:01:07.710Z] Deletion check at 2025-01-22T20:01:07.710Z: Outside working hours. Skipping deletion.
+[2025-01-22T21:01:07.721Z] Deletion check at 2025-01-22T21:01:07.721Z: Outside working hours. Skipping deletion.
+[2025-01-22T22:01:07.735Z] Deletion check at 2025-01-22T22:01:07.735Z: Outside working hours. Skipping deletion.
+[2025-01-22T23:01:07.757Z] Deletion check at 2025-01-22T23:01:07.757Z: Outside working hours. Skipping deletion.
+[2025-01-23T00:01:07.777Z] Deletion check at 2025-01-23T00:01:07.777Z: Within working hours. Deleting files.
+[2025-01-23T01:01:07.792Z] Deletion check at 2025-01-23T01:01:07.792Z: Within working hours. Deleting files.
+[2025-01-23T02:01:07.830Z] Deletion check at 2025-01-23T02:01:07.830Z: Within working hours. Deleting files.
+[2025-01-23T03:01:07.858Z] Deletion check at 2025-01-23T03:01:07.858Z: Within working hours. Deleting files.
+[2025-01-23T04:01:07.871Z] Deletion check at 2025-01-23T04:01:07.871Z: Within working hours. Deleting files.
+[2025-01-23T05:01:07.885Z] Deletion check at 2025-01-23T05:01:07.885Z: Within working hours. Deleting files.
+[2025-01-23T06:01:07.911Z] Deletion check at 2025-01-23T06:01:07.911Z: Within working hours. Deleting files.
+[2025-01-23T07:01:07.934Z] Deletion check at 2025-01-23T07:01:07.934Z: Within working hours. Deleting files.
+[2025-01-23T07:45:17.713Z] Deletion check at 2025-01-23T07:45:17.712Z: Within working hours. Deleting files.
+[2025-01-23T07:45:17.721Z] Server started on port 3000
+[2025-01-23T07:53:07.965Z] Server started on port 3000
+[2025-01-23T07:53:07.952Z] Deletion check at 2025-01-23T07:53:07.951Z: Within working hours. Deleting files.
+[2025-01-23T07:54:14.262Z] Deletion check at 2025-01-23T07:54:14.261Z: Within working hours. Deleting files.
+[2025-01-23T07:54:14.267Z] Server started on port 3000
+[2025-01-23T08:54:14.280Z] Deletion check at 2025-01-23T08:54:14.280Z: Within working hours. Deleting files.
+[2025-01-23T09:54:14.283Z] Deletion check at 2025-01-23T09:54:14.283Z: Within working hours. Deleting files.
+[2025-01-23T10:54:14.417Z] Deletion check at 2025-01-23T10:54:14.417Z: Within working hours. Deleting files.
+[2025-01-23T11:54:14.527Z] Deletion check at 2025-01-23T11:54:14.527Z: Outside working hours. Skipping deletion.
+[2025-01-23T12:54:14.569Z] Deletion check at 2025-01-23T12:54:14.569Z: Outside working hours. Skipping deletion.
+[2025-01-23T13:54:14.589Z] Deletion check at 2025-01-23T13:54:14.589Z: Outside working hours. Skipping deletion.
+[2025-01-23T14:54:14.595Z] Deletion check at 2025-01-23T14:54:14.595Z: Outside working hours. Skipping deletion.
+[2025-01-23T15:54:14.609Z] Deletion check at 2025-01-23T15:54:14.609Z: Outside working hours. Skipping deletion.
+[2025-01-23T16:54:14.621Z] Deletion check at 2025-01-23T16:54:14.621Z: Outside working hours. Skipping deletion.
+[2025-01-23T17:54:14.630Z] Deletion check at 2025-01-23T17:54:14.630Z: Outside working hours. Skipping deletion.
+[2025-01-23T18:54:14.636Z] Deletion check at 2025-01-23T18:54:14.636Z: Outside working hours. Skipping deletion.
+[2025-01-23T19:54:14.646Z] Deletion check at 2025-01-23T19:54:14.646Z: Outside working hours. Skipping deletion.
+[2025-01-23T20:54:14.656Z] Deletion check at 2025-01-23T20:54:14.656Z: Outside working hours. Skipping deletion.
+[2025-01-23T21:54:14.666Z] Deletion check at 2025-01-23T21:54:14.666Z: Outside working hours. Skipping deletion.
+[2025-01-23T22:54:14.668Z] Deletion check at 2025-01-23T22:54:14.668Z: Outside working hours. Skipping deletion.
+[2025-01-23T23:54:14.698Z] Deletion check at 2025-01-23T23:54:14.698Z: Outside working hours. Skipping deletion.
+[2025-01-24T00:54:14.773Z] Deletion check at 2025-01-24T00:54:14.773Z: Within working hours. Deleting files.
+[2025-01-24T01:54:14.798Z] Deletion check at 2025-01-24T01:54:14.798Z: Within working hours. Deleting files.
+[2025-01-24T02:54:14.815Z] Deletion check at 2025-01-24T02:54:14.815Z: Within working hours. Deleting files.
+[2025-01-24T03:54:14.832Z] Deletion check at 2025-01-24T03:54:14.832Z: Within working hours. Deleting files.
+[2025-01-24T04:54:14.865Z] Deletion check at 2025-01-24T04:54:14.865Z: Within working hours. Deleting files.
+[2025-01-24T05:54:14.889Z] Deletion check at 2025-01-24T05:54:14.889Z: Within working hours. Deleting files.
+[2025-01-24T06:54:14.912Z] Deletion check at 2025-01-24T06:54:14.912Z: Within working hours. Deleting files.
+[2025-01-24T07:54:14.920Z] Deletion check at 2025-01-24T07:54:14.920Z: Within working hours. Deleting files.
+[2025-01-24T08:54:14.936Z] Deletion check at 2025-01-24T08:54:14.936Z: Within working hours. Deleting files.
+[2025-01-24T09:54:14.944Z] Deletion check at 2025-01-24T09:54:14.944Z: Within working hours. Deleting files.
+[2025-01-24T10:54:14.953Z] Deletion check at 2025-01-24T10:54:14.953Z: Within working hours. Deleting files.
+[2025-01-24T11:54:14.962Z] Deletion check at 2025-01-24T11:54:14.962Z: Outside working hours. Skipping deletion.
+[2025-01-24T12:54:14.982Z] Deletion check at 2025-01-24T12:54:14.982Z: Outside working hours. Skipping deletion.
+[2025-01-24T13:54:15.008Z] Deletion check at 2025-01-24T13:54:15.008Z: Outside working hours. Skipping deletion.
+[2025-01-24T14:54:15.022Z] Deletion check at 2025-01-24T14:54:15.022Z: Outside working hours. Skipping deletion.
+[2025-01-24T15:54:15.041Z] Deletion check at 2025-01-24T15:54:15.041Z: Outside working hours. Skipping deletion.
+[2025-01-24T16:54:15.056Z] Deletion check at 2025-01-24T16:54:15.056Z: Outside working hours. Skipping deletion.
+[2025-01-24T17:54:15.070Z] Deletion check at 2025-01-24T17:54:15.070Z: Outside working hours. Skipping deletion.
+[2025-01-24T18:54:15.089Z] Deletion check at 2025-01-24T18:54:15.089Z: Outside working hours. Skipping deletion.
+[2025-01-24T19:54:15.110Z] Deletion check at 2025-01-24T19:54:15.110Z: Outside working hours. Skipping deletion.
+[2025-01-24T20:54:15.132Z] Deletion check at 2025-01-24T20:54:15.132Z: Outside working hours. Skipping deletion.
+[2025-01-24T21:54:15.155Z] Deletion check at 2025-01-24T21:54:15.155Z: Outside working hours. Skipping deletion.
+[2025-01-24T22:54:15.172Z] Deletion check at 2025-01-24T22:54:15.172Z: Outside working hours. Skipping deletion.
+[2025-01-24T23:54:15.194Z] Deletion check at 2025-01-24T23:54:15.194Z: Outside working hours. Skipping deletion.
+[2025-01-25T00:54:15.204Z] Deletion check at 2025-01-25T00:54:15.204Z: Within working hours. Deleting files.
+[2025-01-25T01:54:15.219Z] Deletion check at 2025-01-25T01:54:15.219Z: Within working hours. Deleting files.
+[2025-01-25T02:54:15.240Z] Deletion check at 2025-01-25T02:54:15.240Z: Within working hours. Deleting files.
+[2025-01-25T03:54:15.250Z] Deletion check at 2025-01-25T03:54:15.250Z: Within working hours. Deleting files.
+[2025-01-25T04:54:15.269Z] Deletion check at 2025-01-25T04:54:15.269Z: Within working hours. Deleting files.
+[2025-01-25T05:54:15.280Z] Deletion check at 2025-01-25T05:54:15.280Z: Within working hours. Deleting files.
+[2025-01-25T06:54:15.294Z] Deletion check at 2025-01-25T06:54:15.294Z: Within working hours. Deleting files.
+[2025-01-25T07:54:15.307Z] Deletion check at 2025-01-25T07:54:15.307Z: Within working hours. Deleting files.
+[2025-01-25T08:54:15.313Z] Deletion check at 2025-01-25T08:54:15.313Z: Within working hours. Deleting files.
+[2025-01-25T09:54:15.337Z] Deletion check at 2025-01-25T09:54:15.337Z: Within working hours. Deleting files.
+[2025-01-25T10:54:15.345Z] Deletion check at 2025-01-25T10:54:15.345Z: Within working hours. Deleting files.
+[2025-01-25T11:54:15.356Z] Deletion check at 2025-01-25T11:54:15.356Z: Outside working hours. Skipping deletion.
+[2025-01-25T12:54:15.379Z] Deletion check at 2025-01-25T12:54:15.379Z: Outside working hours. Skipping deletion.
+[2025-01-25T13:54:15.396Z] Deletion check at 2025-01-25T13:54:15.396Z: Outside working hours. Skipping deletion.
+[2025-01-25T14:54:15.409Z] Deletion check at 2025-01-25T14:54:15.409Z: Outside working hours. Skipping deletion.
+[2025-01-25T15:54:15.419Z] Deletion check at 2025-01-25T15:54:15.419Z: Outside working hours. Skipping deletion.
+[2025-01-25T16:54:15.436Z] Deletion check at 2025-01-25T16:54:15.436Z: Outside working hours. Skipping deletion.
+[2025-01-25T17:54:15.460Z] Deletion check at 2025-01-25T17:54:15.459Z: Outside working hours. Skipping deletion.
+[2025-01-25T18:54:15.475Z] Deletion check at 2025-01-25T18:54:15.475Z: Outside working hours. Skipping deletion.
+[2025-01-25T19:54:15.484Z] Deletion check at 2025-01-25T19:54:15.484Z: Outside working hours. Skipping deletion.
+[2025-01-25T20:54:15.499Z] Deletion check at 2025-01-25T20:54:15.499Z: Outside working hours. Skipping deletion.
+[2025-01-25T21:54:15.525Z] Deletion check at 2025-01-25T21:54:15.525Z: Outside working hours. Skipping deletion.
+[2025-01-25T22:54:15.546Z] Deletion check at 2025-01-25T22:54:15.546Z: Outside working hours. Skipping deletion.
+[2025-01-25T23:54:15.569Z] Deletion check at 2025-01-25T23:54:15.569Z: Outside working hours. Skipping deletion.
+[2025-01-26T00:54:15.582Z] Deletion check at 2025-01-26T00:54:15.582Z: Within working hours. Deleting files.
+[2025-01-26T01:54:15.603Z] Deletion check at 2025-01-26T01:54:15.603Z: Within working hours. Deleting files.
+[2025-01-26T02:54:15.619Z] Deletion check at 2025-01-26T02:54:15.619Z: Within working hours. Deleting files.
+[2025-01-26T03:54:15.638Z] Deletion check at 2025-01-26T03:54:15.638Z: Within working hours. Deleting files.
+[2025-01-26T04:54:15.651Z] Deletion check at 2025-01-26T04:54:15.651Z: Within working hours. Deleting files.
+[2025-01-26T05:54:15.663Z] Deletion check at 2025-01-26T05:54:15.663Z: Within working hours. Deleting files.
+[2025-01-26T06:54:15.686Z] Deletion check at 2025-01-26T06:54:15.686Z: Within working hours. Deleting files.
+[2025-01-26T07:54:15.702Z] Deletion check at 2025-01-26T07:54:15.702Z: Within working hours. Deleting files.
+[2025-01-26T08:54:15.718Z] Deletion check at 2025-01-26T08:54:15.718Z: Within working hours. Deleting files.
+[2025-01-26T09:54:15.737Z] Deletion check at 2025-01-26T09:54:15.737Z: Within working hours. Deleting files.
+[2025-01-26T10:54:15.754Z] Deletion check at 2025-01-26T10:54:15.754Z: Within working hours. Deleting files.
+[2025-01-26T11:54:15.774Z] Deletion check at 2025-01-26T11:54:15.774Z: Outside working hours. Skipping deletion.
+[2025-01-26T12:54:15.798Z] Deletion check at 2025-01-26T12:54:15.798Z: Outside working hours. Skipping deletion.
+[2025-01-26T13:54:15.811Z] Deletion check at 2025-01-26T13:54:15.811Z: Outside working hours. Skipping deletion.
+[2025-01-26T14:54:15.827Z] Deletion check at 2025-01-26T14:54:15.827Z: Outside working hours. Skipping deletion.
+[2025-01-26T15:54:15.850Z] Deletion check at 2025-01-26T15:54:15.850Z: Outside working hours. Skipping deletion.
+[2025-01-26T16:54:15.874Z] Deletion check at 2025-01-26T16:54:15.874Z: Outside working hours. Skipping deletion.
+[2025-01-26T17:54:15.891Z] Deletion check at 2025-01-26T17:54:15.891Z: Outside working hours. Skipping deletion.
+[2025-01-26T18:54:15.908Z] Deletion check at 2025-01-26T18:54:15.908Z: Outside working hours. Skipping deletion.
+[2025-01-26T19:54:15.925Z] Deletion check at 2025-01-26T19:54:15.925Z: Outside working hours. Skipping deletion.
+[2025-01-26T20:54:15.944Z] Deletion check at 2025-01-26T20:54:15.944Z: Outside working hours. Skipping deletion.
+[2025-01-26T21:54:15.962Z] Deletion check at 2025-01-26T21:54:15.962Z: Outside working hours. Skipping deletion.
+[2025-01-26T22:54:15.982Z] Deletion check at 2025-01-26T22:54:15.982Z: Outside working hours. Skipping deletion.
+[2025-01-26T23:54:15.994Z] Deletion check at 2025-01-26T23:54:15.994Z: Outside working hours. Skipping deletion.
+[2025-01-27T00:54:16.012Z] Deletion check at 2025-01-27T00:54:16.012Z: Within working hours. Deleting files.
+[2025-01-27T01:54:16.029Z] Deletion check at 2025-01-27T01:54:16.029Z: Within working hours. Deleting files.
+[2025-01-27T02:14:17.740Z] Server started on port 3000
+[2025-01-27T02:14:17.733Z] Deletion check at 2025-01-27T02:14:17.732Z: Within working hours. Deleting files.
+[2025-01-27T02:15:38.215Z] Deletion check at 2025-01-27T02:15:38.214Z: Within working hours. Deleting files.
+[2025-01-27T02:15:38.222Z] Server started on port 3000
+[2025-01-27T02:15:50.850Z] Python script output for 1737944148057-942458862-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737944148057-942458862-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737944148078_462648504.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-01-27T02:15:51.147Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737944148078_462648504.pdf deleted successfully.
+[2025-01-27T02:18:42.982Z] Deletion check at 2025-01-27T02:18:42.982Z: Within working hours. Deleting files.
+[2025-01-27T02:18:42.989Z] Server started on port 3000
+[2025-01-27T02:18:42.990Z] Deleted file: 1737944148057-942458862-OKUDA-Ryo_CIF.pdf
+[2025-01-27T02:20:36.183Z] Deletion check at 2025-01-27T02:20:36.182Z: Within working hours. Deleting files.
+[2025-01-27T02:20:36.191Z] Server started on port 3000
+[2025-01-27T02:20:46.582Z] Python script output for 1737944444971-825846839-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737944444971-825846839-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737944445048_680953364.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-01-27T02:20:46.787Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737944445048_680953364.pdf deleted successfully.
+[2025-01-27T02:22:06.027Z] Deletion check at 2025-01-27T02:22:06.026Z: Within working hours. Deleting files.
+[2025-01-27T02:22:06.032Z] Server started on port 3000
+[2025-01-27T02:22:06.034Z] Deleted file: 1737944444971-825846839-OKUDA-Ryo_CIF.pdf
+[2025-01-27T02:22:23.750Z] Python script output for 1737944541722-348101334-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737944541722-348101334-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737944541744_101096950.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-01-27T02:22:23.945Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737944541744_101096950.pdf deleted successfully.
+[2025-01-27T02:22:43.092Z] Python script output for 1737944561282-999443739-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737944561282-999443739-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737944561317_610973177.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-01-27T02:22:43.228Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737944561317_610973177.pdf deleted successfully.
+[2025-01-27T02:24:18.507Z] Deletion check at 2025-01-27T02:24:18.506Z: Within working hours. Deleting files.
+[2025-01-27T02:24:18.513Z] Server started on port 3000
+[2025-01-27T02:24:18.515Z] Deleted file: 1737944541722-348101334-OKUDA-Ryo_CIF.pdf
+[2025-01-27T02:24:18.515Z] Deleted file: 1737944561282-999443739-OKUDA-Ryo_CIF.pdf
+[2025-01-27T02:25:01.760Z] Deletion check at 2025-01-27T02:25:01.759Z: Within working hours. Deleting files.
+[2025-01-27T02:25:01.766Z] Server started on port 3000
+[2025-01-27T02:50:07.550Z] Python script output for 1737946205722-594860000-OKUDA-Ryo_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1737946205722-594860000-OKUDA-Ryo_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737946205746_489475663.pdf
+Converting PDF to images...
+Number of pages converted: 6
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-01-27T02:50:07.713Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1737946205746_489475663.pdf deleted successfully.
+[2025-01-27T03:25:01.791Z] Deletion check at 2025-01-27T03:25:01.791Z: Within working hours. Deleting files.
+[2025-01-27T03:25:01.793Z] Deleted file: 1737946205722-594860000-OKUDA-Ryo_CIF.pdf
+[2025-01-27T04:25:01.809Z] Deletion check at 2025-01-27T04:25:01.809Z: Within working hours. Deleting files.
+[2025-01-27T05:25:01.820Z] Deletion check at 2025-01-27T05:25:01.820Z: Within working hours. Deleting files.
+[2025-01-27T06:25:01.842Z] Deletion check at 2025-01-27T06:25:01.842Z: Within working hours. Deleting files.
+[2025-01-27T07:25:01.857Z] Deletion check at 2025-01-27T07:25:01.857Z: Within working hours. Deleting files.
+[2025-01-27T08:25:01.871Z] Deletion check at 2025-01-27T08:25:01.870Z: Within working hours. Deleting files.
+[2025-01-27T09:25:01.884Z] Deletion check at 2025-01-27T09:25:01.884Z: Within working hours. Deleting files.
+[2025-01-27T10:25:01.896Z] Deletion check at 2025-01-27T10:25:01.896Z: Within working hours. Deleting files.
+[2025-01-27T11:25:01.909Z] Deletion check at 2025-01-27T11:25:01.909Z: Outside working hours. Skipping deletion.
+[2025-01-27T12:25:01.922Z] Deletion check at 2025-01-27T12:25:01.922Z: Outside working hours. Skipping deletion.
+[2025-01-27T13:25:01.946Z] Deletion check at 2025-01-27T13:25:01.946Z: Outside working hours. Skipping deletion.
+[2025-01-27T14:25:01.958Z] Deletion check at 2025-01-27T14:25:01.958Z: Outside working hours. Skipping deletion.
+[2025-01-27T15:25:01.970Z] Deletion check at 2025-01-27T15:25:01.970Z: Outside working hours. Skipping deletion.
+[2025-01-27T16:25:01.981Z] Deletion check at 2025-01-27T16:25:01.981Z: Outside working hours. Skipping deletion.
+[2025-01-27T17:25:02.001Z] Deletion check at 2025-01-27T17:25:02.001Z: Outside working hours. Skipping deletion.
+[2025-01-27T18:25:02.021Z] Deletion check at 2025-01-27T18:25:02.021Z: Outside working hours. Skipping deletion.
+[2025-01-27T19:25:02.044Z] Deletion check at 2025-01-27T19:25:02.044Z: Outside working hours. Skipping deletion.
+[2025-01-27T20:25:02.063Z] Deletion check at 2025-01-27T20:25:02.063Z: Outside working hours. Skipping deletion.
+[2025-01-27T21:25:02.079Z] Deletion check at 2025-01-27T21:25:02.079Z: Outside working hours. Skipping deletion.
+[2025-01-27T22:25:02.101Z] Deletion check at 2025-01-27T22:25:02.101Z: Outside working hours. Skipping deletion.
+[2025-01-27T23:25:02.123Z] Deletion check at 2025-01-27T23:25:02.123Z: Outside working hours. Skipping deletion.
+[2025-01-28T00:25:02.136Z] Deletion check at 2025-01-28T00:25:02.136Z: Within working hours. Deleting files.
+[2025-01-28T01:25:02.159Z] Deletion check at 2025-01-28T01:25:02.159Z: Within working hours. Deleting files.
+[2025-01-28T02:25:02.168Z] Deletion check at 2025-01-28T02:25:02.168Z: Within working hours. Deleting files.
+[2025-01-28T03:25:02.175Z] Deletion check at 2025-01-28T03:25:02.175Z: Within working hours. Deleting files.
+[2025-01-28T04:25:02.192Z] Deletion check at 2025-01-28T04:25:02.192Z: Within working hours. Deleting files.
+[2025-01-28T05:25:02.206Z] Deletion check at 2025-01-28T05:25:02.206Z: Within working hours. Deleting files.
+[2025-01-28T06:25:02.223Z] Deletion check at 2025-01-28T06:25:02.223Z: Within working hours. Deleting files.
+[2025-01-28T07:25:02.233Z] Deletion check at 2025-01-28T07:25:02.233Z: Within working hours. Deleting files.
+[2025-01-28T08:25:02.243Z] Deletion check at 2025-01-28T08:25:02.243Z: Within working hours. Deleting files.
+[2025-01-28T09:25:02.270Z] Deletion check at 2025-01-28T09:25:02.270Z: Within working hours. Deleting files.
+[2025-01-28T10:25:02.296Z] Deletion check at 2025-01-28T10:25:02.296Z: Within working hours. Deleting files.
+[2025-01-28T11:25:02.321Z] Deletion check at 2025-01-28T11:25:02.321Z: Outside working hours. Skipping deletion.
+[2025-01-28T12:25:02.332Z] Deletion check at 2025-01-28T12:25:02.332Z: Outside working hours. Skipping deletion.
+[2025-01-28T13:25:02.354Z] Deletion check at 2025-01-28T13:25:02.354Z: Outside working hours. Skipping deletion.
+[2025-01-28T14:25:02.377Z] Deletion check at 2025-01-28T14:25:02.377Z: Outside working hours. Skipping deletion.
+[2025-01-28T15:25:02.384Z] Deletion check at 2025-01-28T15:25:02.384Z: Outside working hours. Skipping deletion.
+[2025-01-28T16:25:02.403Z] Deletion check at 2025-01-28T16:25:02.403Z: Outside working hours. Skipping deletion.
+[2025-01-28T17:25:02.421Z] Deletion check at 2025-01-28T17:25:02.421Z: Outside working hours. Skipping deletion.
+[2025-01-28T18:25:02.439Z] Deletion check at 2025-01-28T18:25:02.439Z: Outside working hours. Skipping deletion.
+[2025-01-28T19:25:02.460Z] Deletion check at 2025-01-28T19:25:02.460Z: Outside working hours. Skipping deletion.
+[2025-01-28T20:25:02.474Z] Deletion check at 2025-01-28T20:25:02.474Z: Outside working hours. Skipping deletion.
+[2025-01-28T21:25:02.488Z] Deletion check at 2025-01-28T21:25:02.488Z: Outside working hours. Skipping deletion.
+[2025-01-28T22:25:02.511Z] Deletion check at 2025-01-28T22:25:02.511Z: Outside working hours. Skipping deletion.
+[2025-02-03T01:15:11.062Z] Deletion check at 2025-02-03T01:15:11.050Z: Within working hours. Deleting files.
+[2025-02-03T01:15:11.070Z] Server started on port 3000
+[2025-02-03T02:15:11.068Z] Deletion check at 2025-02-03T02:15:11.068Z: Within working hours. Deleting files.
+[2025-02-03T02:18:27.861Z] Deletion check at 2025-02-03T02:18:27.860Z: Within working hours. Deleting files.
+[2025-02-03T02:18:27.868Z] Server started on port 3000
+[2025-02-03T02:27:55.419Z] Python script output for 1738549671187-856265063-9.012 - SL Change of Third Party Financial Adviser (OMA) Form.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1738549671187-856265063-9.012 - SL Change of Third Party Financial Adviser (OMA) Form.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1738549671374_124653437.pdf
+Converting PDF to images...
+Number of pages converted: 5
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-02-03T02:27:55.607Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1738549671374_124653437.pdf deleted successfully.
+[2025-02-03T02:37:39.201Z] Python script output for 1738550257836-512059960-1.008 - ADMIN OFFSHORE Client Information Form _CIF_.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1738550257836-512059960-1.008 - ADMIN OFFSHORE Client Information Form _CIF_.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1738550257878_422961705.pdf
+Converting PDF to images...
+Number of pages converted: 2
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-02-03T02:37:39.481Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1738550257878_422961705.pdf deleted successfully.
+[2025-02-03T03:18:27.884Z] Deletion check at 2025-02-03T03:18:27.884Z: Within working hours. Deleting files.
+[2025-02-03T03:18:27.886Z] Deleted file: 1738549671187-856265063-9.012 - SL Change of Third Party Financial Adviser (OMA) Form.pdf
+[2025-02-03T03:18:27.886Z] Deleted file: 1738550257836-512059960-1.008 - ADMIN OFFSHORE Client Information Form _CIF_.pdf
+[2025-02-03T04:18:27.893Z] Deletion check at 2025-02-03T04:18:27.893Z: Within working hours. Deleting files.
+[2025-02-03T05:18:27.910Z] Deletion check at 2025-02-03T05:18:27.910Z: Within working hours. Deleting files.
+[2025-02-03T06:18:27.938Z] Deletion check at 2025-02-03T06:18:27.938Z: Within working hours. Deleting files.
+[2025-02-03T07:18:27.964Z] Deletion check at 2025-02-03T07:18:27.964Z: Within working hours. Deleting files.
+[2025-02-03T08:18:27.979Z] Deletion check at 2025-02-03T08:18:27.979Z: Within working hours. Deleting files.
+[2025-02-03T09:18:27.990Z] Deletion check at 2025-02-03T09:18:27.990Z: Within working hours. Deleting files.
+[2025-02-03T10:18:28.012Z] Deletion check at 2025-02-03T10:18:28.012Z: Within working hours. Deleting files.
+[2025-02-03T11:18:28.038Z] Deletion check at 2025-02-03T11:18:28.038Z: Outside working hours. Skipping deletion.
+[2025-02-03T12:18:28.058Z] Deletion check at 2025-02-03T12:18:28.058Z: Outside working hours. Skipping deletion.
+[2025-02-03T13:18:28.083Z] Deletion check at 2025-02-03T13:18:28.083Z: Outside working hours. Skipping deletion.
+[2025-02-03T14:18:28.094Z] Deletion check at 2025-02-03T14:18:28.094Z: Outside working hours. Skipping deletion.
+[2025-02-03T15:18:28.114Z] Deletion check at 2025-02-03T15:18:28.114Z: Outside working hours. Skipping deletion.
+[2025-02-03T16:18:28.134Z] Deletion check at 2025-02-03T16:18:28.134Z: Outside working hours. Skipping deletion.
+[2025-02-03T17:18:28.144Z] Deletion check at 2025-02-03T17:18:28.144Z: Outside working hours. Skipping deletion.
+[2025-02-03T18:18:28.165Z] Deletion check at 2025-02-03T18:18:28.165Z: Outside working hours. Skipping deletion.
+[2025-02-03T19:18:28.180Z] Deletion check at 2025-02-03T19:18:28.180Z: Outside working hours. Skipping deletion.
+[2025-02-03T20:18:28.194Z] Deletion check at 2025-02-03T20:18:28.193Z: Outside working hours. Skipping deletion.
+[2025-02-03T21:18:28.206Z] Deletion check at 2025-02-03T21:18:28.206Z: Outside working hours. Skipping deletion.
+[2025-02-03T22:18:28.228Z] Deletion check at 2025-02-03T22:18:28.228Z: Outside working hours. Skipping deletion.
+[2025-02-03T23:18:28.244Z] Deletion check at 2025-02-03T23:18:28.244Z: Outside working hours. Skipping deletion.
+[2025-02-04T00:18:28.259Z] Deletion check at 2025-02-04T00:18:28.259Z: Within working hours. Deleting files.
+[2025-02-04T01:18:28.279Z] Deletion check at 2025-02-04T01:18:28.279Z: Within working hours. Deleting files.
+[2025-02-04T02:18:28.297Z] Deletion check at 2025-02-04T02:18:28.297Z: Within working hours. Deleting files.
+[2025-02-04T03:18:28.321Z] Deletion check at 2025-02-04T03:18:28.321Z: Within working hours. Deleting files.
+[2025-02-04T04:18:28.334Z] Deletion check at 2025-02-04T04:18:28.334Z: Within working hours. Deleting files.
+[2025-02-04T05:18:28.349Z] Deletion check at 2025-02-04T05:18:28.349Z: Within working hours. Deleting files.
+[2025-02-04T06:18:28.366Z] Deletion check at 2025-02-04T06:18:28.366Z: Within working hours. Deleting files.
+[2025-02-04T07:18:28.378Z] Deletion check at 2025-02-04T07:18:28.378Z: Within working hours. Deleting files.
+[2025-02-04T08:18:28.397Z] Deletion check at 2025-02-04T08:18:28.397Z: Within working hours. Deleting files.
+[2025-02-04T09:18:28.425Z] Deletion check at 2025-02-04T09:18:28.425Z: Within working hours. Deleting files.
+[2025-02-04T10:18:28.449Z] Deletion check at 2025-02-04T10:18:28.449Z: Within working hours. Deleting files.
+[2025-02-04T11:18:28.476Z] Deletion check at 2025-02-04T11:18:28.476Z: Outside working hours. Skipping deletion.
+[2025-02-04T12:18:28.499Z] Deletion check at 2025-02-04T12:18:28.499Z: Outside working hours. Skipping deletion.
+[2025-02-04T13:18:28.511Z] Deletion check at 2025-02-04T13:18:28.511Z: Outside working hours. Skipping deletion.
+[2025-02-04T14:18:28.524Z] Deletion check at 2025-02-04T14:18:28.524Z: Outside working hours. Skipping deletion.
+[2025-02-04T15:18:28.544Z] Deletion check at 2025-02-04T15:18:28.544Z: Outside working hours. Skipping deletion.
+[2025-02-04T16:18:28.560Z] Deletion check at 2025-02-04T16:18:28.560Z: Outside working hours. Skipping deletion.
+[2025-02-04T17:18:28.573Z] Deletion check at 2025-02-04T17:18:28.573Z: Outside working hours. Skipping deletion.
+[2025-02-04T18:18:28.597Z] Deletion check at 2025-02-04T18:18:28.597Z: Outside working hours. Skipping deletion.
+[2025-02-04T19:18:28.616Z] Deletion check at 2025-02-04T19:18:28.616Z: Outside working hours. Skipping deletion.
+[2025-02-04T20:18:28.634Z] Deletion check at 2025-02-04T20:18:28.634Z: Outside working hours. Skipping deletion.
+[2025-02-04T21:18:28.651Z] Deletion check at 2025-02-04T21:18:28.651Z: Outside working hours. Skipping deletion.
+[2025-02-04T22:18:28.670Z] Deletion check at 2025-02-04T22:18:28.670Z: Outside working hours. Skipping deletion.
+[2025-02-04T23:18:28.682Z] Deletion check at 2025-02-04T23:18:28.682Z: Outside working hours. Skipping deletion.
+[2025-02-05T00:18:28.698Z] Deletion check at 2025-02-05T00:18:28.698Z: Within working hours. Deleting files.
+[2025-02-05T01:18:28.713Z] Deletion check at 2025-02-05T01:18:28.713Z: Within working hours. Deleting files.
+[2025-02-05T02:18:28.729Z] Deletion check at 2025-02-05T02:18:28.729Z: Within working hours. Deleting files.
+[2025-02-05T03:18:28.741Z] Deletion check at 2025-02-05T03:18:28.741Z: Within working hours. Deleting files.
+[2025-02-05T04:18:28.759Z] Deletion check at 2025-02-05T04:18:28.759Z: Within working hours. Deleting files.
+[2025-02-05T05:18:28.771Z] Deletion check at 2025-02-05T05:18:28.771Z: Within working hours. Deleting files.
+[2025-02-05T06:18:28.797Z] Deletion check at 2025-02-05T06:18:28.797Z: Within working hours. Deleting files.
+[2025-02-05T07:18:28.805Z] Deletion check at 2025-02-05T07:18:28.805Z: Within working hours. Deleting files.
+[2025-02-05T08:18:28.827Z] Deletion check at 2025-02-05T08:18:28.827Z: Within working hours. Deleting files.
+[2025-02-05T08:55:42.241Z] Python script output for 1738745739205-302169398-HAYASHI-Wakato_CIF.pdf: Input PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\1738745739205-302169398-HAYASHI-Wakato_CIF.pdf
+Output PDF path: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1738745739225_211784731.pdf
+Converting PDF to images...
+Number of pages converted: 4
+Converting images back to PDF...
+Error during conversion: [WinError 145] The directory is not empty: 'temp_images'
+
+[2025-02-05T08:55:42.375Z] Converted file C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\converted_1738745739225_211784731.pdf deleted successfully.
+[2025-02-05T09:18:28.845Z] Deletion check at 2025-02-05T09:18:28.845Z: Within working hours. Deleting files.
+[2025-02-05T09:18:28.846Z] Deleted file: 1738745739205-302169398-HAYASHI-Wakato_CIF.pdf
+[2025-02-05T10:18:28.868Z] Deletion check at 2025-02-05T10:18:28.868Z: Within working hours. Deleting files.
+[2025-02-05T11:18:28.891Z] Deletion check at 2025-02-05T11:18:28.891Z: Outside working hours. Skipping deletion.
+[2025-02-05T12:18:28.907Z] Deletion check at 2025-02-05T12:18:28.907Z: Outside working hours. Skipping deletion.
+[2025-02-05T13:18:28.924Z] Deletion check at 2025-02-05T13:18:28.924Z: Outside working hours. Skipping deletion.
+[2025-02-05T14:18:28.949Z] Deletion check at 2025-02-05T14:18:28.949Z: Outside working hours. Skipping deletion.
+[2025-02-05T15:18:28.968Z] Deletion check at 2025-02-05T15:18:28.968Z: Outside working hours. Skipping deletion.
+[2025-02-05T16:18:28.980Z] Deletion check at 2025-02-05T16:18:28.980Z: Outside working hours. Skipping deletion.
+[2025-02-05T17:18:29.006Z] Deletion check at 2025-02-05T17:18:29.006Z: Outside working hours. Skipping deletion.
+[2025-02-05T18:18:29.024Z] Deletion check at 2025-02-05T18:18:29.024Z: Outside working hours. Skipping deletion.
+[2025-02-05T19:18:29.050Z] Deletion check at 2025-02-05T19:18:29.050Z: Outside working hours. Skipping deletion.
+[2025-02-05T20:18:29.067Z] Deletion check at 2025-02-05T20:18:29.067Z: Outside working hours. Skipping deletion.
+[2025-02-05T21:18:29.081Z] Deletion check at 2025-02-05T21:18:29.081Z: Outside working hours. Skipping deletion.
+[2025-02-05T22:18:29.097Z] Deletion check at 2025-02-05T22:18:29.097Z: Outside working hours. Skipping deletion.
+[2025-02-05T23:18:29.110Z] Deletion check at 2025-02-05T23:18:29.110Z: Outside working hours. Skipping deletion.
+[2025-02-06T00:18:29.133Z] Deletion check at 2025-02-06T00:18:29.133Z: Within working hours. Deleting files.
+[2025-02-06T01:18:29.158Z] Deletion check at 2025-02-06T01:18:29.158Z: Within working hours. Deleting files.
+[2025-02-06T02:18:29.176Z] Deletion check at 2025-02-06T02:18:29.176Z: Within working hours. Deleting files.
+[2025-02-06T03:18:29.193Z] Deletion check at 2025-02-06T03:18:29.193Z: Within working hours. Deleting files.
+[2025-02-06T04:18:29.217Z] Deletion check at 2025-02-06T04:18:29.217Z: Within working hours. Deleting files.
+[2025-02-06T05:18:29.242Z] Deletion check at 2025-02-06T05:18:29.241Z: Within working hours. Deleting files.
+[2025-02-06T06:18:29.252Z] Deletion check at 2025-02-06T06:18:29.252Z: Within working hours. Deleting files.
+[2025-02-06T07:18:29.270Z] Deletion check at 2025-02-06T07:18:29.270Z: Within working hours. Deleting files.

@@ -7,9 +7,44 @@ const fs = require('fs');
 
 const app = express();
 const PORT = 3000;
-
+const uploadsPath = path.join(__dirname, 'uploads');
 // Create a writable log file
 const logFile = path.join(__dirname, 'logs.txt');
+
+// Function to delete all files in the uploads folder
+function deleteFilesInUploads() {
+  const now = new Date();
+  const currentHour = now.getHours();
+
+  // Check if the current time is within working hours (8 AM to 6 PM)
+  if (currentHour >= 8 && currentHour <= 18) {
+    logToFile(`Deletion check at ${now.toISOString()}: Within working hours. Deleting files.`);
+
+    fs.readdir(uploadsPath, (err, files) => {
+      if (err) {
+        logToFile(`Error reading uploads folder: ${err.message}`);
+        return;
+      }
+
+      files.forEach((file) => {
+        const filePath = path.join(uploadsPath, file);
+        fs.unlink(filePath, (err) => {
+          if (err) {
+            logToFile(`Error deleting file ${file}: ${err.message}`);
+          } else {
+            logToFile(`Deleted file: ${file}`);
+          }
+        });
+      });
+    });
+  } else {
+    logToFile(`Deletion check at ${now.toISOString()}: Outside working hours. Skipping deletion.`);
+  }
+}
+
+// Schedule the cleanup task to run every hour on the hour
+const ONE_HOUR = 60 * 60 * 1000;
+setInterval(deleteFilesInUploads, ONE_HOUR);
 
 // Function to write logs to the file
 function logToFile(message) {
@@ -48,10 +83,14 @@ const upload = multer({
   }
 });
 
+// Optionally, run the cleanup function once when the server starts
+deleteFilesInUploads();
+
 // Serve static files and favicon
 app.use(express.static(path.join(__dirname, 'images'))); // Serve images folder
 app.use(favicon(path.join(__dirname, 'images', 'staff_icon.ico'))); // Ensure favicon is in the "images" folder
 
+// Serve the root page with a basic form
 // Serve the root page with a basic form
 app.get('/', (req, res) => {
   res.send(`
@@ -117,6 +156,18 @@ app.get('/', (req, res) => {
                 font-size: 14px;
                 color: #aaa;
             }
+            #loading {
+                display: none;
+                margin-top: 20px;
+                font-size: 18px;
+                color: #007BFF;
+            }
+            #error {
+                display: none;
+                margin-top: 20px;
+                font-size: 18px;
+                color: red;
+            }
         </style>
     </head>
     <body>
@@ -131,35 +182,85 @@ app.get('/', (req, res) => {
             <div style="display: inline-block; text-align: left;">
             <p class="remark">Remarks:<br>
             1.Upload file and convert pdf text to unselectable<br>
-            2.Usage: Click Choose file, upload file(s) and Click Upload and Convert<br>
-            3.You can upload up to 10 files at once</p>
+            2.Usage: Click Choose file, upload file and Click Upload and Convert<br>
+            3.If the download bar shows "Insecure download blocked", click "keep".</p>
             </div>
             </div>
-            <form action="/upload" method="POST" enctype="multipart/form-data">
-                <input type="file" name="pdfs" accept="application/pdf" multiple required>
+            <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" name="pdf" accept="application/pdf" required>
                 <br>
                 <button type="submit">Upload and Convert</button>
             </form>
+            <div id="loading">Uploading and converting your files... Please wait.</div>
+            <div id="error">Something went wrong. Please check your internet connection or try again later.</div>
         </div>
         <div style="text-align: center;">
         <footer>
             &copy; ${new Date().getFullYear()} Adminasia Ltd. All Rights Reserved.
         </footer>
         </div>
+        <script>
+            const form = document.getElementById('uploadForm');
+            const loadingIndicator = document.getElementById('loading');
+            const errorIndicator = document.getElementById('error');
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault(); // Prevent default form submission
+                loadingIndicator.style.display = 'block'; // Show the loading message
+                errorIndicator.style.display = 'none'; // Hide the error message
+
+                const formData = new FormData(form);
+
+                // Set a timeout for the request (e.g., 30 seconds)
+                const timeout = setTimeout(() => {
+                    loadingIndicator.style.display = 'none';
+                    errorIndicator.style.display = 'block';
+                }, 30000); // 30 seconds
+
+                fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then((response) => {
+                    clearTimeout(timeout); // Clear the timeout if the request completes
+                    if (response.ok) {
+                        return response.blob();
+                    } else {
+                        throw new Error('Server error');
+                    }
+                })
+                .then((blob) => {
+                    loadingIndicator.style.display = 'none';
+
+                    // Create a download link for the converted file
+                    const url = window.URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.style.display = 'none';
+                    a.href = url;
+                    a.download = 'converted_files.pdf'; // Set a default name for the file
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                })
+                .catch((error) => {
+                    loadingIndicator.style.display = 'none';
+                    errorIndicator.style.display = 'block';
+                    console.error('Error:', error);
+                });
+            });
+        </script>
     </body>
     </html>
   `);
 });
-
 // Endpoint to upload and process multiple PDFs
-app.post('/upload', upload.array('pdfs', 10), (req, res) => {
-  if (!req.files || req.files.length === 0) {
-    return res.status(400).send('No files uploaded!');
+// Endpoint to upload and process a single PDF
+app.post('/upload', upload.single('pdf'), (req, res) => {
+  if (!req.file) {
+    return res.status(400).send('No file uploaded!');
   }
 
-  const convertedFiles = [];
-
-  // Process each uploaded file
+  // Process the uploaded file
   const processFile = (file) => {
     return new Promise((resolve, reject) => {
       const filePath = file.path;
@@ -179,12 +280,7 @@ app.post('/upload', upload.array('pdfs', 10), (req, res) => {
 
       pythonProcess.on('close', (code) => {
         if (code === 0) {
-          convertedFiles.push({
-            original: file.filename,
-            converted: outputFileName,
-            link: `http://localhost:${PORT}/download/${outputFileName}`,
-          });
-          resolve();
+          resolve(outputPath); // Resolve with the path of the converted file
         } else {
           logToFile(`Python script failed for ${file.filename}`);
           reject(new Error(`Python script failed for file ${file.filename}`));
@@ -193,97 +289,35 @@ app.post('/upload', upload.array('pdfs', 10), (req, res) => {
     });
   };
 
-  // Process all files concurrently
-  const processFiles = async () => {
+  // Process the file and send the response
+  const processUploadedFile = async () => {
     try {
-      await Promise.all(req.files.map((file) => processFile(file)));
-      res.send(`
-        <!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="icon" type="image/x-icon" href="/images/staff_icon.ico">
-            <title>Files Converted Successfully</title>
-            <style>
-                body {
-                    font-family: Arial, sans-serif;
-                    background-color: #f4f4f9;
-                    margin: 0;
-                    padding: 0;
-                }
-                .container {
-                    max-width: 1000px;
-                    margin: 50px auto;
-                    text-align: center;
-                    padding: 20px;
-                    background: #fff;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-                }
-                h1 {
-                    font-size: 36px;
-                    color: #333;
-                }
-                ul {
-                    list-style: none;
-                    padding: 0;
-                }
-                li {
-                    margin: 10px 0;
-                    font-size: 18px;
-                }
-                a {
-                    color: #007BFF;
-                    text-decoration: none;
-                }
-                a:hover {
-                    text-decoration: underline;
-                }
-                footer {
-                    margin-top: 30px;
-                    font-size: 14px;
-                    color: #aaa;
-                }
-                .button {
-                    margin-top: 20px;
-                    background-color: #007BFF;
-                    color: white;
-                    font-size: 16px;
-                    padding: 10px 20px;
-                    border: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                }
-                .button:hover {
-                    background-color: #0056b3;
-                }
-            </style>
-        </head>
-        <body>
-            <div class="container">
-                <h1>Files Converted Successfully!</h1>
-                <ul>
-                  ${convertedFiles.map((file) => `
-                    <li>
-                      <strong>${file.original}</strong> - 
-                      <a href="${file.link}" target="_blank">Download Converted File</a>
-                    </li>
-                  `).join('')}
-                </ul>
-                <a href="/" class="button">Convert More PDFs</a>
-            </div>
-        </body>
-        </html>
-      `);
+      const convertedFilePath = await processFile(req.file);
+
+      // Send the converted PDF directly
+      res.setHeader('X-Original-File-Name', req.file.originalname);
+      res.download(convertedFilePath, (err) => {
+        if (err) {
+          logToFile(`Error sending file for download: ${err.message}`);
+        } else {
+          // Clean up the converted file after download
+          fs.unlink(convertedFilePath, (err) => {
+            if (err) {
+              logToFile(`Error deleting file: ${err.message}`);
+            } else {
+              logToFile(`Converted file ${convertedFilePath} deleted successfully.`);
+            }
+          });
+        }
+      });
     } catch (err) {
-      logToFile(`Error processing files: ${err.message}`);
-      res.status(500).send('Error processing files.');
+      logToFile(`Error processing file: ${err.message}`);
+      res.status(500).send('Error processing file.');
     }
   };
 
-  processFiles();
+  processUploadedFile();
 });
-
 // Serve and delete the file after it has been accessed
 app.get('/download/:filename', (req, res) => {
   const filePath = path.join(__dirname, '/uploads/', req.params.filename);
@@ -305,6 +339,7 @@ app.get('/download/:filename', (req, res) => {
       }
     });
   } else {
+    logToFile(`File ${filePath} `);
     res.status(404).send('File not found!');
   }
 });
