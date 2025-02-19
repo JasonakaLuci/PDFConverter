@@ -21,6 +21,7 @@ def pdf_to_images_to_pdf(input_path, output_path):
             os.makedirs(temp_dir)
 
         for i, image in enumerate(images):
+            # Use Unicode-safe filenames
             temp_image_path = os.path.join(temp_dir, f'page_{i+1}.jpg')
             image.save(temp_image_path, 'JPEG')
             image_files.append(temp_image_path)
@@ -37,12 +38,17 @@ def pdf_to_images_to_pdf(input_path, output_path):
 
         print("PDF successfully converted to images and back to PDF!")
     except Exception as e:
+        # Make sure errors are printed as Unicode-safe
         print(f"Error during conversion: {e}")
 
 if __name__ == '__main__':
     if len(sys.argv) != 3:
         print("Usage: python pdf_converter.py <input_pdf_path> <output_pdf_path>")
     else:
-        input_pdf_path = sys.argv[1]
-        output_pdf_path = sys.argv[2]
-        pdf_to_images_to_pdf(input_pdf_path, output_pdf_path)
+        try:
+            # Ensure the input arguments are decoded properly
+            input_pdf_path = sys.argv[1].encode('utf-8').decode('utf-8')
+            output_pdf_path = sys.argv[2].encode('utf-8').decode('utf-8')
+            pdf_to_images_to_pdf(input_pdf_path, output_pdf_path)
+        except Exception as e:
+            print(f"Error: {e}")

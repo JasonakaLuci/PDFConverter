@@ -263,31 +263,49 @@ app.post('/upload', upload.single('pdf'), (req, res) => {
   // Process the uploaded file
   const processFile = (file) => {
     return new Promise((resolve, reject) => {
-      const filePath = file.path;
-      const outputFileName = `converted_${Date.now()}_${Math.round(Math.random() * 1E9)}.pdf`;
-      const outputPath = path.join(__dirname, '/uploads/', outputFileName);
+        const filePath = file.path;
+        const outputFileName = `converted_${Date.now()}_${Math.round(Math.random() * 1E9)}.pdf`;
+        const outputPath = path.join(__dirname, '/uploads/', outputFileName);
 
-      // Call Python script using subprocess
-      const pythonProcess = spawn('python', ['pdf_converter.py', filePath, outputPath]);
+        // Explicitly set the Python command
+        const pythonCommand = process.platform === 'win32' ? 'python' : 'python3';
 
-      pythonProcess.stdout.on('data', (data) => {
-        logToFile(`Python script output for ${file.filename}: ${data}`);
-      });
+        // Call the Python script using spawn
+        const pythonProcess = spawn(pythonCommand, ['pdf_converter.py', filePath, outputPath], {
+            stdio: 'pipe', // Use 'pipe' to capture stdout and stderr
+            env: { ...process.env, PYTHONIOENCODING: 'utf-8' } // Ensure UTF-8 encoding
+        });
 
-      pythonProcess.stderr.on('data', (data) => {
-        logToFile(`Python script error for ${file.filename}: ${data}`);
-      });
-
-      pythonProcess.on('close', (code) => {
-        if (code === 0) {
-          resolve(outputPath); // Resolve with the path of the converted file
-        } else {
-          logToFile(`Python script failed for ${file.filename}`);
-          reject(new Error(`Python script failed for file ${file.filename}`));
+        // Check if the process failed to spawn
+        if (!pythonProcess) {
+            reject(new Error('Failed to spawn Python process.'));
+            return;
         }
-      });
+
+        // Capture Python script output
+        pythonProcess.stdout.on('data', (data) => {
+            logToFile(`Python script output for ${file.filename}: ${data.toString()}`);
+        });
+
+        pythonProcess.stderr.on('data', (data) => {
+            logToFile(`Python script error for ${file.filename}: ${data.toString()}`);
+        });
+
+        pythonProcess.on('close', (code) => {
+            if (code === 0) {
+                resolve(outputPath); // Successfully processed
+            } else {
+                logToFile(`Python script failed for ${file.filename} with exit code ${code}`);
+                reject(new Error(`Python script failed for file ${file.filename}`));
+            }
+        });
+
+        pythonProcess.on('error', (err) => {
+            logToFile(`Error spawning Python process: ${err.message}`);
+            reject(new Error('Error spawning Python process.'));
+        });
     });
-  };
+};
 
   // Process the file and send the response
   const processUploadedFile = async () => {
