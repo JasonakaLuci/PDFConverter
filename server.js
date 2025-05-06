@@ -183,7 +183,8 @@ app.get('/', (req, res) => {
             <p class="remark">Remarks:<br>
             1.Upload file and convert pdf text to unselectable<br>
             2.Usage: Click Choose file, upload file and Click Upload and Convert<br>
-            3.If the download bar shows "Insecure download blocked", click "keep".</p>
+            3.If the download bar shows "Insecure download blocked", click "keep".<br>
+            4.Version 02/25: Files with Japanese name bug now fixed</p>
             </div>
             </div>
             <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data">
