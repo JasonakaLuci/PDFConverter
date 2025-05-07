@@ -99,7 +99,7 @@ app.get('/', (req, res) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="/images/staff_icon.ico">
+        <link rel="icon" type="image/x-icon" href="/pdf.ico">
         <title>PDF Converter</title>
         <style>
             body {
@@ -223,30 +223,60 @@ app.get('/', (req, res) => {
                     body: formData
                 })
                 .then((response) => {
-                    clearTimeout(timeout); // Clear the timeout if the request completes
-                    if (response.ok) {
-                        return response.blob();
-                    } else {
-                        throw new Error('Server error');
+                    clearTimeout(timeout); 
+                    if (!response.ok) {
+                        return response.text().then(text => {
+                            let serverMessage = text;
+                            try {
+                                const errJson = JSON.parse(text);
+                                serverMessage = errJson.message || errJson.error || text;
+                            } catch (e) {
+                                // If not JSON or parsing fails, use the raw text
+                            }
+                            // ESCAPE client-side template literals
+                            throw new Error(\`Server error: \${response.status} \${response.statusText}. \${serverMessage}\`);
+                        });
                     }
-                })
-                .then((blob) => {
-                    loadingIndicator.style.display = 'none';
 
-                    // Create a download link for the converted file
+                    const contentDisposition = response.headers.get('Content-Disposition');
+                    // *** Default filename with .pdf extension ***
+                    let filenameToUse = 'converted_output.pdf'; 
+
+                    if (contentDisposition) {
+                        const filenameMatch = contentDisposition.match(/filename="?([^"]+)"?/i);
+                        if (filenameMatch && filenameMatch.length > 1 && filenameMatch[1]) {
+                            filenameToUse = filenameMatch[1];
+                        }
+                    } else {
+                        const originalNameHeader = response.headers.get('X-Original-File-Name');
+                        if (originalNameHeader) {
+                            const baseOriginalName = originalNameHeader.includes('.') ? originalNameHeader.substring(0, originalNameHeader.lastIndexOf('.')) : originalNameHeader;
+                            // ESCAPE client-side template literals AND use .pdf extension
+                            filenameToUse = \`\${baseOriginalName}_converted.pdf\`;
+                        }
+                    }
+                    
+                    return response.blob().then(blob => ({ blob, filename: filenameToUse }));
+                })
+                .then(({ blob, filename }) => {
+                    loadingIndicator.style.display = 'none';
                     const url = window.URL.createObjectURL(blob);
                     const a = document.createElement('a');
                     a.style.display = 'none';
                     a.href = url;
-                    a.download = 'converted_files.pdf'; // Set a default name for the file
+                    a.download = filename; // Use the filename determined from the server's response
                     document.body.appendChild(a);
                     a.click();
                     window.URL.revokeObjectURL(url);
+                    document.body.removeChild(a); 
                 })
                 .catch((error) => {
+                    clearTimeout(timeout); 
                     loadingIndicator.style.display = 'none';
+                    // ESCAPE client-side template literal for error message display
+                    errorIndicator.textContent = \`Upload Failed: \${error.message}\`; 
                     errorIndicator.style.display = 'block';
-                    console.error('Error:', error);
+                    console.error('Fetch Error (pdf_converter.js):', error);
                 });
             });
         </script>
@@ -311,30 +341,49 @@ app.post('/upload', upload.single('pdf'), (req, res) => {
   // Process the file and send the response
   const processUploadedFile = async () => {
     try {
-      const convertedFilePath = await processFile(req.file);
-
-      // Send the converted PDF directly
-      res.setHeader('X-Original-File-Name', req.file.originalname);
-      res.download(convertedFilePath, (err) => {
-        if (err) {
-          logToFile(`Error sending file for download: ${err.message}`);
-        } else {
-          // Clean up the converted file after download
-          fs.unlink(convertedFilePath, (err) => {
-            if (err) {
-              logToFile(`Error deleting file: ${err.message}`);
-            } else {
-              logToFile(`Converted file ${convertedFilePath} deleted successfully.`);
-            }
-          });
+      if (!req.file) {
+        logToFile('processUploadedFile: No file available in req.file.');
+        if (!res.headersSent) {
+            return res.status(400).send('No file uploaded or file processing failed early.');
         }
+        return;
+      }
+
+      // 1. Call your existing processFile function (which runs pdf_converter.py)
+      const convertedFilePath = await processFile(req.file); // This is the path to the converted .pdf file
+
+      // 2. Determine the desired download filename
+      const originalFileName = req.file.originalname; // e.g., "mydocument.pdf"
+      const baseName = path.parse(originalFileName).name; // e.g., "mydocument"
+      // *** Ensure the extension is .pdf as requested ***
+      const downloadFileName = `${baseName}_converted.pdf`; // e.g., "mydocument_converted.pdf"
+
+      // (Optional but good practice) Set X-Original-File-Name header
+      res.setHeader('X-Original-File-Name', originalFileName);
+
+      // 3. Send the file for download with the new filename
+      res.download(convertedFilePath, downloadFileName, (err) => {
+        if (err) {
+          logToFile(`Error sending file "${downloadFileName}" for download: ${err.message}`);
+        } else {
+          logToFile(`File "${downloadFileName}" sent successfully to the client.`);
+        }
+        // Clean up the server-side temporary file after download attempt
+        fs.unlink(convertedFilePath, (unlinkErr) => {
+          if (unlinkErr) {
+            logToFile(`Error deleting server-side temp file ${convertedFilePath}: ${unlinkErr.message}`);
+          } else {
+            logToFile(`Server-side temp file ${convertedFilePath} deleted successfully.`);
+          }
+        });
       });
     } catch (err) {
-      logToFile(`Error processing file: ${err.message}`);
-      res.status(500).send('Error processing file.');
+      logToFile(`Error in processUploadedFile (pdf_converter.js): ${err.message}`);
+      if (!res.headersSent) {
+        res.status(500).send('Error processing file.');
+      }
     }
   };
-
   processUploadedFile();
 });
 // Serve and delete the file after it has been accessed

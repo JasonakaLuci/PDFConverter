@@ -3646,3 +3646,84 @@ PDF successfully converted to images and back to PDF!
 [2025-05-06T06:13:54.385Z] Deletion check at 2025-05-06T06:13:54.385Z: Within working hours. Deleting files.
 [2025-05-06T07:13:54.401Z] Deletion check at 2025-05-06T07:13:54.401Z: Within working hours. Deleting files.
 [2025-05-06T08:13:54.424Z] Deletion check at 2025-05-06T08:13:54.424Z: Within working hours. Deleting files.
+[2025-05-06T09:04:36.046Z] Deletion check at 2025-05-06T09:04:36.045Z: Within working hours. Deleting files.
+[2025-05-06T09:04:36.054Z] Server started on port 3000
+[2025-05-06T09:04:36.054Z] Error reading uploads folder: ENOENT: no such file or directory, scandir 'C:\Users\AS 61\Documents\PDFConverter\uploads'
+[2025-05-06T09:06:56.567Z] Python script output for 1746522398674-30148804-ADMDataExport2025-04-11 19-00-00.csv: Input CSV path: C:\Users\AS 61\Documents\PDFConverter\uploads\1746522398674-30148804-ADMDataExport2025-04-11 19-00-00.csv
+Output FDF path: C:\Users\AS 61\Documents\PDFConverter\uploads\converted_1746522398847_7035912.fdf
+Error during conversion: 'utf-8' codec can't decode byte 0xfa in position 7703: invalid start byte
+
+[2025-05-06T09:06:56.574Z] Error sending file for download: ENOENT: no such file or directory, stat 'C:\Users\AS 61\Documents\PDFConverter\uploads\converted_1746522398847_7035912.fdf'
+[2025-05-06T09:14:40.603Z] Deletion check at 2025-05-06T09:14:40.602Z: Within working hours. Deleting files.
+[2025-05-06T09:14:40.609Z] Server started on port 3000
+[2025-05-06T09:14:40.611Z] Deleted file: 1746522398674-30148804-ADMDataExport2025-04-11 19-00-00.csv
+[2025-05-06T09:15:19.562Z] Python script output for 1746522896949-585105384-ADMDataExport2025-04-11 19-00-00.csv: Input CSV path: C:\Users\AS 61\Documents\PDFConverter\uploads\1746522896949-585105384-ADMDataExport2025-04-11 19-00-00.csv
+Output FDF path: C:\Users\AS 61\Documents\PDFConverter\uploads\converted_1746522897032_549693525.fdf
+CSV successfully converted to FDF!
+
+[2025-05-06T09:15:19.688Z] Converted file C:\Users\AS 61\Documents\PDFConverter\uploads\converted_1746522897032_549693525.fdf deleted successfully.
+[2025-05-06T09:38:15.144Z] Deletion check at 2025-05-06T09:38:15.143Z: Within working hours. Deleting files.
+[2025-05-06T09:38:15.149Z] Server started on port 3000
+[2025-05-06T09:38:15.151Z] Deleted file: 1746522896949-585105384-ADMDataExport2025-04-11 19-00-00.csv
+[2025-05-06T09:48:00.671Z] Python script output for 1746524853252-977068495-ADMDataExport2025-04-11 19-00-00.csv: Input CSV path: C:\Users\AS 61\Documents\PDFConverter\uploads\1746524853252-977068495-ADMDataExport2025-04-11 19-00-00.csv
+Output FDF path: C:\Users\AS 61\Documents\PDFConverter\uploads\converted_1746524853535_637846527.fdf
+CSV successfully converted to FDF!
+
+[2025-05-06T09:48:01.433Z] Converted file C:\Users\AS 61\Documents\PDFConverter\uploads\converted_1746524853535_637846527.fdf deleted successfully.
+[2025-05-06T09:59:15.026Z] Deletion check at 2025-05-06T09:59:15.025Z: Within working hours. Deleting files.
+[2025-05-06T09:59:15.031Z] Server started on port 3000
+[2025-05-06T09:59:15.033Z] Deleted file: 1746524853252-977068495-ADMDataExport2025-04-11 19-00-00.csv
+[2025-05-06T10:00:20.407Z] Deletion check at 2025-05-06T10:00:20.406Z: Within working hours. Deleting files.
+[2025-05-06T10:00:20.412Z] Server started on port 3000
+[2025-05-06T10:00:50.662Z] Deletion check at 2025-05-06T10:00:50.661Z: Within working hours. Deleting files.
+[2025-05-06T10:00:50.668Z] Server started on port 2000
+[2025-05-06T11:00:50.667Z] Deletion check at 2025-05-06T11:00:50.667Z: Outside working hours. Skipping deletion.
+[2025-05-07T00:57:53.594Z] Deletion check at 2025-05-07T00:57:53.594Z: Within working hours. Deleting files.
+[2025-05-07T01:35:57.801Z] Deletion check at 2025-05-07T01:35:57.800Z: Within working hours. Deleting files.
+[2025-05-07T01:35:57.806Z] Server started on port 2000
+[2025-05-07T01:36:21.502Z] Python script output for 1746581781367-703776230-testfile - Form responses.csv: Input CSV path: C:\Users\AS 61\Documents\PDFConverter\uploads\1746581781367-703776230-testfile - Form responses.csv
+Output FDF path: C:\Users\AS 61\Documents\PDFConverter\uploads\converted_1746581781371_918230320.fdf
+CSV successfully converted to FDF!
+
+[2025-05-07T01:36:21.514Z] Converted file C:\Users\AS 61\Documents\PDFConverter\uploads\converted_1746581781371_918230320.fdf deleted successfully.
+[2025-05-07T02:15:57.909Z] Deletion check at 2025-05-07T02:15:57.908Z: Within working hours. Deleting files.
+[2025-05-07T02:15:57.914Z] Server started on port 2000
+[2025-05-07T02:15:57.915Z] Deleted file: 1746581781367-703776230-testfile - Form responses.csv
+[2025-05-07T02:16:15.492Z] Python script output for 1746584175433-151335505-testfile - Form responses.csv: Input CSV path: C:\Users\AS 61\Documents\PDFConverter\uploads\1746584175433-151335505-testfile - Form responses.csv
+Output FDF path: C:\Users\AS 61\Documents\PDFConverter\uploads\converted_1746584175436_57972796.fdf
+CSV successfully converted to FDF!
+
+[2025-05-07T02:16:15.504Z] File testfile - Form responses_converted.fdf sent successfully.
+[2025-05-07T02:16:15.505Z] Temp file C:\Users\AS 61\Documents\PDFConverter\uploads\converted_1746584175436_57972796.fdf deleted successfully.
+[2025-05-07T02:16:45.116Z] Deletion check at 2025-05-07T02:16:45.115Z: Within working hours. Deleting files.
+[2025-05-07T02:16:45.121Z] Server started on port 2000
+[2025-05-07T02:16:45.122Z] Deleted file: 1746584175433-151335505-testfile - Form responses.csv
+[2025-05-07T02:16:50.363Z] Python script output for 1746584210310-611083979-testfile - Form responses.csv: Input CSV path: C:\Users\AS 61\Documents\PDFConverter\uploads\1746584210310-611083979-testfile - Form responses.csv
+Output FDF path: C:\Users\AS 61\Documents\PDFConverter\uploads\converted_1746584210313_960488176.fdf
+CSV successfully converted to FDF!
+
+[2025-05-07T02:16:50.372Z] File testfile - Form responses_converted.fdf sent successfully.
+[2025-05-07T02:16:50.373Z] Temp file C:\Users\AS 61\Documents\PDFConverter\uploads\converted_1746584210313_960488176.fdf deleted successfully.
+[2025-05-07T02:32:02.846Z] Deletion check at 2025-05-07T02:32:02.845Z: Within working hours. Deleting files.
+[2025-05-07T02:32:02.852Z] Server started on port 2000
+[2025-05-07T02:32:02.853Z] Deleted file: 1746584210310-611083979-testfile - Form responses.csv
+[2025-05-07T02:33:15.450Z] Deletion check at 2025-05-07T02:33:15.449Z: Within working hours. Deleting files.
+[2025-05-07T02:33:15.455Z] Server started on port 3000
+[2025-05-07T02:33:37.526Z] Python script output for 1746585215567-302115728-binder.pdf: Input PDF path: C:\Users\AS 61\Documents\PDFConverter\uploads\1746585215567-302115728-binder.pdf
+Output PDF path: C:\Users\AS 61\Documents\PDFConverter\uploads\converted_1746585215585_904385770.pdf
+Converting PDF to images...
+Number of pages converted: 3
+Converting images back to PDF...
+PDF successfully converted to images and back to PDF!
+
+[2025-05-07T02:33:37.553Z] File "binder_converted.pdf" sent successfully to the client.
+[2025-05-07T02:33:37.554Z] Server-side temp file C:\Users\AS 61\Documents\PDFConverter\uploads\converted_1746585215585_904385770.pdf deleted successfully.
+[2025-05-07T02:38:00.345Z] Deletion check at 2025-05-07T02:38:00.344Z: Within working hours. Deleting files.
+[2025-05-07T02:38:00.351Z] Server started on port 2000
+[2025-05-07T02:43:28.567Z] Deletion check at 2025-05-07T02:43:28.567Z: Within working hours. Deleting files.
+[2025-05-07T02:43:28.574Z] Server started on port 2000
+[2025-05-07T02:43:28.575Z] Deleted file: 1746585215567-302115728-binder.pdf
+[2025-05-07T02:46:32.173Z] Deletion check at 2025-05-07T02:46:32.172Z: Within working hours. Deleting files.
+[2025-05-07T02:46:32.178Z] Server started on port 3000
+[2025-05-07T02:47:26.939Z] Deletion check at 2025-05-07T02:47:26.938Z: Within working hours. Deleting files.
+[2025-05-07T02:47:26.944Z] Server started on port 3000
