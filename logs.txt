@@ -3727,3 +3727,112 @@ PDF successfully converted to images and back to PDF!
 [2025-05-07T02:46:32.178Z] Server started on port 3000
 [2025-05-07T02:47:26.939Z] Deletion check at 2025-05-07T02:47:26.938Z: Within working hours. Deleting files.
 [2025-05-07T02:47:26.944Z] Server started on port 3000
+2025-05-09T04:47:35.379Z: Server running on port 2000
+2025-05-09T04:47:35.383Z: Deletion check at 2025-05-09T04:47:35.383Z: Within working hours. Deleting files.
+2025-05-09T04:48:17.121Z: Server running on port 2000
+2025-05-09T04:48:17.124Z: Deletion check at 2025-05-09T04:48:17.124Z: Within working hours. Deleting files.
+2025-05-09T04:48:39.549Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766119545-210356047.csv
+2025-05-09T04:48:39.809Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-09T04:48:46.636Z: Converting client 3 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766119545-210356047.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766119545-210356047_client_3.fdf
+2025-05-09T04:48:46.694Z: Python script stderr (convert_client): Unknown command: C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766119545-210356047_client_3.fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_fdf_path> convert_client <client_index>
+
+2025-05-09T04:48:46.703Z: Python script exited with code 1 for convert_client. Error: Unknown command: C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766119545-210356047_client_3.fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_fdf_path> convert_client <client_index>
+
+2025-05-09T04:48:50.565Z: Converting client 3 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766119545-210356047.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766119545-210356047_client_3.fdf
+2025-05-09T04:48:50.623Z: Python script stderr (convert_client): Unknown command: C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766119545-210356047_client_3.fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_fdf_path> convert_client <client_index>
+
+2025-05-09T04:48:50.632Z: Python script exited with code 1 for convert_client. Error: Unknown command: C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766119545-210356047_client_3.fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_fdf_path> convert_client <client_index>
+
+2025-05-09T04:54:32.349Z: Deletion check at 2025-05-09T04:54:32.349Z: Within working hours. Deleting files.
+2025-05-09T04:54:32.345Z: Server running on port 2000
+2025-05-09T04:54:32.350Z: Deleted file: csvFile-1746766119545-210356047.csv
+2025-05-09T04:54:39.855Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766479852-715099278.csv
+2025-05-09T04:54:40.130Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-09T04:54:49.534Z: Converting client 3 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766479852-715099278.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766479852-715099278_client_3.fdf
+2025-05-09T04:54:49.606Z: Successfully converted client 3 to FDF: csvFile-1746766479852-715099278_client_3.fdf
+2025-05-09T05:01:35.078Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766479852-715099278_client_3.fdf not found for download.
+2025-05-09T05:02:01.716Z: Converting client 3 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766479852-715099278.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766479852-715099278_client_3.fdf
+2025-05-09T05:02:01.787Z: Successfully converted client 3 to FDF: csvFile-1746766479852-715099278_client_3.fdf
+2025-05-09T05:02:03.012Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746766479852-715099278_client_3.fdf not found for download.
+2025-05-09T05:54:32.345Z: Deletion check at 2025-05-09T05:54:32.345Z: Within working hours. Deleting files.
+2025-05-09T05:54:32.346Z: Deleted file: csvFile-1746766479852-715099278.csv
+2025-05-09T06:07:24.468Z: Server running on port 2000
+2025-05-09T06:07:24.471Z: Deletion check at 2025-05-09T06:07:24.471Z: Within working hours. Deleting files.
+2025-05-09T06:07:32.003Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746770852000-218647917.csv
+2025-05-09T06:07:32.084Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-09T06:07:52.799Z: Converting client 3 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746770852000-218647917.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746770852000-218647917_client_3.fdf
+2025-05-09T06:07:52.860Z: Python script stderr (convert_client): Error writing FDF file: [Errno 2] No such file or directory: 'C:\\Users\\AS 61\\Documents\\PDFConverter\\uploads\\csvFile-1746770852000-218647917_client_3.fdf\\ABE_AKIHIRO_1746770852002.fdf'
+
+2025-05-09T06:07:52.868Z: Python script exited with code 1 for convert_client. Error: Error writing FDF file: [Errno 2] No such file or directory: 'C:\\Users\\AS 61\\Documents\\PDFConverter\\uploads\\csvFile-1746770852000-218647917_client_3.fdf\\ABE_AKIHIRO_1746770852002.fdf'
+
+2025-05-09T06:07:58.891Z: Converting client 2 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746770852000-218647917.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746770852000-218647917_client_2.fdf
+2025-05-09T06:07:58.951Z: Python script stderr (convert_client): Error writing FDF file: [Errno 2] No such file or directory: 'C:\\Users\\AS 61\\Documents\\PDFConverter\\uploads\\csvFile-1746770852000-218647917_client_2.fdf\\YAMAKI_Katsumasa_1746770852002.fdf'
+
+2025-05-09T06:07:58.960Z: Python script exited with code 1 for convert_client. Error: Error writing FDF file: [Errno 2] No such file or directory: 'C:\\Users\\AS 61\\Documents\\PDFConverter\\uploads\\csvFile-1746770852000-218647917_client_2.fdf\\YAMAKI_Katsumasa_1746770852002.fdf'
+
+2025-05-09T06:13:57.677Z: Server running on port 2000
+2025-05-09T06:13:57.682Z: Deletion check at 2025-05-09T06:13:57.682Z: Within working hours. Deleting files.
+2025-05-09T06:13:57.685Z: Deleted file: csvFile-1746770852000-218647917.csv
+2025-05-09T06:14:06.867Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746771246865-41004095.csv
+2025-05-09T06:14:06.935Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-09T06:14:08.571Z: Converting client 3 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746771246865-41004095.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746771246865-41004095_client_3.fdf
+2025-05-09T06:14:31.513Z: Converting client 3 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746771246865-41004095.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746771246865-41004095_client_3.fdf
+2025-05-09T06:15:24.504Z: Server running on port 2000
+2025-05-09T06:15:24.508Z: Deletion check at 2025-05-09T06:15:24.508Z: Within working hours. Deleting files.
+2025-05-09T06:15:24.509Z: Deleted file: csvFile-1746771246865-41004095.csv
+2025-05-09T06:15:30.109Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746771330106-933095301.csv
+2025-05-09T06:15:30.176Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-09T06:15:32.762Z: Converting client 3 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746771330106-933095301.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746771330106-933095301_client_3.fdf
+2025-05-09T06:16:56.268Z: Server running on port 2000
+2025-05-09T06:16:56.273Z: Deletion check at 2025-05-09T06:16:56.273Z: Within working hours. Deleting files.
+2025-05-09T06:16:56.275Z: Deleted file: csvFile-1746771330106-933095301.csv
+2025-05-09T06:17:01.402Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746771421398-706366217.csv
+2025-05-09T06:17:01.478Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-09T06:17:03.301Z: Converting client 3 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746771421398-706366217.csv to FDF in directory: C:\Users\AS 61\Documents\PDFConverter\uploads
+2025-05-09T06:17:03.369Z: Successfully converted client 3 to FDF: ABE_AKIHIRO_1746771421411.fdf
+2025-05-09T06:17:04.863Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\ABE_AKIHIRO_1746771421411.fdf deleted successfully.
+2025-05-09T06:23:37.809Z: Server running on port 2000
+2025-05-09T06:23:37.813Z: Deletion check at 2025-05-09T06:23:37.813Z: Within working hours. Deleting files.
+2025-05-09T06:23:37.814Z: Deleted file: csvFile-1746771421398-706366217.csv
+2025-05-09T06:23:49.374Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746771829371-228842526.csv
+2025-05-09T06:23:49.464Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-09T06:25:20.015Z: Server running on port 2000
+2025-05-09T06:25:20.019Z: Deletion check at 2025-05-09T06:25:20.019Z: Within working hours. Deleting files.
+2025-05-09T06:25:20.020Z: Deleted file: csvFile-1746771829371-228842526.csv
+2025-05-09T06:25:57.339Z: Server running on port 2000
+2025-05-09T06:25:57.342Z: Deletion check at 2025-05-09T06:25:57.342Z: Within working hours. Deleting files.
+2025-05-09T06:26:07.628Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746771967626-80884164.csv
+2025-05-09T06:26:07.707Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-09T06:28:23.782Z: Server running on port 2000
+2025-05-09T06:28:23.787Z: Deletion check at 2025-05-09T06:28:23.787Z: Within working hours. Deleting files.
+2025-05-09T06:28:23.787Z: Deleted file: csvFile-1746771967626-80884164.csv
+2025-05-09T06:28:29.772Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746772109769-354754412.csv
+2025-05-09T06:28:29.839Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-09T06:36:08.654Z: Server running on port 2000
+2025-05-09T06:36:08.658Z: Deletion check at 2025-05-09T06:36:08.658Z: Within working hours. Deleting files.
+2025-05-09T06:36:08.659Z: Deleted file: csvFile-1746772109769-354754412.csv
+2025-05-09T06:36:16.215Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746772576212-521898947.csv
+2025-05-09T06:36:16.295Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-09T06:37:28.656Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746772648655-80093574.csv
+2025-05-09T06:37:28.714Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-09T06:37:42.713Z: Converting client 20 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746772648655-80093574.csv to FDF in directory: C:\Users\AS 61\Documents\PDFConverter\uploads
+2025-05-09T06:37:42.782Z: Successfully converted client 20 to FDF: TESUTO_TESUTO_1746772648656.fdf
+2025-05-09T06:37:47.064Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\TESUTO_TESUTO_1746772648656.fdf deleted successfully.
+2025-05-09T06:39:23.615Z: Converting client 3 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746772648655-80093574.csv to FDF in directory: C:\Users\AS 61\Documents\PDFConverter\uploads
+2025-05-09T06:39:23.685Z: Successfully converted client 3 to FDF: ABE_AKIHIRO_1746772648656.fdf
+2025-05-09T06:39:26.151Z: Converting client 2 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746772648655-80093574.csv to FDF in directory: C:\Users\AS 61\Documents\PDFConverter\uploads
+2025-05-09T06:39:26.222Z: Successfully converted client 2 to FDF: YAMAKI_Katsumasa_1746772648656.fdf
+2025-05-09T06:39:27.200Z: Converting client 1 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746772648655-80093574.csv to FDF in directory: C:\Users\AS 61\Documents\PDFConverter\uploads
+2025-05-09T06:39:27.273Z: Successfully converted client 1 to FDF: MIYOSHI_MIYUKI_1746772648656.fdf

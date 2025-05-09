@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDF Converter</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/csv.ico"> <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align to top, not center */
+            min-height: 100vh;
+            padding-top: 50px; /* Space from top */
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px; /* Keep it relatively narrow */
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            font-weight: normal;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="file"] {
+            display: block; /* Ensure it takes full width */
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Include padding in width */
+            font-size: 16px;
+            margin-top: 5px; /* Space from label */
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+            transition: background-color 0.2s ease;
+            margin-top: 10px; /* Spacing for buttons */
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        /* Client List Specific Styles */
+        #clientSelectionSection {
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        .client-list {
+            list-style-type: none;
+            padding: 0;
+            max-height: 250px; /* Shorter for a more compact look */
+            overflow-y: auto;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            margin-top: 10px;
+        }
+        .client-list li {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background-color 0.15s ease;
+            font-size: 15px;
+            color: #444;
+        }
+        .client-list li:last-child {
+            border-bottom: none;
+        }
+        .client-list li:hover {
+            background-color: #e8e8e8;
+        }
+        .client-list li.selected {
+            background-color: #d0e6ff; /* Lighter blue for selected */
+            color: #0056b3;
+            font-weight: bold;
+            border-left: 4px solid #007bff;
+            padding-left: 11px; /* Adjust for border */
+        }
+
+        /* Messages */
+        .message {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 15px;
+            text-align: center;
+        }
+        .message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .message.info {
+            background-color: #e2e3e5;
+            color: #383d41;
+            border: 1px solid #d6d8db;
+        }
+
+        /* Download Link */
+        .download-link {
+            margin-top: 25px;
+            text-align: center;
+        }
+        .download-link a {
+            display: inline-block;
+            background-color: #28a745; /* Green button */
+            color: white;
+            padding: 12px 25px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: background-color 0.2s ease;
+        }
+        .download-link a:hover {
+            background-color: #218838;
+        }
+        /* Logo section */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px; /* Space below logo */
+        }
+        .logo-container img {
+            max-width: 200px; /* Adjust as needed */
+            height: auto;
+            display: block; /* To center img with margin auto */
+            margin: 0 auto; /* Center the image */
+        }
+        #seeMoreBtn {
+            margin-top: 15px;
+            background-color: #6c757d; /* Gray for secondary action */
+        }
+        #seeMoreBtn:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <a href="https://adminasialtd.com" target="_blank">
+                <img src="/images/adminasia.png" alt="AdminAsia Logo">
+            </a>
+        </div>
+
+        <h1>CSV to FDF Converter</h1>
+
+        <div class="form-group">
+            <label for="csvFile">Upload CSV File:</label>
+            <input type="file" id="csvFile" accept=".csv">
+            <button onclick="uploadFile()">Upload and List Clients</button>
+        </div>
+
+        <div class="form-group" id="clientSelectionSection" style="display:none;">
+            <label>Select a Client to Convert:</label>
+            <ul id="clientList" class="client-list">
+                </ul>
+            <button id="seeMoreBtn" onclick="showMoreClients()" style="display:none;">See More Clients</button>
+            <button onclick="convertSelectedClient()" id="convertButton" disabled>Convert Selected Client to FDF</button>
+        </div>
+
+        <div id="message" class="message" style="display:none;"></div>
+
+        <div id="downloadLink" class="download-link" style="display:none;">
+            <a id="downloadFile" href="#" download>Download FDF File</a>
+        </div>
+    </div>
+
+    <script>
+        let uploadedFilename = '';
+        let clientsData = []; // Stores ALL clients received from the server
+        let selectedClientIndex = null;
+
+        const CLIENTS_PER_LOAD = 10; // Number of clients to load at once
+        let currentDisplayCount = 0; // How many clients are currently displayed
+
+        async function uploadFile() {
+            const fileInput = document.getElementById('csvFile');
+            const file = fileInput.files[0];
+            const messageDiv = document.getElementById('message');
+            const clientListUl = document.getElementById('clientList');
+            const clientSelectionSection = document.getElementById('clientSelectionSection');
+            const convertButton = document.getElementById('convertButton');
+            const seeMoreButton = document.getElementById('seeMoreBtn');
+            const downloadLinkDiv = document.getElementById('downloadLink');
+
+            messageDiv.style.display = 'none';
+            clientSelectionSection.style.display = 'none';
+            clientListUl.innerHTML = ''; // Clear previous list
+            seeMoreButton.style.display = 'none'; // Hide see more button initially
+            downloadLinkDiv.style.display = 'none';
+            convertButton.disabled = true;
+            selectedClientIndex = null; // Reset selected index
+            currentDisplayCount = 0; // Reset display count
+
+            if (!file) {
+                showMessage('Please select a CSV file.', 'error');
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('csvFile', file);
+
+            try {
+                showMessage('Uploading CSV and listing clients...', 'info');
+                const response = await fetch('/upload-csv', {
+                    method: 'POST',
+                    body: formData,
+                });
+
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    throw new Error(`Server error: ${errorText}`);
+                }
+
+                const data = await response.json();
+                uploadedFilename = data.filename;
+                clientsData = data.clients; // Store ALL clients received
+
+                if (clientsData.length > 0) {
+                    showMessage('CSV uploaded. Please select a client to convert.', 'success');
+                    clientSelectionSection.style.display = 'block';
+                    
+                    // Display the first batch of clients
+                    displayClients(0, CLIENTS_PER_LOAD);
+
+                    // Pre-select the very first client (index 0) of the full dataset
+                    // Only if there are clients to display
+                    if (clientsData[0]) {
+                        const firstClientOriginalIndex = clientsData[0].original_index;
+                        const firstListItem = clientListUl.querySelector(`li[data-original-index="${firstClientOriginalIndex}"]`);
+                        if (firstListItem) {
+                            selectClient(firstListItem, parseInt(firstListItem.dataset.originalIndex));
+                        }
+                    }
+
+                    // Show 'See More' button if there are more clients than initially displayed
+                    if (clientsData.length > CLIENTS_PER_LOAD) {
+                        seeMoreButton.style.display = 'block';
+                    }
+
+                } else {
+                    showMessage('No clients found in the CSV file.', 'error');
+                }
+
+            } catch (error) {
+                console.error('Error during file upload:', error);
+                showMessage(`Error: ${error.message}`, 'error');
+            }
+        }
+
+        function displayClients(startIndex, limit) {
+            const clientListUl = document.getElementById('clientList');
+            const seeMoreButton = document.getElementById('seeMoreBtn');
+
+            const endIndex = Math.min(startIndex + limit, clientsData.length);
+
+            for (let i = startIndex; i < endIndex; i++) {
+                const client = clientsData[i];
+                const listItem = document.createElement('li');
+                listItem.textContent = `${i + 1}. ${client.display_name}`; // Use i+1 for display order
+                listItem.dataset.originalIndex = client.original_index;
+                listItem.addEventListener('click', () => selectClient(listItem, parseInt(listItem.dataset.originalIndex)));
+                clientListUl.appendChild(listItem);
+            }
+            currentDisplayCount = endIndex; // Update the count of currently displayed clients
+
+            // Hide 'See More' button if all clients are displayed
+            if (currentDisplayCount >= clientsData.length) {
+                seeMoreButton.style.display = 'none';
+            } else {
+                seeMoreButton.style.display = 'block'; // Ensure it's visible if there are more
+            }
+        }
+
+        function showMoreClients() {
+            displayClients(currentDisplayCount, CLIENTS_PER_LOAD);
+        }
+
+        function selectClient(selectedListItem, originalIndex) {
+            const clientListUl = document.getElementById('clientList');
+            const convertButton = document.getElementById('convertButton');
+
+            // Remove 'selected' class from all list items
+            Array.from(clientListUl.children).forEach(li => {
+                li.classList.remove('selected');
+            });
+
+            // Add 'selected' class to the clicked or pre-selected list item
+            selectedListItem.classList.add('selected');
+            selectedClientIndex = originalIndex; // Update the selected client index
+            convertButton.disabled = false; // Enable the convert button
+        }
+
+        async function convertSelectedClient() {
+            const messageDiv = document.getElementById('message');
+            const downloadLinkDiv = document.getElementById('downloadLink');
+            const downloadFileLink = document.getElementById('downloadFile');
+
+            if (selectedClientIndex === null || uploadedFilename === '') {
+                showMessage('Please upload a CSV and select a client first.', 'error');
+                return;
+            }
+
+            try {
+                showMessage('Converting selected client to FDF...', 'info');
+                const response = await fetch('/convert-fdf', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        filename: uploadedFilename,
+                        clientIndex: selectedClientIndex
+                    }),
+                });
+
+                if (!response.ok) {
+                    const errorText = await response.text();
+                    throw new Error(`Server error: ${errorText}`);
+                }
+
+                const data = await response.json();
+                if (data.fdf_filename) {
+                    showMessage('FDF file generated successfully! Click to download.', 'success');
+                    downloadFileLink.href = `/download/${data.fdf_filename}`;
+                    downloadFileLink.download = data.fdf_filename;
+                    downloadLinkDiv.style.display = 'block';
+                } else {
+                    throw new Error('Conversion failed: No FDF filename received.');
+                }
+
+            } catch (error) {
+                console.error('Error during FDF conversion:', error);
+                showMessage(`Error: ${error.message}`, 'error');
+                downloadLinkDiv.style.display = 'none';
+            }
+        }
+
+        function showMessage(msg, type) {
+            const messageDiv = document.getElementById('message');
+            messageDiv.textContent = msg;
+            messageDiv.className = `message ${type}`;
+            messageDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
