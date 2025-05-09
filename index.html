@@ -15,6 +15,13 @@
             align-items: flex-start; /* Align to top, not center */
             min-height: 100vh;
             padding-top: 50px; /* Space from top */
+
+            /* NEW: Scale the entire body content */
+            transform: scale(1.1); /* Scale everything by 125% */
+            transform-origin: top center; /* Scale from the top center */
+            width: 100%; /* Ensure it takes full width before scaling */
+            /* Need to adjust margin-top to compensate for scaling if padding-top is not enough */
+            margin-top: 0; /* Reset default margin-top */
         }
         .container {
             background-color: #fff;
@@ -62,7 +69,6 @@
             width: 100%;
             box-sizing: border-box;
             transition: background-color 0.2s ease;
-            margin-top: 10px; /* Spacing for buttons */
         }
         button:hover {
             background-color: #0056b3;
@@ -82,7 +88,7 @@
             list-style-type: none;
             padding: 0;
             max-height: 250px; /* Shorter for a more compact look */
-            overflow-y: auto;
+            overflow-y: auto; /* Make it scrollable */
             border: 1px solid #e0e0e0;
             border-radius: 4px;
             background-color: #f9f9f9;
@@ -163,12 +169,32 @@
             display: block; /* To center img with margin auto */
             margin: 0 auto; /* Center the image */
         }
+        /* Specific styling for See More button */
         #seeMoreBtn {
-            margin-top: 15px;
             background-color: #6c757d; /* Gray for secondary action */
+            font-size: 14px; /* Smaller font size */
+            padding: 8px 15px; /* Smaller padding */
+            max-width: 200px; /* Limit its width */
+            margin: 0 auto; /* Centered horizontally */
+            display: block; /* To allow margin auto centering */
+            visibility: hidden; /* Hidden by default, will be shown by JS */
         }
         #seeMoreBtn:hover {
             background-color: #5a6268;
+        }
+        /* Container for buttons to maintain space */
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Align items to the start */
+            align-items: center; /* Center buttons horizontally */
+            gap: 10px; /* Space between buttons (applies when both are visible) */
+            margin-top: 15px; /* Space from client list above. Adjust this value! */
+            box-sizing: border-box; /* Include padding in height calculation */
+        }
+        .button-container button {
+            margin-top: 0; /* Remove default margin-top from general button style */
+            margin-bottom: 0; /* Ensure no extra margin below buttons */
         }
     </style>
 </head>
@@ -192,8 +218,10 @@
             <label>Select a Client to Convert:</label>
             <ul id="clientList" class="client-list">
                 </ul>
-            <button id="seeMoreBtn" onclick="showMoreClients()" style="display:none;">See More Clients</button>
-            <button onclick="convertSelectedClient()" id="convertButton" disabled>Convert Selected Client to FDF</button>
+            <div class="button-container">
+                <button id="seeMoreBtn" onclick="showMoreClients()">See More Clients</button>
+                <button onclick="convertSelectedClient()" id="convertButton" disabled>Convert Selected Client to FDF</button>
+            </div>
         </div>
 
         <div id="message" class="message" style="display:none;"></div>
@@ -211,20 +239,52 @@
         const CLIENTS_PER_LOAD = 10; // Number of clients to load at once
         let currentDisplayCount = 0; // How many clients are currently displayed
 
+        // Get elements once to avoid repeated DOM queries
+        const clientListUl = document.getElementById('clientList');
+        const seeMoreButton = document.getElementById('seeMoreBtn');
+        const convertButton = document.getElementById('convertButton');
+        const messageDiv = document.getElementById('message');
+        const clientSelectionSection = document.getElementById('clientSelectionSection');
+        const downloadLinkDiv = document.getElementById('downloadLink');
+
+
+        // --- Helper function to manage seeMoreButton visibility ---
+        function setSeeMoreButtonVisibility(visible) {
+            if (visible) {
+                seeMoreButton.style.visibility = 'visible';
+            } else {
+                seeMoreButton.style.visibility = 'hidden';
+            }
+        }
+
+        // --- Event Listener for scrolling ---
+        clientListUl.addEventListener('scroll', () => {
+            // Check if scrolled to the bottom
+            const { scrollTop, scrollHeight, clientHeight } = clientListUl;
+            // Add a small buffer (e.g., 5px) to the bottom detection
+            if (scrollHeight - scrollTop <= clientHeight + 5) { 
+                // User has scrolled to the bottom
+                if (currentDisplayCount < clientsData.length) {
+                    setSeeMoreButtonVisibility(true); // Make visible
+                } else {
+                    setSeeMoreButtonVisibility(false); // Hide if no more clients
+                }
+            } else {
+                // Not at the bottom, hide the button
+                setSeeMoreButtonVisibility(false);
+            }
+        });
+        // --- End Event Listener for scrolling ---
+
+
         async function uploadFile() {
             const fileInput = document.getElementById('csvFile');
             const file = fileInput.files[0];
-            const messageDiv = document.getElementById('message');
-            const clientListUl = document.getElementById('clientList');
-            const clientSelectionSection = document.getElementById('clientSelectionSection');
-            const convertButton = document.getElementById('convertButton');
-            const seeMoreButton = document.getElementById('seeMoreBtn');
-            const downloadLinkDiv = document.getElementById('downloadLink');
-
+            
             messageDiv.style.display = 'none';
             clientSelectionSection.style.display = 'none';
             clientListUl.innerHTML = ''; // Clear previous list
-            seeMoreButton.style.display = 'none'; // Hide see more button initially
+            setSeeMoreButtonVisibility(false); // Hide see more button initially
             downloadLinkDiv.style.display = 'none';
             convertButton.disabled = true;
             selectedClientIndex = null; // Reset selected index
@@ -271,10 +331,12 @@
                         }
                     }
 
-                    // Show 'See More' button if there are more clients than initially displayed
-                    if (clientsData.length > CLIENTS_PER_LOAD) {
-                        seeMoreButton.style.display = 'block';
+                    // If the list is NOT scrollable (i.e., all clients fit within max-height),
+                    // and there are more clients than initially shown, then show the button immediately.
+                    if (clientsData.length > currentDisplayCount && clientListUl.scrollHeight <= clientListUl.clientHeight + 5) { 
+                        setSeeMoreButtonVisibility(true); // Make visible immediately
                     }
+
 
                 } else {
                     showMessage('No clients found in the CSV file.', 'error');
@@ -287,37 +349,34 @@
         }
 
         function displayClients(startIndex, limit) {
-            const clientListUl = document.getElementById('clientList');
-            const seeMoreButton = document.getElementById('seeMoreBtn');
-
             const endIndex = Math.min(startIndex + limit, clientsData.length);
-
+            
             for (let i = startIndex; i < endIndex; i++) {
                 const client = clientsData[i];
                 const listItem = document.createElement('li');
-                listItem.textContent = `${i + 1}. ${client.display_name}`; // Use i+1 for display order
+                listItem.textContent = `${i + 1}. ${client.display_name}`;
                 listItem.dataset.originalIndex = client.original_index;
                 listItem.addEventListener('click', () => selectClient(listItem, parseInt(listItem.dataset.originalIndex)));
                 clientListUl.appendChild(listItem);
             }
             currentDisplayCount = endIndex; // Update the count of currently displayed clients
 
-            // Hide 'See More' button if all clients are displayed
+            // Manage 'See More' button visibility based on whether all clients are displayed
             if (currentDisplayCount >= clientsData.length) {
-                seeMoreButton.style.display = 'none';
-            } else {
-                seeMoreButton.style.display = 'block'; // Ensure it's visible if there are more
-            }
+                setSeeMoreButtonVisibility(false); // No more clients to load
+            } 
         }
 
         function showMoreClients() {
-            displayClients(currentDisplayCount, CLIENTS_PER_LOAD);
+            // Only show more if there are more clients AND the button is visible
+            if (currentDisplayCount < clientsData.length && seeMoreButton.style.visibility === 'visible') {
+                displayClients(currentDisplayCount, CLIENTS_PER_LOAD);
+                // Immediately hide the button again after loading more, until scrolled to bottom again
+                setSeeMoreButtonVisibility(false);
+            }
         }
 
         function selectClient(selectedListItem, originalIndex) {
-            const clientListUl = document.getElementById('clientList');
-            const convertButton = document.getElementById('convertButton');
-
             // Remove 'selected' class from all list items
             Array.from(clientListUl.children).forEach(li => {
                 li.classList.remove('selected');
@@ -330,10 +389,6 @@
         }
 
         async function convertSelectedClient() {
-            const messageDiv = document.getElementById('message');
-            const downloadLinkDiv = document.getElementById('downloadLink');
-            const downloadFileLink = document.getElementById('downloadFile');
-
             if (selectedClientIndex === null || uploadedFilename === '') {
                 showMessage('Please upload a CSV and select a client first.', 'error');
                 return;
@@ -360,6 +415,7 @@
                 const data = await response.json();
                 if (data.fdf_filename) {
                     showMessage('FDF file generated successfully! Click to download.', 'success');
+                    const downloadFileLink = document.getElementById('downloadFile'); // Moved inside to ensure it's defined if hidden initially
                     downloadFileLink.href = `/download/${data.fdf_filename}`;
                     downloadFileLink.download = data.fdf_filename;
                     downloadLinkDiv.style.display = 'block';
@@ -375,7 +431,6 @@
         }
 
         function showMessage(msg, type) {
-            const messageDiv = document.getElementById('message');
             messageDiv.textContent = msg;
             messageDiv.className = `message ${type}`;
             messageDiv.style.display = 'block';
