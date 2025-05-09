@@ -20,7 +20,6 @@
             transform: scale(1.25); /* Scale everything by 125% */
             transform-origin: top center; /* Scale from the top center */
             width: 100%; /* Ensure it takes full width before scaling */
-            /* Need to adjust margin-top to compensate for scaling if padding-top is not enough */
             margin-top: 0; /* Reset default margin-top */
         }
         .container {
@@ -57,18 +56,6 @@
             box-sizing: border-box; /* Include padding in width */
             font-size: 16px;
             margin-top: 5px; /* Space from label */
-        }
-        button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            width: 100%;
-            box-sizing: border-box;
-            transition: background-color 0.2s ease;
         }
         button:hover {
             background-color: #0056b3;
@@ -140,24 +127,6 @@
             border: 1px solid #d6d8db;
         }
 
-        /* Download Link (this style block will no longer be directly used as the div is removed) */
-        /* .download-link {
-            margin-top: 25px;
-            text-align: center;
-        }
-        .download-link a {
-            display: inline-block;
-            background-color: #28a745;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-size: 17px;
-            transition: background-color 0.2s ease;
-        }
-        .download-link a:hover {
-            background-color: #218838;
-        } */
         /* Logo section */
         .logo-container {
             text-align: center;
@@ -192,9 +161,21 @@
             margin-top: 15px; /* Space from client list above. Adjust this value! */
             box-sizing: border-box; /* Include padding in height calculation */
         }
-        .button-container button {
-            margin-top: 0; /* Remove default margin-top from general button style */
-            margin-bottom: 0; /* Ensure no extra margin below buttons */
+        /* General button style for primary action buttons */
+        button[onclick]:not(#seeMoreBtn) { /* Apply this to all buttons with onclick, except seeMoreBtn */
+             background-color: #007bff;
+             color: white;
+             padding: 10px 20px;
+             border: none;
+             border-radius: 4px;
+             cursor: pointer;
+             font-size: 16px;
+             width: 100%;
+             box-sizing: border-box;
+             transition: background-color 0.2s ease;
+        }
+        button[onclick]:not(#seeMoreBtn):hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -211,7 +192,6 @@
         <div class="form-group">
             <label for="csvFile">Upload CSV File:</label>
             <input type="file" id="csvFile" accept=".csv">
-            <button onclick="uploadFile()">Upload and List Clients</button>
         </div>
 
         <div class="form-group" id="clientSelectionSection" style="display:none;">
@@ -223,7 +203,7 @@
                 <button onclick="convertSelectedClient()" id="convertButton" disabled>Convert to FDF and Download</button>
             </div>
         </div>
-
+        
         <div id="message" class="message" style="display:none;"></div>
 
     </div>
@@ -237,12 +217,12 @@
         let currentDisplayCount = 0; // How many clients are currently displayed
 
         // Get elements once to avoid repeated DOM queries
+        const csvFileInput = document.getElementById('csvFile'); // Get reference to the file input
         const clientListUl = document.getElementById('clientList');
         const seeMoreButton = document.getElementById('seeMoreBtn');
         const convertButton = document.getElementById('convertButton');
         const messageDiv = document.getElementById('message');
         const clientSelectionSection = document.getElementById('clientSelectionSection');
-        // Removed downloadLinkDiv and downloadFileLink from here
 
 
         // --- Helper function to manage seeMoreButton visibility ---
@@ -273,22 +253,26 @@
         });
         // --- End Event Listener for scrolling ---
 
+        // --- NEW: Event listener for file input change ---
+        csvFileInput.addEventListener('change', uploadFile);
+        // --- End new event listener ---
+
 
         async function uploadFile() {
-            const fileInput = document.getElementById('csvFile');
-            const file = fileInput.files[0];
+            const file = csvFileInput.files[0]; // Use the cached reference
             
             messageDiv.style.display = 'none';
             clientSelectionSection.style.display = 'none';
             clientListUl.innerHTML = ''; // Clear previous list
             setSeeMoreButtonVisibility(false); // Hide see more button initially
-            // downloadLinkDiv.style.display = 'none'; // Removed
             convertButton.disabled = true;
             selectedClientIndex = null; // Reset selected index
             currentDisplayCount = 0; // Reset display count
 
             if (!file) {
                 showMessage('Please select a CSV file.', 'error');
+                // If no file selected, ensure the UI is reset if it was already showing clients
+                clientSelectionSection.style.display = 'none';
                 return;
             }
 
@@ -345,13 +329,21 @@
             }
         }
 
+        function populateClientList(clients) {
+            // This function is no longer directly called. displayClients is now responsible
+            // for rendering the list.
+            // It is left here as a placeholder, but its logic is now handled by displayClients.
+        }
+
+
         function displayClients(startIndex, limit) {
             const endIndex = Math.min(startIndex + limit, clientsData.length);
             
             for (let i = startIndex; i < endIndex; i++) {
                 const client = clientsData[i];
                 const listItem = document.createElement('li');
-                listItem.textContent = `${i + 1}. ${client.display_name}`;
+                // REMOVED "i + 1." prefix
+                listItem.textContent = client.display_name; // Use only the display_name
                 listItem.dataset.originalIndex = client.original_index;
                 listItem.addEventListener('click', () => selectClient(listItem, parseInt(listItem.dataset.originalIndex)));
                 clientListUl.appendChild(listItem);
@@ -415,7 +407,6 @@
                 const data = await response.json();
                 if (data.fdf_filename) {
                     showMessage('FDF file generated. Downloading...', 'success');
-                    // Trigger the download directly
                     window.location.href = `/download/${data.fdf_filename}`;
                 } else {
                     throw new Error('Conversion failed: No FDF filename received.');

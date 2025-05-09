@@ -57,12 +57,13 @@ def list_clients(input_path):
         
         client_surname = client_row.get('Client1Sur', 'N/A')
         client_given = client_row.get('Client1Given', 'N/A')
-        client_dob = client_row.get('Client1DOB', 'N/A')
+        # client_dob = client_row.get('Client1DOB', 'N/A') # REMOVED DOB
         product_name = client_row.get('Product', 'N/A')
         
+        # UPDATED display_name string
         clients_for_display.append({
             'original_index': original_index,
-            'display_name': f"{client_surname} {client_given} (DOB: {client_dob}, Product: {product_name})"
+            'display_name': f"{client_surname} {client_given} (Product: {product_name})" 
         })
     
     # Print the JSON output to stdout for server2.js to capture
@@ -72,7 +73,6 @@ def list_clients(input_path):
 def convert_selected_client_to_fdf(input_path, output_dir, client_index):
     """
     Converts a specific client's data from CSV to an FDF file.
-    output_dir is the directory where the FDF should be saved.
     """
     all_clients_data = read_csv_data(input_path)
 
@@ -97,7 +97,7 @@ def convert_selected_client_to_fdf(input_path, output_dir, client_index):
     
     # Add a timestamp to ensure uniqueness if multiple conversions happen quickly
     # and to differentiate files easily.
-    timestamp = int(os.path.getmtime(input_path) * 1000) # Use CSV's modification time or current time
+    timestamp = int(os.path.getmtime(input_path) * 1000) 
     fdf_filename = f"{sanitized_filename}_{timestamp}.fdf"
     output_path = os.path.join(output_dir, fdf_filename)
 
@@ -106,13 +106,14 @@ def convert_selected_client_to_fdf(input_path, output_dir, client_index):
     unnamed_field_count = 0
 
     for field_name, field_value in selected_client_data.items():
-        if field_value:
+        if field_value:  # Only include non-empty fields
+            # Handle unnamed fields by assigning a generic name
             if field_name.strip() == '':
                 unnamed_field_count += 1
                 if unnamed_field_count == 1:
-                    field_name = 'ClientNameJP'
+                    field_name = 'ClientNameJP' 
                 elif unnamed_field_count == 2:
-                    field_name = 'InsuredNameJP'
+                    field_name = 'InsuredNameJP' 
                 else:
                     field_name = f'UnnamedField{unnamed_field_count}'
 
@@ -139,7 +140,7 @@ if __name__ == '__main__':
         sys.stderr.write("  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>\n")
         sys.exit(1)
 
-    command = sys.argv[2]
+    command = sys.argv[2] # The second argument is now the command
 
     if command == 'list_clients':
         input_csv_path = sys.argv[1]
@@ -151,7 +152,7 @@ if __name__ == '__main__':
             sys.exit(1)
         input_csv_path = sys.argv[1]
         output_dir = sys.argv[3] # Now this is the directory
-        client_index = sys.argv[4]
+        client_index = sys.argv[4] # The 4th argument is the client index
         convert_selected_client_to_fdf(input_csv_path, output_dir, client_index)
     else:
         sys.stderr.write(f"Unknown command: {command}\n")
