@@ -3886,3 +3886,10 @@ Usage:
 2025-05-09T07:22:32.777Z: Deleted file: csvFile-1746775282175-702662366.csv
 2025-05-09T07:22:40.687Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746775360683-372535716.csv
 2025-05-09T07:22:40.761Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-09T09:10:11.398Z: Server running on port 2000
+2025-05-09T09:10:11.402Z: Deletion check at 2025-05-09T09:10:11.401Z: Within working hours. Deleting files.
+2025-05-09T09:10:33.288Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746781833285-30537177.csv
+2025-05-09T09:10:33.401Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-09T09:10:46.033Z: Converting client 1 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746781833285-30537177.csv to FDF in directory: C:\Users\AS 61\Documents\PDFConverter\uploads
+2025-05-09T09:10:46.111Z: Successfully converted client 1 to FDF: MIYOSHI_MIYUKI_1746781833290.fdf
+2025-05-09T09:10:46.130Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\MIYOSHI_MIYUKI_1746781833290.fdf deleted successfully.

@@ -17,7 +17,7 @@
             padding-top: 50px; /* Space from top */
 
             /* NEW: Scale the entire body content */
-            transform: scale(1.1); /* Scale everything by 125% */
+            transform: scale(1.25); /* Scale everything by 125% */
             transform-origin: top center; /* Scale from the top center */
             width: 100%; /* Ensure it takes full width before scaling */
             /* Need to adjust margin-top to compensate for scaling if padding-top is not enough */
@@ -140,14 +140,14 @@
             border: 1px solid #d6d8db;
         }
 
-        /* Download Link */
-        .download-link {
+        /* Download Link (this style block will no longer be directly used as the div is removed) */
+        /* .download-link {
             margin-top: 25px;
             text-align: center;
         }
         .download-link a {
             display: inline-block;
-            background-color: #28a745; /* Green button */
+            background-color: #28a745;
             color: white;
             padding: 12px 25px;
             border-radius: 4px;
@@ -157,7 +157,7 @@
         }
         .download-link a:hover {
             background-color: #218838;
-        }
+        } */
         /* Logo section */
         .logo-container {
             text-align: center;
@@ -220,15 +220,12 @@
                 </ul>
             <div class="button-container">
                 <button id="seeMoreBtn" onclick="showMoreClients()">See More Clients</button>
-                <button onclick="convertSelectedClient()" id="convertButton" disabled>Convert Selected Client to FDF</button>
+                <button onclick="convertSelectedClient()" id="convertButton" disabled>Convert to FDF and Download</button>
             </div>
         </div>
 
         <div id="message" class="message" style="display:none;"></div>
 
-        <div id="downloadLink" class="download-link" style="display:none;">
-            <a id="downloadFile" href="#" download>Download FDF File</a>
-        </div>
     </div>
 
     <script>
@@ -245,7 +242,7 @@
         const convertButton = document.getElementById('convertButton');
         const messageDiv = document.getElementById('message');
         const clientSelectionSection = document.getElementById('clientSelectionSection');
-        const downloadLinkDiv = document.getElementById('downloadLink');
+        // Removed downloadLinkDiv and downloadFileLink from here
 
 
         // --- Helper function to manage seeMoreButton visibility ---
@@ -285,7 +282,7 @@
             clientSelectionSection.style.display = 'none';
             clientListUl.innerHTML = ''; // Clear previous list
             setSeeMoreButtonVisibility(false); // Hide see more button initially
-            downloadLinkDiv.style.display = 'none';
+            // downloadLinkDiv.style.display = 'none'; // Removed
             convertButton.disabled = true;
             selectedClientIndex = null; // Reset selected index
             currentDisplayCount = 0; // Reset display count
@@ -394,8 +391,11 @@
                 return;
             }
 
+            // Disable button and show loading message during conversion
+            convertButton.disabled = true;
+            showMessage('Converting to FDF...', 'info');
+
             try {
-                showMessage('Converting selected client to FDF...', 'info');
                 const response = await fetch('/convert-fdf', {
                     method: 'POST',
                     headers: {
@@ -414,11 +414,9 @@
 
                 const data = await response.json();
                 if (data.fdf_filename) {
-                    showMessage('FDF file generated successfully! Click to download.', 'success');
-                    const downloadFileLink = document.getElementById('downloadFile'); // Moved inside to ensure it's defined if hidden initially
-                    downloadFileLink.href = `/download/${data.fdf_filename}`;
-                    downloadFileLink.download = data.fdf_filename;
-                    downloadLinkDiv.style.display = 'block';
+                    showMessage('FDF file generated. Downloading...', 'success');
+                    // Trigger the download directly
+                    window.location.href = `/download/${data.fdf_filename}`;
                 } else {
                     throw new Error('Conversion failed: No FDF filename received.');
                 }
@@ -426,7 +424,12 @@
             } catch (error) {
                 console.error('Error during FDF conversion:', error);
                 showMessage(`Error: ${error.message}`, 'error');
-                downloadLinkDiv.style.display = 'none';
+            } finally {
+                // Re-enable the button after conversion attempt (success or failure)
+                // Unless a new CSV is needed, it should remain enabled if a client is selected
+                if (selectedClientIndex !== null) {
+                    convertButton.disabled = false;
+                }
             }
         }
 
