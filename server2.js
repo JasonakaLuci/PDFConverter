@@ -6,7 +6,7 @@ const { spawn } = require('child_process');
 const fs = require('fs');
 
 const app = express();
-const PORT = 2000;
+const PORT = 3000;
 const uploadsPath = path.join(__dirname, 'uploads'); // This is the global uploadsPath
 // Create a writable log file
 const logFile = path.join(__dirname, 'logs.txt');
