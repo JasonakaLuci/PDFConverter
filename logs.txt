@@ -3924,3 +3924,118 @@ Usage:
 2025-05-09T09:26:27.260Z: Deleted file: csvFile-1746782560336-383429130.csv
 2025-05-09T09:26:36.974Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1746782796970-172063598.csv
 2025-05-09T09:26:37.059Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:01:26.531Z: Server running on port 2000
+2025-05-12T03:01:26.534Z: Deletion check at 2025-05-12T03:01:26.534Z: Within working hours. Deleting files.
+2025-05-12T03:01:36.922Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747018896918-74429552.csv
+2025-05-12T03:01:37.086Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:02:18.222Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747018938221-959515559.csv
+2025-05-12T03:02:18.278Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:02:51.510Z: Converting client 11 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747018938221-959515559.csv to FDF in directory: C:\Users\AS 61\Documents\PDFConverter\uploads
+2025-05-12T03:02:51.565Z: Successfully converted client 11 to FDF: ABE_AKIHIRO_1747018938235.fdf
+2025-05-12T03:02:51.579Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\ABE_AKIHIRO_1747018938235.fdf deleted successfully.
+2025-05-12T03:03:17.145Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747018997143-964982875.csv
+2025-05-12T03:03:17.204Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:22:01.002Z: Server running on port 2000
+2025-05-12T03:22:01.005Z: Deletion check at 2025-05-12T03:22:01.005Z: Within working hours. Deleting files.
+2025-05-12T03:22:01.006Z: Deleted file: csvFile-1747018896918-74429552.csv
+2025-05-12T03:22:01.006Z: Deleted file: csvFile-1747018938221-959515559.csv
+2025-05-12T03:22:01.006Z: Deleted file: csvFile-1747018997143-964982875.csv
+2025-05-12T03:22:08.793Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747020128789-424645883.csv
+2025-05-12T03:22:08.855Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:24:50.811Z: Server running on port 2000
+2025-05-12T03:24:50.814Z: Deletion check at 2025-05-12T03:24:50.814Z: Within working hours. Deleting files.
+2025-05-12T03:24:50.815Z: Deleted file: csvFile-1747020128789-424645883.csv
+2025-05-12T03:24:59.494Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747020299491-551733684.csv
+2025-05-12T03:24:59.550Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:26:37.622Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747020397620-181427295.csv
+2025-05-12T03:26:37.677Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:31:15.908Z: Server running on port 2000
+2025-05-12T03:31:15.911Z: Deletion check at 2025-05-12T03:31:15.911Z: Within working hours. Deleting files.
+2025-05-12T03:31:15.912Z: Deleted file: csvFile-1747020397620-181427295.csv
+2025-05-12T03:31:15.912Z: Deleted file: csvFile-1747020299491-551733684.csv
+2025-05-12T03:31:22.126Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747020682123-327019992.csv
+2025-05-12T03:31:22.182Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:39:17.564Z: Deletion check at 2025-05-12T03:39:17.564Z: Within working hours. Deleting files.
+2025-05-12T03:39:17.561Z: Server running on port 2000
+2025-05-12T03:39:17.565Z: Deleted file: csvFile-1747020682123-327019992.csv
+2025-05-12T03:39:23.619Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747021163616-695044828.csv
+2025-05-12T03:39:23.680Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:39:59.352Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747021199351-584107583.csv
+2025-05-12T03:39:59.409Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:41:35.305Z: Deletion check at 2025-05-12T03:41:35.305Z: Within working hours. Deleting files.
+2025-05-12T03:41:35.306Z: Deleted file: csvFile-1747021199351-584107583.csv
+2025-05-12T03:41:35.302Z: Server running on port 2000
+2025-05-12T03:41:35.306Z: Deleted file: csvFile-1747021163616-695044828.csv
+2025-05-12T03:41:42.194Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747021302191-50646685.csv
+2025-05-12T03:41:42.249Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:42:16.870Z: Server running on port 2000
+2025-05-12T03:42:16.874Z: Deleted file: csvFile-1747021302191-50646685.csv
+2025-05-12T03:42:16.873Z: Deletion check at 2025-05-12T03:42:16.873Z: Within working hours. Deleting files.
+2025-05-12T03:42:21.453Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747021341450-70597034.csv
+2025-05-12T03:42:21.513Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:43:54.252Z: Server running on port 2000
+2025-05-12T03:43:54.255Z: Deletion check at 2025-05-12T03:43:54.255Z: Within working hours. Deleting files.
+2025-05-12T03:43:54.256Z: Deleted file: csvFile-1747021341450-70597034.csv
+2025-05-12T03:43:59.035Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747021439033-405406524.csv
+2025-05-12T03:43:59.091Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:45:19.941Z: Server running on port 2000
+2025-05-12T03:45:19.944Z: Deletion check at 2025-05-12T03:45:19.944Z: Within working hours. Deleting files.
+2025-05-12T03:45:19.945Z: Deleted file: csvFile-1747021439033-405406524.csv
+2025-05-12T03:45:24.266Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747021524264-458480838.csv
+2025-05-12T03:45:24.329Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:47:26.720Z: Deletion check at 2025-05-12T03:47:26.720Z: Within working hours. Deleting files.
+2025-05-12T03:47:26.716Z: Server running on port 2000
+2025-05-12T03:47:26.720Z: Deleted file: csvFile-1747021524264-458480838.csv
+2025-05-12T03:47:34.400Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747021654398-934197248.csv
+2025-05-12T03:47:34.457Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:49:59.964Z: Server running on port 2000
+2025-05-12T03:49:59.969Z: Deleted file: csvFile-1747021654398-934197248.csv
+2025-05-12T03:49:59.968Z: Deletion check at 2025-05-12T03:49:59.968Z: Within working hours. Deleting files.
+2025-05-12T03:50:06.096Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747021806091-377211471.csv
+2025-05-12T03:50:06.163Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T03:55:56.220Z: Deletion check at 2025-05-12T03:55:56.220Z: Within working hours. Deleting files.
+2025-05-12T03:55:56.221Z: Deleted file: csvFile-1747021806091-377211471.csv
+2025-05-12T03:55:56.217Z: Server running on port 2000
+2025-05-12T03:56:00.678Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747022160674-98180652.csv
+2025-05-12T03:56:00.740Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T04:00:47.301Z: Deletion check at 2025-05-12T04:00:47.301Z: Within working hours. Deleting files.
+2025-05-12T04:00:47.298Z: Server running on port 2000
+2025-05-12T04:00:47.302Z: Deleted file: csvFile-1747022160674-98180652.csv
+2025-05-12T04:00:52.342Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747022452339-840819209.csv
+2025-05-12T04:00:52.396Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T04:03:06.818Z: Server running on port 2000
+2025-05-12T04:03:06.822Z: Deleted file: csvFile-1747022452339-840819209.csv
+2025-05-12T04:03:06.821Z: Deletion check at 2025-05-12T04:03:06.821Z: Within working hours. Deleting files.
+2025-05-12T04:03:12.821Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747022592818-404017252.csv
+2025-05-12T04:03:12.878Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T04:06:42.819Z: Server running on port 2000
+2025-05-12T04:06:42.823Z: Deleted file: csvFile-1747022592818-404017252.csv
+2025-05-12T04:06:42.823Z: Deletion check at 2025-05-12T04:06:42.823Z: Within working hours. Deleting files.
+2025-05-12T04:06:48.031Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747022808029-704137910.csv
+2025-05-12T04:06:48.089Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T04:08:44.689Z: Server running on port 2000
+2025-05-12T04:08:44.693Z: Deletion check at 2025-05-12T04:08:44.693Z: Within working hours. Deleting files.
+2025-05-12T04:08:44.693Z: Deleted file: csvFile-1747022808029-704137910.csv
+2025-05-12T04:08:49.922Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747022929918-358665738.csv
+2025-05-12T04:08:49.984Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T04:09:57.871Z: Deleted file: csvFile-1747022929918-358665738.csv
+2025-05-12T04:09:57.870Z: Deletion check at 2025-05-12T04:09:57.870Z: Within working hours. Deleting files.
+2025-05-12T04:09:57.867Z: Server running on port 2000
+2025-05-12T04:10:25.011Z: Server running on port 2000
+2025-05-12T04:10:25.014Z: Deletion check at 2025-05-12T04:10:25.014Z: Within working hours. Deleting files.
+2025-05-12T04:10:27.816Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747023027811-185851494.csv
+2025-05-12T04:10:27.875Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T04:11:19.103Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747023079101-445120240.csv
+2025-05-12T04:11:19.171Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T04:11:27.801Z: Converting client 21 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747023079101-445120240.csv to FDF in directory: C:\Users\AS 61\Documents\PDFConverter\uploads
+2025-05-12T04:11:27.848Z: Successfully converted client 21 to FDF: MIYOSHI_MIYUKI_1747023079102.fdf
+2025-05-12T04:11:27.858Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\MIYOSHI_MIYUKI_1747023079102.fdf deleted successfully.
+2025-05-12T04:11:35.780Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747023095778-49429217.csv
+2025-05-12T04:11:35.846Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T04:11:55.934Z: Server running on port 2000
+2025-05-12T04:11:55.938Z: Deletion check at 2025-05-12T04:11:55.938Z: Within working hours. Deleting files.
+2025-05-12T04:11:55.939Z: Deleted file: csvFile-1747023079101-445120240.csv
+2025-05-12T04:11:55.939Z: Deleted file: csvFile-1747023095778-49429217.csv
+2025-05-12T04:11:55.939Z: Deleted file: csvFile-1747023027811-185851494.csv
+2025-05-12T04:12:00.978Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747023120975-931992291.csv
+2025-05-12T04:12:01.036Z: Successfully listed clients from testfile - Jason Test.csv.
