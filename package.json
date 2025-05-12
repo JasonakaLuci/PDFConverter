@@ -81,7 +81,6 @@
     "server": "node server.js",
     "server2": "node server2.js",
     "start-all": "npm run server & npm run server2"
-
   },
   "keywords": [],
   "author": "",

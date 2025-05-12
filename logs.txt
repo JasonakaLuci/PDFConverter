@@ -4039,3 +4039,146 @@ Usage:
 2025-05-12T04:11:55.939Z: Deleted file: csvFile-1747023027811-185851494.csv
 2025-05-12T04:12:00.978Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747023120975-931992291.csv
 2025-05-12T04:12:01.036Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T06:33:34.741Z: Server started on port 2000
+2025-05-12T06:33:48.243Z: Received file: testfile - Jason Test (1).csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031628240-781213857.csv
+2025-05-12T06:33:48.504Z: Successfully listed clients from testfile - Jason Test (1).csv.
+2025-05-12T06:33:55.657Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031635656-740381395.csv
+2025-05-12T06:33:55.731Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-12T06:34:01.825Z: Starting bulk conversion and zipping for C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031635656-740381395.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031635656-740381395_all_fdfs_1747031641825.zip
+2025-05-12T06:34:01.832Z: Starting bulk conversion and zipping for C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031635656-740381395.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031635656-740381395_all_fdfs_1747031641832.zip
+2025-05-12T06:34:01.890Z: Python script stderr (convert_all_to_zip): Unknown command: C:\Users\AS 61\Documents\PDFConverter\uploads
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-05-12T06:34:01.896Z: Python script stderr (convert_all_to_zip): Unknown command: C:\Users\AS 61\Documents\PDFConverter\uploads
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-05-12T06:34:01.899Z: Python script exited with code 1 for convert_all_to_zip. Error: Unknown command: C:\Users\AS 61\Documents\PDFConverter\uploads
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-05-12T06:34:01.906Z: Python script exited with code 1 for convert_all_to_zip. Error: Unknown command: C:\Users\AS 61\Documents\PDFConverter\uploads
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-05-12T06:34:06.366Z: Starting bulk conversion and zipping for C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031635656-740381395.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031635656-740381395_all_fdfs_1747031646366.zip
+2025-05-12T06:34:06.374Z: Starting bulk conversion and zipping for C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031635656-740381395.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031635656-740381395_all_fdfs_1747031646374.zip
+2025-05-12T06:34:06.433Z: Python script stderr (convert_all_to_zip): Unknown command: C:\Users\AS 61\Documents\PDFConverter\uploads
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-05-12T06:34:06.437Z: Python script stderr (convert_all_to_zip): Unknown command: C:\Users\AS 61\Documents\PDFConverter\uploads
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-05-12T06:34:06.441Z: Python script exited with code 1 for convert_all_to_zip. Error: Unknown command: C:\Users\AS 61\Documents\PDFConverter\uploads
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-05-12T06:34:06.447Z: Python script exited with code 1 for convert_all_to_zip. Error: Unknown command: C:\Users\AS 61\Documents\PDFConverter\uploads
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-05-12T06:38:47.683Z: Server running on port 2000
+2025-05-12T06:38:47.686Z: Deletion check at 2025-05-12T06:38:47.686Z: Within working hours. Deleting files.
+2025-05-12T06:38:47.687Z: Deleted file: csvFile-1747031628240-781213857.csv
+2025-05-12T06:38:47.687Z: Deleted file: csvFile-1747023120975-931992291.csv
+2025-05-12T06:38:47.687Z: Deleted file: csvFile-1747031635656-740381395.csv
+2025-05-12T06:38:57.238Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031937235-468586793.csv
+2025-05-12T06:38:57.315Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-12T06:38:59.932Z: Starting bulk conversion and zipping for C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031937235-468586793.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031937235-468586793_all_fdfs_1747031939932.zip
+2025-05-12T06:38:59.940Z: Starting bulk conversion and zipping for C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031937235-468586793.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031937235-468586793_all_fdfs_1747031939940.zip
+2025-05-12T06:39:00.014Z: Successfully created zip: C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031937235-468586793_all_fdfs_1747031939932.zip
+2025-05-12T06:39:00.022Z: Successfully created zip: C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031937235-468586793_all_fdfs_1747031939940.zip
+2025-05-12T06:39:00.028Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031937235-468586793_all_fdfs_1747031939932.zip deleted successfully.
+2025-05-12T06:39:00.038Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747031937235-468586793_all_fdfs_1747031939940.zip deleted successfully.
+2025-05-12T06:40:46.389Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747032046388-132045605.csv
+2025-05-12T06:40:46.472Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-12T06:43:43.935Z: Server running on port 2000
+2025-05-12T06:43:43.938Z: Deletion check at 2025-05-12T06:43:43.938Z: Within working hours. Deleting files.
+2025-05-12T06:43:43.939Z: Deleted file: csvFile-1747032046388-132045605.csv
+2025-05-12T06:43:43.939Z: Deleted file: csvFile-1747031937235-468586793.csv
+2025-05-12T06:43:53.482Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747032233478-545253630.csv
+2025-05-12T06:43:53.561Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-12T06:44:03.392Z: Starting bulk conversion and zipping for C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747032233478-545253630.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747032233478-545253630_all_fdfs_1747032243392.zip
+2025-05-12T06:44:03.460Z: Successfully created zip: C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747032233478-545253630_all_fdfs_1747032243392.zip
+2025-05-12T06:44:03.472Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747032233478-545253630_all_fdfs_1747032243392.zip deleted successfully.
+2025-05-12T06:44:28.220Z: Received file: testfile - Jason Test (1).csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747032268218-681361696.csv
+2025-05-12T06:44:28.294Z: Successfully listed clients from testfile - Jason Test (1).csv.
+2025-05-12T06:48:57.982Z: Server running on port 2000
+2025-05-12T06:48:57.985Z: Deletion check at 2025-05-12T06:48:57.985Z: Within working hours. Deleting files.
+2025-05-12T06:48:57.986Z: Deleted file: csvFile-1747032233478-545253630.csv
+2025-05-12T06:48:57.986Z: Deleted file: csvFile-1747032268218-681361696.csv
+2025-05-12T06:49:05.981Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747032545977-983940167.csv
+2025-05-12T06:49:06.071Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T06:49:13.133Z: Converting client 5 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747032545977-983940167.csv to FDF in directory: C:\Users\AS 61\Documents\PDFConverter\uploads
+2025-05-12T06:49:13.208Z: Successfully converted client 5 to FDF: MIYOSHI_MIYUKI_1747032553211.fdf
+2025-05-12T06:49:13.219Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\MIYOSHI_MIYUKI_1747032553211.fdf deleted successfully.
+2025-05-12T06:50:04.450Z: Starting bulk conversion and zipping for C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747032545977-983940167.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747032545977-983940167_all_fdfs_1747032604450.zip
+2025-05-12T06:50:04.550Z: Successfully created zip: C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747032545977-983940167_all_fdfs_1747032604450.zip
+2025-05-12T06:50:04.562Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747032545977-983940167_all_fdfs_1747032604450.zip deleted successfully.
+2025-05-12T06:52:40.923Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747032760921-487294655.csv
+2025-05-12T06:52:41.002Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T06:56:53.470Z: Server running on port 2000
+2025-05-12T06:56:53.473Z: Deletion check at 2025-05-12T06:56:53.473Z: Within working hours. Deleting files.
+2025-05-12T06:56:53.474Z: Deleted file: csvFile-1747032760921-487294655.csv
+2025-05-12T06:56:53.474Z: Deleted file: csvFile-1747032545977-983940167.csv
+2025-05-12T06:57:02.093Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033022089-705780826.csv
+2025-05-12T06:57:02.173Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-12T06:57:07.026Z: Starting bulk conversion and zipping for C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033022089-705780826.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033022089-705780826_all_fdfs_1747033027026.zip
+2025-05-12T06:57:07.104Z: Successfully created zip: C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033022089-705780826_all_fdfs_1747033027026.zip
+2025-05-12T06:57:07.115Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033022089-705780826_all_fdfs_1747033027026.zip deleted successfully.
+2025-05-12T06:57:10.134Z: Converting client 3 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033022089-705780826.csv to FDF in directory: C:\Users\AS 61\Documents\PDFConverter\uploads
+2025-05-12T06:57:10.210Z: Successfully converted client 3 to FDF: ABE_AKIHIRO_1747033030202.fdf
+2025-05-12T06:57:10.219Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\ABE_AKIHIRO_1747033030202.fdf deleted successfully.
+2025-05-12T06:58:38.710Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033118709-110403902.csv
+2025-05-12T06:58:38.788Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T07:01:55.279Z: Server running on port 2000
+2025-05-12T07:01:55.283Z: Deletion check at 2025-05-12T07:01:55.283Z: Within working hours. Deleting files.
+2025-05-12T07:01:55.283Z: Deleted file: csvFile-1747033022089-705780826.csv
+2025-05-12T07:01:55.283Z: Deleted file: csvFile-1747033118709-110403902.csv
+2025-05-12T07:02:02.710Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033322707-830138994.csv
+2025-05-12T07:02:02.792Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-12T07:02:09.037Z: Converting client 3 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033322707-830138994.csv to FDF in directory: C:\Users\AS 61\Documents\PDFConverter\uploads
+2025-05-12T07:02:09.109Z: Successfully converted client 3 to FDF: ABE_AKIHIRO_1747033329110.fdf
+2025-05-12T07:02:09.120Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\ABE_AKIHIRO_1747033329110.fdf deleted successfully.
+2025-05-12T07:02:11.394Z: Starting bulk conversion and zipping for C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033322707-830138994.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033322707-830138994_all_fdfs_1747033331394.zip
+2025-05-12T07:02:11.473Z: Successfully created zip: C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033322707-830138994_all_fdfs_1747033331394.zip
+2025-05-12T07:02:11.482Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033322707-830138994_all_fdfs_1747033331394.zip deleted successfully.
+2025-05-12T07:11:38.557Z: Server running on port 2000
+2025-05-12T07:11:38.561Z: Deletion check at 2025-05-12T07:11:38.561Z: Within working hours. Deleting files.
+2025-05-12T07:11:38.562Z: Deleted file: csvFile-1747033322707-830138994.csv
+2025-05-12T07:11:46.492Z: Received file: testfile - Form responses.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033906489-583942924.csv
+2025-05-12T07:11:46.575Z: Successfully listed clients from testfile - Form responses.csv.
+2025-05-12T07:11:50.375Z: Converting client 1 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033906489-583942924.csv to FDF in directory: C:\Users\AS 61\Documents\PDFConverter\uploads
+2025-05-12T07:11:50.448Z: Successfully converted client 1 to FDF: MIYOSHI_MIYUKI_1747033910447.fdf
+2025-05-12T07:11:50.459Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\MIYOSHI_MIYUKI_1747033910447.fdf deleted successfully.
+2025-05-12T07:11:53.591Z: Starting bulk conversion and zipping for C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033906489-583942924.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033906489-583942924_all_fdfs_1747033913591.zip
+2025-05-12T07:11:53.673Z: Successfully created zip: C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033906489-583942924_all_fdfs_1747033913591.zip
+2025-05-12T07:11:53.683Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033906489-583942924_all_fdfs_1747033913591.zip deleted successfully.
+2025-05-12T07:12:14.790Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747033934789-647866178.csv
+2025-05-12T07:12:14.864Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T07:20:02.424Z: Received file: testfile - Jason Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1747034402422-782850977.csv
+2025-05-12T07:20:02.506Z: Successfully listed clients from testfile - Jason Test.csv.
+2025-05-12T07:41:23.052Z: Server running on port 2000
+2025-05-12T07:41:23.056Z: Deletion check at 2025-05-12T07:41:23.056Z: Within working hours. Deleting files.
+2025-05-12T07:41:23.057Z: Deleted file: csvFile-1747033906489-583942924.csv
+2025-05-12T07:41:23.057Z: Deleted file: csvFile-1747033934789-647866178.csv
+2025-05-12T07:41:23.057Z: Deleted file: csvFile-1747034402422-782850977.csv

@@ -64,12 +64,33 @@
         }
         /* --- END CSS --- */
 
+        button { /* General button style */
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+            transition: background-color 0.2s ease;
+        }
         button:hover {
             background-color: #0056b3;
         }
         button:disabled {
             background-color: #cccccc;
             cursor: not-allowed;
+        }
+        /* Specific styles for Download All button */
+        #downloadAllBtn {
+            background-color: #28a745; /* Green color */
+            margin-top: 20px; /* Space from client selection section */
+            display: none; /* Initially hidden */
+        }
+        #downloadAllBtn:hover {
+            background-color: #218838;
         }
 
         /* Client List Specific Styles */
@@ -168,21 +189,9 @@
             margin-top: 15px; /* Space from client list above. Adjust this value! */
             box-sizing: border-box; /* Include padding in height calculation */
         }
-        /* General button style for primary action buttons */
-        button[onclick]:not(#seeMoreBtn) { /* Apply this to all buttons with onclick, except seeMoreBtn */
-             background-color: #007bff;
-             color: white;
-             padding: 10px 20px;
-             border: none;
-             border-radius: 4px;
-             cursor: pointer;
-             font-size: 16px;
-             width: 100%;
-             box-sizing: border-box;
-             transition: background-color 0.2s ease;
-        }
-        button[onclick]:not(#seeMoreBtn):hover {
-            background-color: #0056b3;
+        /* Ensure the general button style doesn't mess up specific button margins */
+        .button-container button {
+            margin-top: 0;
         }
 
         /* Fix for spacing between search box and "Select a Client" label */
@@ -215,340 +224,364 @@
             <ul id="clientList" class="client-list">
                 </ul>
             <div class="button-container">
-                <button id="seeMoreBtn" onclick="showMoreClients()">See More Clients</button>
-                <button onclick="convertSelectedClient()" id="convertButton" disabled>Convert to FDF and Download</button>
+                <button id="seeMoreBtn">See More Clients</button>
+                <button id="convertButton" disabled>Convert to FDF and Download</button>
             </div>
         </div>
         
+        <button id="downloadAllBtn" disabled style="display:none;">Download All as Zip</button>
+
         <div id="message" class="message" style="display:none;"></div>
 
     </div>
 
     <script>
-        // --- START: Global Variables and Constants ---
-        let uploadedFilename = '';
-        let allClientsData = []; // Stores ALL clients received from the server
-        let filteredClientsData = []; // Stores the currently filtered clients
-        let selectedClientIndex = null;
+        // Wrap all JavaScript code inside DOMContentLoaded
+        document.addEventListener('DOMContentLoaded', () => {
 
-        const CLIENTS_PER_LOAD = 10; // Number of clients to load at once
-        let currentDisplayCount = 0; // How many clients are currently displayed
+            // --- START: Global Variables and Constants ---
+            let uploadedFilename = '';
+            let allClientsData = []; // Stores ALL clients received from the server
+            let filteredClientsData = []; // Stores the currently filtered clients
+            let selectedClientIndex = null;
 
-        // Get elements once to avoid repeated DOM queries
-        const csvFileInput = document.getElementById('csvFile');
-        const clientSearchInput = document.getElementById('clientSearch');
-        const clientListUl = document.getElementById('clientList');
-        const seeMoreButton = document.getElementById('seeMoreBtn');
-        const convertButton = document.getElementById('convertButton');
-        const messageDiv = document.getElementById('message');
-        const clientSelectionSection = document.getElementById('clientSelectionSection');
-        const selectClientLabel = document.getElementById('selectClientLabel');
-        // --- END: Global Variables and Constants ---
+            const CLIENTS_PER_LOAD = 10; // Number of clients to load at once
+            let currentDisplayCount = 0; // How many clients are currently displayed
+
+            // Get elements once to avoid repeated DOM queries
+            const csvFileInput = document.getElementById('csvFile');
+            const clientSearchInput = document.getElementById('clientSearch');
+            const clientListUl = document.getElementById('clientList');
+            const seeMoreButton = document.getElementById('seeMoreBtn');
+            const convertButton = document.getElementById('convertButton');
+            const downloadAllButton = document.getElementById('downloadAllBtn');
+            const messageDiv = document.getElementById('message');
+            const clientSelectionSection = document.getElementById('clientSelectionSection');
+            const selectClientLabel = document.getElementById('selectClientLabel');
+            // --- END: Global Variables and Constants ---
 
 
-        // --- START: Function Definitions (All functions defined first) ---
+            // --- START: Function Definitions (All functions defined first for scope) ---
 
-        // Helper function to manage seeMoreButton visibility
-        function setSeeMoreButtonVisibility(visible) {
-            // console.log(`DEBUG: setSeeMoreButtonVisibility(${visible}) called.`); // DEBUG LOG
-            if (visible) {
-                seeMoreButton.style.visibility = 'visible';
-            } else {
-                seeMoreButton.style.visibility = 'hidden';
-            }
-        }
-
-        // Function to display messages to the user
-        function showMessage(msg, type) {
-            // console.log(`DEBUG: showMessage() called: "${msg}" (${type})`); // DEBUG LOG
-            messageDiv.textContent = msg;
-            messageDiv.className = `message ${type}`;
-            messageDiv.style.display = 'block';
-        }
-
-        // Function to handle client selection in the list
-        function selectClient(selectedListItem, originalIndex) {
-            // console.log(`DEBUG: selectClient() called for originalIndex: ${originalIndex}.`); // DEBUG LOG
-            Array.from(clientListUl.children).forEach(li => {
-                li.classList.remove('selected');
-            });
-            selectedListItem.classList.add('selected');
-            selectedClientIndex = originalIndex;
-            convertButton.disabled = false;
-            // console.log("DEBUG: Client selected and convert button enabled."); // DEBUG LOG
-        }
-
-        // Function to display clients in the list (initial load, load more, or filtered)
-        function displayClients(startIndex, limit) {
-            // console.log(`DEBUG: displayClients() called. startIndex: ${startIndex}, limit: ${limit}, filteredClientsData.length: ${filteredClientsData.length}`); // DEBUG LOG
-            const clientsToDisplay = filteredClientsData;
-            const endIndex = Math.min(startIndex + limit, clientsToDisplay.length);
-            
-            // Clear the list content only when starting from the beginning (new search or initial load)
-            if (startIndex === 0) {
-                clientListUl.innerHTML = '';
-                currentDisplayCount = 0; // Reset currentDisplayCount as well when list is cleared
-                // console.log("DEBUG: List cleared (startIndex is 0). currentDisplayCount reset."); // DEBUG LOG
-            }
-
-            // console.log(`DEBUG: Rendering clients from index ${startIndex} to ${endIndex - 1}.`); // DEBUG LOG
-            for (let i = startIndex; i < endIndex; i++) {
-                const client = clientsToDisplay[i];
-                const listItem = document.createElement('li');
-                listItem.textContent = client.display_name;
-                listItem.dataset.originalIndex = client.original_index;
-                listItem.addEventListener('click', () => selectClient(listItem, parseInt(listItem.dataset.originalIndex)));
-                clientListUl.appendChild(listItem);
-                // console.log(`DEBUG: Added client: ${client.display_name}`); // DEBUG LOG
-            }
-            currentDisplayCount = endIndex; // Update the count of currently displayed clients
-            // console.log(`DEBUG: After rendering, currentDisplayCount: ${currentDisplayCount}.`); // DEBUG LOG
-
-            // Manage 'See More' button visibility based on whether all filtered clients are displayed
-            if (currentDisplayCount >= clientsToDisplay.length) {
-                setSeeMoreButtonVisibility(false); // No more filtered clients to load
-                // console.log("DEBUG: All filtered clients displayed. 'See More' button hidden."); // DEBUG LOG
-            } else {
-                setSeeMoreButtonVisibility(false); // Default to hidden unless scrolled to bottom
-                // console.log("DEBUG: More filtered clients exist. 'See More' button hidden (waiting for scroll)."); // DEBUG LOG
-            }
-        }
-
-        // Function to filter clients based on search input
-        function filterClients() {
-            // console.log("DEBUG: filterClients() called. Search term:", clientSearchInput.value); // DEBUG LOG
-            const searchTerm = clientSearchInput.value.toLowerCase();
-            
-            // Filter the allClientsData based on the search term
-            filteredClientsData = allClientsData.filter(client => {
-                const displayName = client.display_name ? client.display_name.toLowerCase() : '';
-                // console.log(`DEBUG: Filtering - Client: ${client.display_name}, Display Name: ${displayName}, Search Term: ${searchTerm}, Includes: ${displayName.includes(searchTerm)}`); // DEBUG LOG
-                return displayName.includes(searchTerm);
-            });
-
-            // Reset and re-display filtered results from beginning
-            displayClients(0, CLIENTS_PER_LOAD); // Call displayClients to render the first batch of filtered data
-
-            // Re-select the first client in the filtered list if any
-            if (filteredClientsData.length > 0) {
-                // Find the first list item that was just rendered based on the filter
-                const firstClientOriginalIndex = filteredClientsData[0].original_index;
-                const firstListItem = clientListUl.querySelector(`li[data-original-index="${firstClientOriginalIndex}"]`);
-                if (firstListItem) {
-                    selectClient(firstListItem, parseInt(firstListItem.dataset.originalIndex));
-                    // console.log("DEBUG: Re-selected first filtered client in view."); // DEBUG LOG
+            // Helper function to manage seeMoreButton visibility
+            function setSeeMoreButtonVisibility(visible) {
+                if (visible) {
+                    seeMoreButton.style.visibility = 'visible';
                 } else {
-                   // If the first filtered client is not in the initially displayed batch (e.g., due to a very small CLIENTS_PER_LOAD)
-                   // ensure convert button is enabled and selectedClientIndex is set correctly.
-                   selectedClientIndex = filteredClientsData[0].original_index;
-                   convertButton.disabled = false;
-                   // console.log("DEBUG: No items visible on first page, but client exists. Convert button enabled."); // DEBUG LOG
+                    seeMoreButton.style.visibility = 'hidden';
                 }
-            } else {
-                // No clients match the search, disable convert button
-                convertButton.disabled = true;
-                selectedClientIndex = null;
-                // console.log("DEBUG: No filtered clients. Convert button disabled."); // DEBUG LOG
             }
 
-            // Manage "See More" button visibility after filtering
-            // This check should use filteredClientsData.length and currentDisplayCount
-            // and whether the list is scrollable.
-            if (filteredClientsData.length > currentDisplayCount && clientListUl.scrollHeight <= clientListUl.clientHeight + 5) {
-                setSeeMoreButtonVisibility(true);
-                // console.log("DEBUG: 'See More' button visible (filtered list not scrollable yet)."); // DEBUG LOG
-            } else {
-                setSeeMoreButtonVisibility(false);
-                // console.log("DEBUG: 'See More' button hidden after filter (no more items or list is scrollable)."); // DEBUG LOG
-            }
-        }
-
-        // Function to handle showing more clients
-        function showMoreClients() {
-            // console.log("DEBUG: showMoreClients() called."); // DEBUG LOG
-            if (currentDisplayCount < filteredClientsData.length && seeMoreButton.style.visibility === 'visible') {
-                // console.log("DEBUG: Loading more clients..."); // DEBUG LOG
-                displayClients(currentDisplayCount, CLIENTS_PER_LOAD);
-                setSeeMoreButtonVisibility(false); // Hide immediately after loading more
-            } else {
-                // console.log("DEBUG: showMoreClients conditions not met. Current display count:", currentDisplayCount, "Filtered length:", filteredClientsData.length, "Button visibility:", seeMoreButton.style.visibility); // DEBUG LOG
-            }
-        }
-
-        // Function to handle file upload and initial client listing
-        async function uploadFile() {
-            // console.log("DEBUG: uploadFile() called."); // DEBUG LOG
-            const file = csvFileInput.files[0];
-            
-            messageDiv.style.display = 'none';
-            clientSelectionSection.style.display = 'none';
-            clientListUl.innerHTML = ''; // Clear previous list
-            setSeeMoreButtonVisibility(false); // Hide see more button initially
-            convertButton.disabled = true;
-            selectedClientIndex = null; // Reset selected index
-            currentDisplayCount = 0; // Reset display count
-            clientSearchInput.value = ''; // Clear search input on new upload
-
-            if (!file) {
-                showMessage('Please select a CSV file.', 'error');
-                clientSelectionSection.style.display = 'none';
-                // console.log("DEBUG: No file selected, exiting uploadFile."); // DEBUG LOG
-                return;
+            // Helper function to manage Download All button visibility
+            function setDownloadAllButtonVisibility(visible) {
+                if (visible) {
+                    downloadAllButton.style.display = 'block';
+                } else {
+                    downloadAllButton.style.display = 'none';
+                }
             }
 
-            const formData = new FormData();
-            formData.append('csvFile', file);
+            // Function to display messages to the user
+            function showMessage(msg, type) {
+                messageDiv.textContent = msg;
+                messageDiv.className = `message ${type}`;
+                messageDiv.style.display = 'block';
+            }
 
-            try {
-                showMessage('Uploading CSV and listing clients...', 'info');
-                // console.log("DEBUG: Sending /upload-csv request."); // DEBUG LOG
-                const response = await fetch('/upload-csv', {
-                    method: 'POST',
-                    body: formData,
+            // Function to handle client selection in the list
+            function selectClient(selectedListItem, originalIndex) {
+                Array.from(clientListUl.children).forEach(li => {
+                    li.classList.remove('selected');
+                });
+                selectedListItem.classList.add('selected');
+                selectedClientIndex = originalIndex;
+                convertButton.disabled = false;
+            }
+
+            // Function to display clients in the list (initial load, load more, or filtered)
+            function displayClients(startIndex, limit) {
+                const clientsToDisplay = filteredClientsData;
+                const endIndex = Math.min(startIndex + limit, clientsToDisplay.length);
+                
+                // Clear the list content only when starting from the beginning (new search or initial load)
+                if (startIndex === 0) {
+                    clientListUl.innerHTML = '';
+                    currentDisplayCount = 0; // Reset currentDisplayCount as well when list is cleared
+                }
+
+                for (let i = startIndex; i < endIndex; i++) {
+                    const client = clientsToDisplay[i];
+                    const listItem = document.createElement('li');
+                    listItem.textContent = client.display_name;
+                    listItem.dataset.originalIndex = client.original_index;
+                    listItem.addEventListener('click', () => selectClient(listItem, parseInt(listItem.dataset.originalIndex)));
+                    clientListUl.appendChild(listItem);
+                }
+                currentDisplayCount = endIndex; // Update the count of currently displayed clients
+
+                // Manage 'See More' button visibility based on whether all filtered clients are displayed
+                if (currentDisplayCount >= clientsToDisplay.length) {
+                    setSeeMoreButtonVisibility(false); // No more filtered clients to load
+                } else {
+                    setSeeMoreButtonVisibility(false); // Default to hidden unless scrolled to bottom (handled by scroll listener)
+                }
+            }
+
+            // Function to filter clients based on search input
+            function filterClients() {
+                const searchTerm = clientSearchInput.value.toLowerCase();
+                
+                // Filter the allClientsData based on the search term
+                filteredClientsData = allClientsData.filter(client => {
+                    const displayName = client.display_name ? client.display_name.toLowerCase() : '';
+                    return displayName.includes(searchTerm);
                 });
 
-                if (!response.ok) {
-                    const errorText = await response.text();
-                    throw new Error(`Server error: ${errorText}`);
-                }
+                // Reset and re-display filtered results from beginning
+                displayClients(0, CLIENTS_PER_LOAD); 
 
-                const data = await response.json();
-                uploadedFilename = data.filename;
-                allClientsData = data.clients; // Store ALL clients received
-                filteredClientsData = [...allClientsData]; // Initialize filtered data with all clients
-                // console.log("DEBUG: Clients received from server. allClientsData.length:", allClientsData.length); // DEBUG LOG
-                // console.log("DEBUG: Initial filteredClientsData:", filteredClientsData); // DEBUG LOG
-
-                if (allClientsData.length > 0) {
-                    showMessage('CSV uploaded. Please select a client to convert.', 'success');
-                    clientSelectionSection.style.display = 'block';
-                    
-                    // Display the first batch of clients from filteredClientsData
-                    // console.log("DEBUG: Calling displayClients(0, CLIENTS_PER_LOAD) from uploadFile."); // DEBUG LOG
-                    displayClients(0, CLIENTS_PER_LOAD);
-
-                    // Pre-select the very first client (index 0) of the FULL dataset (or filtered if any)
-                    // Ensure it's the first client in the *filtered* list that's selected
-                    if (filteredClientsData.length > 0) {
-                        const firstClientOriginalIndex = filteredClientsData[0].original_index;
-                        const firstListItem = clientListUl.querySelector(`li[data-original-index="${firstClientOriginalIndex}"]`);
-                        if (firstListItem) {
-                            selectClient(firstListItem, parseInt(firstListItem.dataset.originalIndex));
-                            // console.log("DEBUG: First client pre-selected:", filteredClientsData[0].display_name); // DEBUG LOG
-                        } else {
-                           // If the first filtered client is not in the first displayed batch (e.g., due to very small CLIENTS_PER_LOAD)
-                           // ensure convert button is enabled and selectedClientIndex is set correctly.
-                           selectedClientIndex = filteredClientsData[0].original_index;
-                           convertButton.disabled = false;
-                           // console.log("DEBUG: First client pre-selected (not in initial view):", filteredClientsData[0].display_name); // DEBUG LOG
-                        }
+                // Re-select the first client in the filtered list if any
+                if (filteredClientsData.length > 0) {
+                    const firstClientOriginalIndex = filteredClientsData[0].original_index;
+                    const firstListItem = clientListUl.querySelector(`li[data-original-index="${firstClientOriginalIndex}"]`);
+                    if (firstListItem) {
+                        selectClient(firstListItem, parseInt(firstListItem.dataset.originalIndex));
                     } else {
-                        // No clients available after upload
-                        convertButton.disabled = true;
-                        selectedClientIndex = null;
-                        // console.log("DEBUG: No clients found after upload."); // DEBUG LOG
+                       selectedClientIndex = filteredClientsData[0].original_index;
+                       convertButton.disabled = false;
                     }
-
-                    // If the list is NOT scrollable (i.e., all clients fit within max-height),
-                    // and there are more clients than initially shown, then show the button immediately.
-                    if (filteredClientsData.length > currentDisplayCount && clientListUl.scrollHeight <= clientListUl.clientHeight + 5) { 
-                        setSeeMoreButtonVisibility(true); // Make visible immediately
-                        // console.log("DEBUG: 'See More' button visible (list not scrollable yet)."); // DEBUG LOG
-                    }
-
-
                 } else {
-                    showMessage('No clients found in the CSV file.', 'error');
-                    // console.log("DEBUG: No clients found in CSV file after parsing."); // DEBUG LOG
+                    // No clients match the search, disable convert button
+                    convertButton.disabled = true;
+                    selectedClientIndex = null;
                 }
 
-            } catch (error) {
-                console.error('Error during file upload:', error);
-                showMessage(`Error: ${error.message}`, 'error');
-            }
-        }
-
-        // Function to handle conversion and download
-        async function convertSelectedClient() {
-            // console.log("DEBUG: convertSelectedClient() called."); // DEBUG LOG
-            if (selectedClientIndex === null || uploadedFilename === '') {
-                showMessage('Please upload a CSV and select a client first.', 'error');
-                // console.log("DEBUG: Conversion aborted: No client selected or file uploaded."); // DEBUG LOG
-                return;
-            }
-
-            convertButton.disabled = true;
-            showMessage('Converting to FDF...', 'info');
-            // console.log(`DEBUG: Starting conversion for client originalIndex: ${selectedClientIndex}, filename: ${uploadedFilename}`); // DEBUG LOG
-
-            try {
-                const response = await fetch('/convert-fdf', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        filename: uploadedFilename,
-                        clientIndex: selectedClientIndex
-                    }),
-                });
-
-                if (!response.ok) {
-                    const errorText = await response.text();
-                    throw new Error(`Server error: ${errorText}`);
-                }
-
-                const data = await response.json();
-                if (data.fdf_filename) {
-                    showMessage('FDF file generated. Downloading...', 'success');
-                    window.location.href = `/download/${data.fdf_filename}`;
-                    // console.log(`DEBUG: Download triggered for ${data.fdf_filename}`); // DEBUG LOG
-                } else {
-                    throw new Error('Conversion failed: No FDF filename received.');
-                }
-
-            } catch (error) {
-                    console.error('Error during FDF conversion:', error);
-                    showMessage(`Error: ${error.message}`, 'error');
-            } finally {
-                if (selectedClientIndex !== null) {
-                    convertButton.disabled = false;
-                }
-                // console.log("DEBUG: convertSelectedClient() finished."); // DEBUG LOG
-            }
-        }
-        // --- END: Function Definitions ---
-
-
-        // --- START: Event Listener Attachments (after all functions are defined) ---
-
-        // Event listener for scrolling
-        clientListUl.addEventListener('scroll', () => {
-            const { scrollTop, scrollHeight, clientHeight } = clientListUl;
-            if (scrollHeight - scrollTop <= clientHeight + 5) {
-                if (currentDisplayCount < filteredClientsData.length) {
+                // Manage "See More" button visibility after filtering
+                if (filteredClientsData.length > currentDisplayCount && clientListUl.scrollHeight <= clientListUl.clientHeight + 5) {
                     setSeeMoreButtonVisibility(true);
                 } else {
                     setSeeMoreButtonVisibility(false);
                 }
-            } else {
-                setSeeMoreButtonVisibility(false);
             }
-        });
 
-        // Event listener for file input change
-        csvFileInput.addEventListener('change', uploadFile);
+            // Function to handle showing more clients
+            function showMoreClients() {
+                if (currentDisplayCount < filteredClientsData.length && seeMoreButton.style.visibility === 'visible') {
+                    displayClients(currentDisplayCount, CLIENTS_PER_LOAD);
+                    setSeeMoreButtonVisibility(false); // Hide immediately after loading more
+                }
+            }
 
-        // Event listener for search input
-        clientSearchInput.addEventListener('input', filterClients);
+            // Function to handle file upload and initial client listing
+            async function uploadFile() {
+                const file = csvFileInput.files[0];
+                
+                messageDiv.style.display = 'none';
+                clientSelectionSection.style.display = 'none';
+                clientListUl.innerHTML = ''; // Clear previous list
+                setSeeMoreButtonVisibility(false); // Hide see more button initially
+                convertButton.disabled = true;
+                setDownloadAllButtonVisibility(false); // Hide Download All button initially
+                downloadAllButton.disabled = true; // Keep it disabled
+                selectedClientIndex = null; // Reset selected index
+                currentDisplayCount = 0; // Reset display count
+                clientSearchInput.value = ''; // Clear search input on new upload
 
-        // --- END: Event Listener Attachments ---
+                if (!file) {
+                    showMessage('Please select a CSV file.', 'error');
+                    clientSelectionSection.style.display = 'none';
+                    return;
+                }
+
+                const formData = new FormData();
+                formData.append('csvFile', file);
+
+                try {
+                    showMessage('Uploading CSV and listing clients...', 'info');
+                    const response = await fetch('/upload-csv', {
+                        method: 'POST',
+                        body: formData,
+                    });
+
+                    if (!response.ok) {
+                        const errorText = await response.text();
+                        throw new Error(`Server error: ${errorText}`);
+                    }
+
+                    const data = await response.json();
+                    uploadedFilename = data.filename;
+                    allClientsData = data.clients; // Store ALL clients received
+                    filteredClientsData = [...allClientsData]; // Initialize filtered data with all clients
+
+                    if (allClientsData.length > 0) {
+                        showMessage('CSV uploaded. Please select a client to convert.', 'success');
+                        clientSelectionSection.style.display = 'block';
+                        setDownloadAllButtonVisibility(true); // Show Download All button
+                        downloadAllButton.disabled = false; // Enable Download All button
+
+                        // Display the first batch of clients from filteredClientsData
+                        displayClients(0, CLIENTS_PER_LOAD);
+
+                        // Pre-select the very first client (index 0) of the FULL dataset (or filtered if any)
+                        // Ensure it's the first client in the *filtered* list that's selected
+                        if (filteredClientsData.length > 0) {
+                            const firstClientOriginalIndex = filteredClientsData[0].original_index;
+                            const firstListItem = clientListUl.querySelector(`li[data-original-index="${firstClientOriginalIndex}"]`);
+                            if (firstListItem) {
+                                selectClient(firstListItem, parseInt(firstListItem.dataset.originalIndex));
+                            } else {
+                               selectedClientIndex = filteredClientsData[0].original_index;
+                               convertButton.disabled = false;
+                            }
+                        } else {
+                            // No clients available after upload
+                            convertButton.disabled = true;
+                            selectedClientIndex = null;
+                        }
+
+                        // If the list is NOT scrollable (i.e., all clients fit within max-height),
+                        // and there are more clients than initially shown, then show the button immediately.
+                        if (filteredClientsData.length > currentDisplayCount && clientListUl.scrollHeight <= clientListUl.clientHeight + 5) { 
+                            setSeeMoreButtonVisibility(true); // Make visible immediately
+                        }
 
 
-        // --- START: Initial Load/Setup (optional, can be called via uploadFile directly) ---
-        // No specific initial load outside of uploadFile when file input changes
-        // --- END: Initial Load/Setup ---
+                    } else {
+                        showMessage('No clients found in the CSV file.', 'error');
+                    }
 
+                } catch (error) {
+                    console.error('Error during file upload:', error);
+                    showMessage(`Error: ${error.message}`, 'error');
+                }
+            }
+
+            // Function to handle conversion and download for a single client
+            async function convertSelectedClient() {
+                if (selectedClientIndex === null || uploadedFilename === '') {
+                    showMessage('Please upload a CSV and select a client first.', 'error');
+                    return;
+                }
+
+                convertButton.disabled = true;
+                showMessage('Converting to FDF...', 'info');
+
+                try {
+                    const response = await fetch('/convert-fdf', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            filename: uploadedFilename,
+                            clientIndex: selectedClientIndex
+                        }),
+                    });
+
+                    if (!response.ok) {
+                        const errorText = await response.text();
+                        throw new Error(`Server error: ${errorText}`);
+                    }
+
+                    const data = await response.json();
+                    if (data.fdf_filename) {
+                        showMessage('FDF file generated. Downloading...', 'success');
+                        window.location.href = `/download/${data.fdf_filename}`;
+                    } else {
+                        throw new Error('Conversion failed: No FDF filename received.');
+                    }
+
+                } catch (error) {
+                        console.error('Error during FDF conversion:', error);
+                        showMessage(`Error: ${error.message}`, 'error');
+                } finally {
+                    if (selectedClientIndex !== null) {
+                        convertButton.disabled = false;
+                    }
+                }
+            }
+
+            // NEW: Function to handle downloading all FDFs as a zip
+            async function downloadAllFDFs() {
+                if (uploadedFilename === '' || allClientsData.length === 0) {
+                    showMessage('Please upload a CSV file with clients first.', 'error');
+                    return;
+                }
+
+                downloadAllButton.disabled = true;
+                convertButton.disabled = true; // Disable single convert button too
+                showMessage('Generating and zipping all FDFs. This may take a moment...', 'info');
+
+                try {
+                    const response = await fetch('/download-all-fdfs', { // NEW: Endpoint
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ filename: uploadedFilename }),
+                    });
+
+                    if (!response.ok) {
+                        const errorText = await response.text();
+                        throw new Error(`Server error: ${errorText}`);
+                    }
+
+                    const data = await response.json();
+                    if (data.zip_filename) {
+                        showMessage('All FDFs zipped. Downloading archive...', 'success');
+                        window.location.href = `/download/${data.zip_filename}`; // Use existing download endpoint
+                    } else {
+                        throw new Error('Zip generation failed: No zip filename received.');
+                    }
+
+                } catch (error) {
+                    console.error('Error during bulk FDF conversion and zipping:', error);
+                    showMessage(`Error: ${error.message}`, 'error');
+                } finally {
+                    downloadAllButton.disabled = false;
+                    if (selectedClientIndex !== null) { // Re-enable single convert if a client is selected
+                        convertButton.disabled = false;
+                    }
+                }
+            }
+            // --- END: Function Definitions ---
+
+
+            // --- START: Event Listener Attachments (after all functions are defined) ---
+
+            // Event listener for scrolling
+            clientListUl.addEventListener('scroll', () => {
+                const { scrollTop, scrollHeight, clientHeight } = clientListUl;
+                if (scrollHeight - scrollTop <= clientHeight + 5) {
+                    if (currentDisplayCount < filteredClientsData.length) {
+                        setSeeMoreButtonVisibility(true);
+                    } else {
+                        setSeeMoreButtonVisibility(false);
+                    }
+                } else {
+                    setSeeMoreButtonVisibility(false);
+                }
+            });
+
+            // Event listener for file input change
+            csvFileInput.addEventListener('change', uploadFile);
+
+            // Event listener for search input
+            clientSearchInput.addEventListener('input', filterClients);
+
+            // Event listeners attached using JavaScript (Corrected)
+            seeMoreButton.addEventListener('click', showMoreClients);
+            convertButton.addEventListener('click', convertSelectedClient);
+            downloadAllButton.addEventListener('click', downloadAllFDFs);
+
+            // --- END: Event Listener Attachments ---
+
+
+            // --- START: Initial Setup/Load (if any specific actions are needed on page load) ---
+            // No specific initial load outside of uploadFile when file input changes
+            // --- END: Initial Load/Setup ---
+
+        }); // End of DOMContentLoaded listener
     </script>
 </body>
 </html>
