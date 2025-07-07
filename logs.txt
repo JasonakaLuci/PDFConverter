@@ -4182,3 +4182,230 @@ Usage:
 2025-05-12T07:41:23.057Z: Deleted file: csvFile-1747033906489-583942924.csv
 2025-05-12T07:41:23.057Z: Deleted file: csvFile-1747033934789-647866178.csv
 2025-05-12T07:41:23.057Z: Deleted file: csvFile-1747034402422-782850977.csv
+2025-07-07T04:57:01.676Z: Server running on port 2000
+2025-07-07T04:57:01.686Z: Deletion check at 2025-07-07T04:57:01.686Z: Within working hours. Deleting files.
+2025-07-07T04:57:42.765Z: Received file: HKAPP Client Information Form - BLANK.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864262761-962668098.csv
+2025-07-07T04:57:42.985Z: Successfully listed clients from HKAPP Client Information Form - BLANK.csv.
+2025-07-07T04:57:54.201Z: Received file: HKAPP Client Information Form - BLANK.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864274199-51296922.csv
+2025-07-07T04:57:54.288Z: Successfully listed clients from HKAPP Client Information Form - BLANK.csv.
+2025-07-07T04:58:11.168Z: Received file: HKAPP Client Information Form - BLANK (1).csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864291166-54016109.csv
+2025-07-07T04:58:11.252Z: Successfully listed clients from HKAPP Client Information Form - BLANK (1).csv.
+2025-07-07T05:04:40.115Z: Server running on port 2000
+2025-07-07T05:04:40.119Z: Deletion check at 2025-07-07T05:04:40.119Z: Within working hours. Deleting files.
+2025-07-07T05:04:40.121Z: Deleted file: csvFile-1751864262761-962668098.csv
+2025-07-07T05:04:40.121Z: Deleted file: csvFile-1751864274199-51296922.csv
+2025-07-07T05:04:40.121Z: Deleted file: csvFile-1751864291166-54016109.csv
+2025-07-07T05:04:50.018Z: Received file: HKAPP Client Information Form - BLANK.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864690014-276474688.csv
+2025-07-07T05:04:50.092Z: Successfully listed clients from HKAPP Client Information Form - BLANK.csv.
+2025-07-07T05:04:52.703Z: Received file: HKAPP Client Information Form - BLANK (1).csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864692702-914426020.csv
+2025-07-07T05:04:52.781Z: Successfully listed clients from HKAPP Client Information Form - BLANK (1).csv.
+2025-07-07T05:04:55.943Z: Generating empty FDF template from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864692702-914426020.csv
+2025-07-07T05:04:56.011Z: Python script stderr (generate_empty_fdf): Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:04:56.019Z: Python script exited with code 1 for generate_empty_fdf. Error: Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:04:57.958Z: Generating empty FDF template from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864692702-914426020.csv
+2025-07-07T05:04:58.026Z: Python script stderr (generate_empty_fdf): Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:04:58.034Z: Python script exited with code 1 for generate_empty_fdf. Error: Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:04:58.393Z: Generating empty FDF template from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864692702-914426020.csv
+2025-07-07T05:04:58.461Z: Python script stderr (generate_empty_fdf): Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:04:58.469Z: Python script exited with code 1 for generate_empty_fdf. Error: Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:04:58.718Z: Generating empty FDF template from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864692702-914426020.csv
+2025-07-07T05:04:58.785Z: Python script stderr (generate_empty_fdf): Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:04:58.793Z: Python script exited with code 1 for generate_empty_fdf. Error: Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:04:58.934Z: Generating empty FDF template from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864692702-914426020.csv
+2025-07-07T05:04:59.003Z: Python script stderr (generate_empty_fdf): Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:04:59.011Z: Python script exited with code 1 for generate_empty_fdf. Error: Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:04:59.402Z: Generating empty FDF template from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864692702-914426020.csv
+2025-07-07T05:04:59.470Z: Python script stderr (generate_empty_fdf): Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:04:59.478Z: Python script exited with code 1 for generate_empty_fdf. Error: Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:05:01.111Z: Generating empty FDF template from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864692702-914426020.csv
+2025-07-07T05:05:01.177Z: Python script stderr (generate_empty_fdf): Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:05:01.186Z: Python script exited with code 1 for generate_empty_fdf. Error: Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:05:01.406Z: Generating empty FDF template from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864692702-914426020.csv
+2025-07-07T05:05:01.474Z: Python script stderr (generate_empty_fdf): Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:05:01.483Z: Python script exited with code 1 for generate_empty_fdf. Error: Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:05:01.598Z: Generating empty FDF template from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864692702-914426020.csv
+2025-07-07T05:05:01.664Z: Python script stderr (generate_empty_fdf): Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:05:01.672Z: Python script exited with code 1 for generate_empty_fdf. Error: Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:05:01.859Z: Generating empty FDF template from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864692702-914426020.csv
+2025-07-07T05:05:01.927Z: Python script stderr (generate_empty_fdf): Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:05:01.935Z: Python script exited with code 1 for generate_empty_fdf. Error: Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:05:02.613Z: Generating empty FDF template from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864692702-914426020.csv
+2025-07-07T05:05:02.682Z: Python script stderr (generate_empty_fdf): Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:05:02.689Z: Python script exited with code 1 for generate_empty_fdf. Error: Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:05:02.769Z: Generating empty FDF template from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864692702-914426020.csv
+2025-07-07T05:05:02.836Z: Python script stderr (generate_empty_fdf): Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:05:02.844Z: Python script exited with code 1 for generate_empty_fdf. Error: Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:05:02.974Z: Generating empty FDF template from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864692702-914426020.csv
+2025-07-07T05:05:03.045Z: Python script stderr (generate_empty_fdf): Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:05:03.053Z: Python script exited with code 1 for generate_empty_fdf. Error: Unknown command: generate_empty_fdf
+Usage:
+  python fdf_converter.py <input_csv_path> list_clients
+  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>
+  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>
+
+2025-07-07T05:06:05.438Z: Converting client 0 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864692702-914426020.csv to FDF in directory: C:\Users\AS 61\Documents\PDFConverter\uploads
+2025-07-07T05:06:05.523Z: Successfully converted client 0 to FDF: Unnamed_Client_1751864765514.fdf
+2025-07-07T05:06:05.536Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\Unnamed_Client_1751864765514.fdf deleted successfully.
+2025-07-07T05:07:11.285Z: Server running on port 2000
+2025-07-07T05:07:11.288Z: Deletion check at 2025-07-07T05:07:11.288Z: Within working hours. Deleting files.
+2025-07-07T05:07:11.289Z: Deleted file: csvFile-1751864690014-276474688.csv
+2025-07-07T05:07:11.289Z: Deleted file: csvFile-1751864692702-914426020.csv
+2025-07-07T05:07:19.398Z: Received file: HKAPP Client Information Form - BLANK.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864839394-297884571.csv
+2025-07-07T05:07:19.483Z: Successfully listed clients from HKAPP Client Information Form - BLANK.csv.
+2025-07-07T05:07:22.242Z: Received file: HKAPP Client Information Form - BLANK (1).csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864842241-66966636.csv
+2025-07-07T05:07:22.317Z: Successfully listed clients from HKAPP Client Information Form - BLANK (1).csv.
+2025-07-07T05:07:24.334Z: Generating empty FDF template from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751864842241-66966636.csv
+2025-07-07T05:07:24.411Z: Successfully created empty FDF: empty_fdf_template_1751864844404.fdf
+2025-07-07T05:07:24.425Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\empty_fdf_template_1751864844404.fdf deleted successfully.
+2025-07-07T05:10:33.206Z: Received file: HKAPP Client Information Form - BLANK.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751865033204-834373657.csv
+2025-07-07T05:10:33.286Z: Successfully listed clients from HKAPP Client Information Form - BLANK.csv.
+2025-07-07T05:11:50.123Z: Received file: HKAPP Client Information Form - BLANK (1).csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751865110122-102601870.csv
+2025-07-07T05:11:50.196Z: Successfully listed clients from HKAPP Client Information Form - BLANK (1).csv.
+2025-07-07T05:14:55.885Z: Server running on port 2000
+2025-07-07T05:14:55.888Z: Deletion check at 2025-07-07T05:14:55.888Z: Within working hours. Deleting files.
+2025-07-07T05:14:55.888Z: Deleted file: csvFile-1751864839394-297884571.csv
+2025-07-07T05:14:55.889Z: Deleted file: csvFile-1751864842241-66966636.csv
+2025-07-07T05:14:55.889Z: Deleted file: csvFile-1751865110122-102601870.csv
+2025-07-07T05:14:55.889Z: Deleted file: csvFile-1751865033204-834373657.csv
+2025-07-07T05:15:04.940Z: Received file: HKAPP Client Information Form - BLANK.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751865304937-966856495.csv
+2025-07-07T05:15:05.022Z: Successfully listed clients from HKAPP Client Information Form - BLANK.csv.
+2025-07-07T05:15:07.195Z: Generating empty FDF template from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751865304937-966856495.csv
+2025-07-07T05:15:07.260Z: Successfully created empty FDF: empty_fdf_template_1751865307266.fdf
+2025-07-07T05:15:07.273Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\empty_fdf_template_1751865307266.fdf deleted successfully.
+2025-07-07T05:15:37.003Z: Received file: HKAPP Client Information Form - BLANK (1).csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751865337001-892757925.csv
+2025-07-07T05:15:37.079Z: Successfully listed clients from HKAPP Client Information Form - BLANK (1).csv.
+2025-07-07T05:15:40.521Z: Converting client 0 from C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751865337001-892757925.csv to FDF in directory: C:\Users\AS 61\Documents\PDFConverter\uploads
+2025-07-07T05:15:40.600Z: Successfully converted client 0 to FDF: Unnamed_Client_1751865340601.fdf
+2025-07-07T05:15:40.610Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\Unnamed_Client_1751865340601.fdf deleted successfully.
+2025-07-07T05:15:52.308Z: Starting bulk conversion and zipping for C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751865337001-892757925.csv to C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751865337001-892757925_all_fdfs_1751865352308.zip
+2025-07-07T05:15:52.394Z: Successfully created zip: C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751865337001-892757925_all_fdfs_1751865352308.zip
+2025-07-07T05:15:52.404Z: File C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751865337001-892757925_all_fdfs_1751865352308.zip deleted successfully.
+2025-07-07T05:16:29.999Z: Server running on port 2000
+2025-07-07T05:16:30.002Z: Deletion check at 2025-07-07T05:16:30.002Z: Within working hours. Deleting files.
+2025-07-07T05:16:30.002Z: Deleted file: csvFile-1751865304937-966856495.csv
+2025-07-07T05:16:30.003Z: Deleted file: csvFile-1751865337001-892757925.csv

@@ -96,7 +96,7 @@ def convert_selected_client_to_fdf(input_path, output_dir, client_index):
 
     for field_name, field_value in selected_client_data.items():
         if field_value:
-            if field_name.strip() == '':
+            if field_name is None or field_name.strip() == '':
                 unnamed_field_count += 1
                 if unnamed_field_count == 1:
                     field_name = 'ClientNameJP' 
@@ -130,7 +130,6 @@ def convert_all_to_zip(input_csv_path, output_fdf_dir_for_zip, output_zip_path):
         sys.stderr.write("No client data found in the CSV file for bulk conversion.\n")
         sys.exit(1)
 
-    # Ensure the temporary directory for FDFs exists
     if not os.path.exists(output_fdf_dir_for_zip):
         os.makedirs(output_fdf_dir_for_zip)
 
@@ -140,19 +139,16 @@ def convert_all_to_zip(input_csv_path, output_fdf_dir_for_zip, output_zip_path):
         for i, client_data in enumerate(all_clients_data):
             client_surname = client_data.get('Client1Sur', 'Unnamed')
             client_given = client_data.get('Client1Given', 'Client')
-            
             client_full_name = f"{client_surname}_{client_given}"
             sanitized_filename = sanitize_filename(client_full_name)
-            
-            # Corrected: Removed "client_" from filename
-            fdf_filename = f"{sanitized_filename}_{i + 1}.fdf" # No "client_" prefix
+            fdf_filename = f"{sanitized_filename}_{i + 1}.fdf"
             individual_fdf_path = os.path.join(output_fdf_dir_for_zip, fdf_filename)
 
             fdf_content = create_fdf_header()
             unnamed_field_count = 0
             for field_name, field_value in client_data.items():
                 if field_value:
-                    if field_name.strip() == '':
+                    if field_name is None or field_name.strip() == '':
                         unnamed_field_count += 1
                         if unnamed_field_count == 1:
                             field_name = 'ClientNameJP'
@@ -168,57 +164,108 @@ def convert_all_to_zip(input_csv_path, output_fdf_dir_for_zip, output_zip_path):
             
             fdf_files_to_zip.append(individual_fdf_path)
 
-        # Create the zip archive
         with zipfile.ZipFile(output_zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
             for fdf_file_path in fdf_files_to_zip:
-                # Add file to zip using just its filename (not full path)
                 zipf.write(fdf_file_path, os.path.basename(fdf_file_path))
         
     except Exception as e:
         sys.stderr.write(f"Error during bulk FDF conversion or zipping: {e}\n")
         sys.exit(1)
     finally:
-        # Clean up individual FDF files after zipping (even if an error occurred during zipping, but after FDFs were written)
         for fdf_file_path in fdf_files_to_zip:
             if os.path.exists(fdf_file_path):
                 os.remove(fdf_file_path)
 
+def generate_empty_fdf(input_path, output_dir):
+    """
+    Creates an FDF file with all field names from the CSV header but with empty values.
+    """
+    try:
+        with open(input_path, 'r', encoding='utf-8', errors='ignore') as csv_file:
+            csv_reader = csv.reader(csv_file)
+            headers = next(csv_reader) # Read only the header row
+    except Exception as e:
+        sys.stderr.write(f"Error reading CSV header: {e}\n")
+        sys.exit(1)
+
+    fdf_filename = f"empty_fdf_template_{int(time.time() * 1000)}.fdf"
+    output_path = os.path.join(output_dir, fdf_filename)
+
+    fdf_content = create_fdf_header()
+    
+    unnamed_field_count = 0
+    for field_name in headers:
+        if field_name is None or field_name.strip() == '':
+            unnamed_field_count += 1
+            if unnamed_field_count == 1:
+                field_name = 'ClientNameJP'
+            elif unnamed_field_count == 2:
+                field_name = 'InsuredNameJP'
+            else:
+                field_name = f'UnnamedField{unnamed_field_count}'
+        
+        fdf_content += f"<< /T ({escape_fdf_string(field_name)}) /V () >>\n"
+
+    fdf_content += create_fdf_footer()
+
+    try:
+        with open(output_path, 'w', encoding='utf-8', errors='ignore') as fdf_file:
+            fdf_file.write(fdf_content)
+        
+        print(json.dumps({"fdf_filename": fdf_filename}))
+        
+    except Exception as e:
+        sys.stderr.write(f"Error writing empty FDF file: {e}\n")
+        sys.exit(1)
+
 
 if __name__ == '__main__':
+    # Check for the correct number of arguments based on the command
     if len(sys.argv) < 3:
         sys.stderr.write("Usage:\n")
         sys.stderr.write("  python fdf_converter.py <input_csv_path> list_clients\n")
-        sys.stderr.write("  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>\n")
-        sys.stderr.write("  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>\n")
+        sys.stderr.write("  python fdf_converter.py <input_csv_path> convert_client <output_dir> <client_index>\n")
+        sys.stderr.write("  python fdf_converter.py <input_csv_path> convert_all_to_zip <output_dir> <output_zip_path>\n")
+        sys.stderr.write("  python fdf_converter.py <input_csv_path> generate_empty_fdf <output_dir>\n")
         sys.exit(1)
 
     command = sys.argv[2]
+    input_csv_path = sys.argv[1]
 
     if command == 'list_clients':
-        input_csv_path = sys.argv[1]
+        if len(sys.argv) != 3:
+            sys.stderr.write("Usage: python fdf_converter.py <input_csv_path> list_clients\n")
+            sys.exit(1)
         list_clients(input_csv_path)
+    
     elif command == 'convert_client':
         if len(sys.argv) != 5:
-            sys.stderr.write("Usage: python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>\n")
-            sys.stderr.write(f"Received arguments: {sys.argv}\n")
+            sys.stderr.write("Usage: python fdf_converter.py <input_csv_path> convert_client <output_dir> <client_index>\n")
             sys.exit(1)
-        input_csv_path = sys.argv[1]
         output_dir = sys.argv[3]
         client_index = sys.argv[4]
         convert_selected_client_to_fdf(input_csv_path, output_dir, client_index)
+
     elif command == 'convert_all_to_zip':
         if len(sys.argv) != 5:
-            sys.stderr.write("Usage: python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>\n")
-            sys.stderr.write(f"Received arguments: {sys.argv}\n")
+            sys.stderr.write("Usage: python fdf_converter.py <input_csv_path> convert_all_to_zip <output_dir> <output_zip_path>\n")
             sys.exit(1)
-        input_csv_path = sys.argv[1]
         output_fdf_dir_for_zip = sys.argv[3]
         output_zip_path = sys.argv[4]
         convert_all_to_zip(input_csv_path, output_fdf_dir_for_zip, output_zip_path)
+    
+    elif command == 'generate_empty_fdf':
+        if len(sys.argv) != 4:
+            sys.stderr.write("Usage: python fdf_converter.py <input_csv_path> generate_empty_fdf <output_dir>\n")
+            sys.exit(1)
+        output_dir = sys.argv[3]
+        generate_empty_fdf(input_csv_path, output_dir)
+
     else:
         sys.stderr.write(f"Unknown command: {command}\n")
         sys.stderr.write("Usage:\n")
         sys.stderr.write("  python fdf_converter.py <input_csv_path> list_clients\n")
-        sys.stderr.write("  python fdf_converter.py <input_csv_path> <output_dir> convert_client <client_index>\n")
-        sys.stderr.write("  python fdf_converter.py <input_csv_path> <output_fdf_dir_for_zip> convert_all_to_zip <output_zip_path>\n")
+        sys.stderr.write("  python fdf_converter.py <input_csv_path> convert_client <output_dir> <client_index>\n")
+        sys.stderr.write("  python fdf_converter.py <input_csv_path> convert_all_to_zip <output_dir> <output_zip_path>\n")
+        sys.stderr.write("  python fdf_converter.py <input_csv_path> generate_empty_fdf <output_dir>\n")
         sys.exit(1)

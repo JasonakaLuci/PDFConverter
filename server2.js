@@ -226,6 +226,65 @@ app.post('/download-all-fdfs', (req, res) => {
   });
 });
 
+app.post('/generate-empty-fdf', (req, res) => {
+  const { filename } = req.body;
+
+  if (!filename) {
+    logToFile('Missing filename for empty FDF generation.');
+    return res.status(400).send('Missing filename.');
+  }
+
+  const csvFilePath = path.join(uploadsPath, filename);
+  if (!fs.existsSync(csvFilePath)) {
+    logToFile(`CSV file not found for empty FDF generation: ${csvFilePath}`);
+    return res.status(404).send('CSV file not found.');
+  }
+
+  logToFile(`Generating empty FDF template from ${csvFilePath}`);
+
+  const emptyFdfProcess = spawn('python', [
+    path.join(__dirname, 'fdf_converter.py'),
+    csvFilePath,
+    'generate_empty_fdf',
+    uploadsPath
+  ]);
+
+  let pythonOutput = '';
+  let errorOutput = '';
+
+  emptyFdfProcess.stdout.on('data', (data) => {
+    pythonOutput += data.toString();
+  });
+
+  emptyFdfProcess.stderr.on('data', (data) => {
+    errorOutput += data.toString();
+    logToFile(`Python script stderr (generate_empty_fdf): ${data.toString()}`);
+  });
+
+  emptyFdfProcess.on('close', (code) => {
+    if (code === 0) {
+      try {
+        const pythonResponse = JSON.parse(pythonOutput.trim());
+        const fdf_filename = pythonResponse.fdf_filename;
+        
+        if (fdf_filename) {
+          logToFile(`Successfully created empty FDF: ${fdf_filename}`);
+          res.json({ fdf_filename: fdf_filename });
+        } else {
+          throw new Error("Python did not return an FDF filename for the empty template.");
+        }
+      } catch (parseError) {
+        logToFile(`Error parsing Python empty FDF output JSON: ${parseError.message}. Raw output: ${pythonOutput}`);
+        res.status(500).send('Error parsing empty FDF filename from Python script.');
+      }
+    } else {
+      logToFile(`Python script exited with code ${code} for generate_empty_fdf. Error: ${errorOutput}`);
+      res.status(500).send('Error generating empty FDF template.');
+    }
+  });
+});
+
+
 app.get('/download/:filename', (req, res) => {
   const filePath = path.join(__dirname, 'uploads', req.params.filename);
   
