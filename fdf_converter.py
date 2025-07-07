@@ -44,6 +44,7 @@ def read_csv_data(input_path):
 def list_clients(input_path):
     """
     Reads the CSV, extracts client display information, and prints it as JSON.
+    It now checks for multiple possible field names for client and product.
     """
     all_clients_data = read_csv_data(input_path)
 
@@ -51,9 +52,12 @@ def list_clients(input_path):
     for i, client_row in enumerate(reversed(all_clients_data)):
         original_index = len(all_clients_data) - 1 - i # Calculate original index
         
-        client_surname = client_row.get('Client1Sur', 'N/A')
-        client_given = client_row.get('Client1Given', 'N/A')
-        product_name = client_row.get('Product', 'N/A')
+        # --- UPDATED LOGIC ---
+        # Use fallback fields for surname, given name, and product.
+        client_surname = client_row.get('Client1Sur') or client_row.get('settlorname[last]') or 'N/A'
+        client_given = client_row.get('Client1Given') or client_row.get('settlorname[first]') or 'N/A'
+        product_name = client_row.get('Product') or client_row.get('product') or 'N/A'
+        # --- END UPDATED LOGIC ---
         
         clients_for_display.append({
             'original_index': original_index,
@@ -80,8 +84,10 @@ def convert_selected_client_to_fdf(input_path, output_dir, client_index):
     
     selected_client_data = all_clients_data[client_index]
 
-    client_surname = selected_client_data.get('Client1Sur', 'Unnamed')
-    client_given = selected_client_data.get('Client1Given', 'Client')
+    # --- UPDATED LOGIC for filename ---
+    client_surname = selected_client_data.get('Client1Sur') or selected_client_data.get('settlorname[last]') or 'Unnamed'
+    client_given = selected_client_data.get('Client1Given') or selected_client_data.get('settlorname[first]') or 'Client'
+    # --- END UPDATED LOGIC ---
     
     client_full_name = f"{client_surname}_{client_given}"
     sanitized_filename = sanitize_filename(client_full_name)
@@ -122,7 +128,6 @@ def convert_selected_client_to_fdf(input_path, output_dir, client_index):
 def convert_all_to_zip(input_csv_path, output_fdf_dir_for_zip, output_zip_path):
     """
     Reads all clients from a CSV, converts each to an FDF, and zips them.
-    output_fdf_dir_for_zip is a temporary directory for individual FDFs before zipping.
     """
     all_clients_data = read_csv_data(input_csv_path)
     
@@ -137,8 +142,11 @@ def convert_all_to_zip(input_csv_path, output_fdf_dir_for_zip, output_zip_path):
 
     try:
         for i, client_data in enumerate(all_clients_data):
-            client_surname = client_data.get('Client1Sur', 'Unnamed')
-            client_given = client_data.get('Client1Given', 'Client')
+            # --- UPDATED LOGIC for filename ---
+            client_surname = client_data.get('Client1Sur') or client_data.get('settlorname[last]') or 'Unnamed'
+            client_given = client_data.get('Client1Given') or client_data.get('settlorname[first]') or 'Client'
+            # --- END UPDATED LOGIC ---
+
             client_full_name = f"{client_surname}_{client_given}"
             sanitized_filename = sanitize_filename(client_full_name)
             fdf_filename = f"{sanitized_filename}_{i + 1}.fdf"
@@ -220,7 +228,6 @@ def generate_empty_fdf(input_path, output_dir):
 
 
 if __name__ == '__main__':
-    # Check for the correct number of arguments based on the command
     if len(sys.argv) < 3:
         sys.stderr.write("Usage:\n")
         sys.stderr.write("  python fdf_converter.py <input_csv_path> list_clients\n")
