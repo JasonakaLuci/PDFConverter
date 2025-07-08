@@ -16,9 +16,9 @@ def create_fdf_footer():
 
 def escape_fdf_string(s):
     s = str(s)
+    s = s.replace('\\', '\\\\')
     s = s.replace('\n', '\\r').replace('\r', '\\r')
     s = s.replace(')', '\\)').replace('(', '\\(')
-    s = s.replace('\\', '\\\\')
     return s
 
 def sanitize_filename(name):

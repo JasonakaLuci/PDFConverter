@@ -4415,3 +4415,258 @@ Usage:
 2025-07-07T09:59:59.407Z: Successfully listed clients from Test.csv.
 2025-07-07T10:00:53.846Z: Received file: Test.csv at C:\Users\AS 61\Documents\PDFConverter\uploads\csvFile-1751882453845-665211788.csv
 2025-07-07T10:00:53.927Z: Successfully listed clients from Test.csv.
+2025-07-07T10:03:01.083Z: Server running on port 2000
+2025-07-07T10:03:01.085Z: Deletion check at 2025-07-07T10:03:01.085Z: Within working hours. Deleting files.
+2025-07-07T10:03:01.087Z: Deleted file: csvFile-1751882373181-225066335.csv
+2025-07-07T10:03:01.087Z: Deleted file: csvFile-1751882199114-630809236.csv
+2025-07-07T10:03:01.087Z: Deleted file: csvFile-1751882453845-665211788.csv
+2025-07-07T10:03:01.087Z: Deleted file: csvFile-1751882399045-287679972.csv
+2025-07-07T10:03:14.873Z: Received file: Test.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751882594871-524548128.csv
+2025-07-07T10:03:15.385Z: Successfully listed clients from Test.csv.
+[2025-07-07T10:53:14.161Z] Deletion check at 2025-07-07T10:53:14.161Z: Within working hours. Deleting files.
+[2025-07-07T10:53:14.163Z] Deleted file: csvFile-1751882594871-524548128.csv
+2025-07-07T11:03:01.104Z: Deletion check at 2025-07-07T11:03:01.104Z: Outside working hours. Skipping deletion.
+[2025-07-07T11:53:14.186Z] Deletion check at 2025-07-07T11:53:14.186Z: Outside working hours. Skipping deletion.
+2025-07-07T12:03:01.132Z: Deletion check at 2025-07-07T12:03:01.132Z: Outside working hours. Skipping deletion.
+[2025-07-07T12:53:14.193Z] Deletion check at 2025-07-07T12:53:14.193Z: Outside working hours. Skipping deletion.
+2025-07-07T13:03:01.140Z: Deletion check at 2025-07-07T13:03:01.140Z: Outside working hours. Skipping deletion.
+[2025-07-07T13:53:14.194Z] Deletion check at 2025-07-07T13:53:14.194Z: Outside working hours. Skipping deletion.
+2025-07-07T14:03:01.147Z: Deletion check at 2025-07-07T14:03:01.147Z: Outside working hours. Skipping deletion.
+[2025-07-07T14:53:14.201Z] Deletion check at 2025-07-07T14:53:14.201Z: Outside working hours. Skipping deletion.
+2025-07-07T15:03:01.157Z: Deletion check at 2025-07-07T15:03:01.157Z: Outside working hours. Skipping deletion.
+[2025-07-07T15:53:14.212Z] Deletion check at 2025-07-07T15:53:14.212Z: Outside working hours. Skipping deletion.
+2025-07-07T16:03:01.169Z: Deletion check at 2025-07-07T16:03:01.169Z: Outside working hours. Skipping deletion.
+[2025-07-07T16:53:14.216Z] Deletion check at 2025-07-07T16:53:14.216Z: Outside working hours. Skipping deletion.
+2025-07-07T17:03:01.181Z: Deletion check at 2025-07-07T17:03:01.181Z: Outside working hours. Skipping deletion.
+[2025-07-07T17:53:14.226Z] Deletion check at 2025-07-07T17:53:14.226Z: Outside working hours. Skipping deletion.
+2025-07-07T18:03:01.200Z: Deletion check at 2025-07-07T18:03:01.200Z: Outside working hours. Skipping deletion.
+[2025-07-07T18:53:14.251Z] Deletion check at 2025-07-07T18:53:14.251Z: Outside working hours. Skipping deletion.
+2025-07-07T19:03:01.223Z: Deletion check at 2025-07-07T19:03:01.223Z: Outside working hours. Skipping deletion.
+[2025-07-07T19:53:14.281Z] Deletion check at 2025-07-07T19:53:14.281Z: Outside working hours. Skipping deletion.
+2025-07-07T20:03:01.246Z: Deletion check at 2025-07-07T20:03:01.246Z: Outside working hours. Skipping deletion.
+[2025-07-07T20:53:14.302Z] Deletion check at 2025-07-07T20:53:14.302Z: Outside working hours. Skipping deletion.
+2025-07-07T21:03:01.263Z: Deletion check at 2025-07-07T21:03:01.263Z: Outside working hours. Skipping deletion.
+[2025-07-07T21:53:14.315Z] Deletion check at 2025-07-07T21:53:14.315Z: Outside working hours. Skipping deletion.
+2025-07-07T22:03:01.279Z: Deletion check at 2025-07-07T22:03:01.279Z: Outside working hours. Skipping deletion.
+[2025-07-07T22:53:14.338Z] Deletion check at 2025-07-07T22:53:14.338Z: Outside working hours. Skipping deletion.
+2025-07-07T23:03:01.297Z: Deletion check at 2025-07-07T23:03:01.297Z: Outside working hours. Skipping deletion.
+[2025-07-07T23:53:14.354Z] Deletion check at 2025-07-07T23:53:14.354Z: Outside working hours. Skipping deletion.
+2025-07-08T00:03:01.327Z: Deletion check at 2025-07-08T00:03:01.327Z: Within working hours. Deleting files.
+[2025-07-08T00:53:14.383Z] Deletion check at 2025-07-08T00:53:14.383Z: Within working hours. Deleting files.
+2025-07-08T01:03:01.346Z: Deletion check at 2025-07-08T01:03:01.346Z: Within working hours. Deleting files.
+2025-07-08T01:06:44.237Z: Received file: HKAPP Client Information Form - BLANK (1).csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751936804236-628760368.csv
+2025-07-08T01:06:45.122Z: Successfully listed clients from HKAPP Client Information Form - BLANK (1).csv.
+2025-07-08T01:06:53.930Z: Received file: Test.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751936813929-892725797.csv
+2025-07-08T01:06:54.478Z: Successfully listed clients from Test.csv.
+2025-07-08T01:28:28.443Z: Received file: HKAPP Client Information Form - AY_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751938108442-984215110.csv
+2025-07-08T01:28:29.005Z: Successfully listed clients from HKAPP Client Information Form - AY_CSV.csv.
+2025-07-08T01:28:31.675Z: Converting client 0 from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751938108442-984215110.csv to FDF in directory: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads
+2025-07-08T01:28:32.227Z: Successfully converted client 0 to FDF: Name_SETTLOR_1751938112217.fdf
+2025-07-08T01:28:32.300Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\Name_SETTLOR_1751938112217.fdf deleted successfully.
+2025-07-08T01:35:51.399Z: Converting client 0 from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751938108442-984215110.csv to FDF in directory: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads
+2025-07-08T01:35:51.957Z: Successfully converted client 0 to FDF: Name_SETTLOR_1751938551957.fdf
+2025-07-08T01:35:52.011Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\Name_SETTLOR_1751938551957.fdf deleted successfully.
+2025-07-08T01:36:23.494Z: Received file: HKAPP Client Information Form - AY_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751938583492-119120837.csv
+2025-07-08T01:36:24.023Z: Successfully listed clients from HKAPP Client Information Form - AY_CSV.csv.
+2025-07-08T01:36:26.813Z: Converting client 0 from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751938583492-119120837.csv to FDF in directory: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads
+2025-07-08T01:36:27.347Z: Successfully converted client 0 to FDF: Name_SETTLOR_1751938587347.fdf
+2025-07-08T01:36:27.418Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\Name_SETTLOR_1751938587347.fdf deleted successfully.
+2025-07-08T01:41:54.447Z: Generating empty FDF template from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751938583492-119120837.csv
+2025-07-08T01:41:55.009Z: Successfully created empty FDF: empty_fdf_template_1751938915004.fdf
+2025-07-08T01:41:55.127Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\empty_fdf_template_1751938915004.fdf deleted successfully.
+2025-07-08T01:44:37.906Z: Received file: HKAPP Client Information Form - AY_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751939077904-114232298.csv
+2025-07-08T01:44:38.455Z: Successfully listed clients from HKAPP Client Information Form - AY_CSV.csv.
+2025-07-08T01:44:42.188Z: Converting client 0 from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751939077904-114232298.csv to FDF in directory: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads
+2025-07-08T01:44:42.766Z: Successfully converted client 0 to FDF: Name_SETTLOR_1751939082769.fdf
+2025-07-08T01:44:42.849Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\Name_SETTLOR_1751939082769.fdf deleted successfully.
+[2025-07-08T01:53:14.395Z] Deletion check at 2025-07-08T01:53:14.395Z: Within working hours. Deleting files.
+[2025-07-08T01:53:14.397Z] Deleted file: csvFile-1751936804236-628760368.csv
+[2025-07-08T01:53:14.397Z] Deleted file: csvFile-1751938108442-984215110.csv
+[2025-07-08T01:53:14.397Z] Deleted file: csvFile-1751938583492-119120837.csv
+[2025-07-08T01:53:14.397Z] Deleted file: csvFile-1751936813929-892725797.csv
+[2025-07-08T01:53:14.397Z] Deleted file: csvFile-1751939077904-114232298.csv
+2025-07-08T02:03:01.351Z: Deletion check at 2025-07-08T02:03:01.351Z: Within working hours. Deleting files.
+2025-07-08T02:03:07.749Z: Received file: HKAPP Client Information Form - CLEAR_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751940187748-30807140.csv
+2025-07-08T02:03:08.335Z: Successfully listed clients from HKAPP Client Information Form - CLEAR_CSV.csv.
+2025-07-08T02:03:09.630Z: Generating empty FDF template from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751940187748-30807140.csv
+2025-07-08T02:03:10.158Z: Successfully created empty FDF: empty_fdf_template_1751940190153.fdf
+2025-07-08T02:03:10.191Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\empty_fdf_template_1751940190153.fdf deleted successfully.
+2025-07-08T02:05:18.314Z: Received file: HKAPP Client Information Form - AY_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751940318313-34150251.csv
+2025-07-08T02:05:18.878Z: Successfully listed clients from HKAPP Client Information Form - AY_CSV.csv.
+2025-07-08T02:05:20.991Z: Converting client 0 from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751940318313-34150251.csv to FDF in directory: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads
+2025-07-08T02:05:21.540Z: Successfully converted client 0 to FDF: Name_SETTLOR_1751940321535.fdf
+2025-07-08T02:05:22.775Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\Name_SETTLOR_1751940321535.fdf deleted successfully.
+2025-07-08T02:21:20.883Z: Received file: HKAPP Client Information Form - CLEAR_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751941280882-632647000.csv
+2025-07-08T02:21:21.477Z: Successfully listed clients from HKAPP Client Information Form - CLEAR_CSV.csv.
+2025-07-08T02:21:22.639Z: Generating empty FDF template from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751941280882-632647000.csv
+2025-07-08T02:21:23.188Z: Successfully created empty FDF: empty_fdf_template_1751941283184.fdf
+2025-07-08T02:21:25.216Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\empty_fdf_template_1751941283184.fdf deleted successfully.
+2025-07-08T02:45:15.699Z: Received file: HKAPP Client Information Form - CLEAR_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751942715697-602531815.csv
+2025-07-08T02:45:16.309Z: Successfully listed clients from HKAPP Client Information Form - CLEAR_CSV.csv.
+2025-07-08T02:45:17.657Z: Generating empty FDF template from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751942715697-602531815.csv
+2025-07-08T02:45:18.195Z: Successfully created empty FDF: empty_fdf_template_1751942718194.fdf
+2025-07-08T02:45:18.218Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\empty_fdf_template_1751942718194.fdf deleted successfully.
+2025-07-08T02:46:07.393Z: Received file: HKAPP Client Information Form - AY_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751942767392-546716534.csv
+2025-07-08T02:46:07.933Z: Successfully listed clients from HKAPP Client Information Form - AY_CSV.csv.
+2025-07-08T02:46:09.723Z: Converting client 0 from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751942767392-546716534.csv to FDF in directory: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads
+2025-07-08T02:46:10.260Z: Successfully converted client 0 to FDF: Name_SETTLOR_1751942770260.fdf
+2025-07-08T02:46:12.104Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\Name_SETTLOR_1751942770260.fdf deleted successfully.
+2025-07-08T02:46:21.734Z: Converting client 0 from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751942767392-546716534.csv to FDF in directory: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads
+2025-07-08T02:46:22.283Z: Successfully converted client 0 to FDF: Name_SETTLOR_1751942782279.fdf
+2025-07-08T02:46:22.345Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\Name_SETTLOR_1751942782279.fdf deleted successfully.
+[2025-07-08T02:53:14.413Z] Deletion check at 2025-07-08T02:53:14.412Z: Within working hours. Deleting files.
+[2025-07-08T02:53:14.414Z] Deleted file: csvFile-1751940187748-30807140.csv
+[2025-07-08T02:53:14.414Z] Deleted file: csvFile-1751940318313-34150251.csv
+[2025-07-08T02:53:14.414Z] Deleted file: csvFile-1751942715697-602531815.csv
+[2025-07-08T02:53:14.414Z] Deleted file: csvFile-1751941280882-632647000.csv
+[2025-07-08T02:53:14.414Z] Deleted file: csvFile-1751942767392-546716534.csv
+2025-07-08T02:56:09.144Z: Received file: HKAPP Client Information Form - CLEAR_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751943369143-55886641.csv
+2025-07-08T02:56:09.735Z: Successfully listed clients from HKAPP Client Information Form - CLEAR_CSV.csv.
+2025-07-08T02:56:12.211Z: Generating empty FDF template from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751943369143-55886641.csv
+2025-07-08T02:56:12.746Z: Successfully created empty FDF: empty_fdf_template_1751943372750.fdf
+2025-07-08T02:56:12.765Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\empty_fdf_template_1751943372750.fdf deleted successfully.
+2025-07-08T02:57:33.337Z: Received file: HKAPP Client Information Form - AY_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751943453336-241479840.csv
+2025-07-08T02:57:33.884Z: Successfully listed clients from HKAPP Client Information Form - AY_CSV.csv.
+2025-07-08T02:57:37.350Z: Converting client 0 from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751943453336-241479840.csv to FDF in directory: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads
+2025-07-08T02:57:37.885Z: Successfully converted client 0 to FDF: Name_SETTLOR_1751943457884.fdf
+2025-07-08T02:57:37.960Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\Name_SETTLOR_1751943457884.fdf deleted successfully.
+2025-07-08T03:03:01.374Z: Deletion check at 2025-07-08T03:03:01.374Z: Within working hours. Deleting files.
+2025-07-08T03:03:01.375Z: Deleted file: csvFile-1751943369143-55886641.csv
+2025-07-08T03:03:01.375Z: Deleted file: csvFile-1751943453336-241479840.csv
+[2025-07-08T03:53:14.439Z] Deletion check at 2025-07-08T03:53:14.439Z: Within working hours. Deleting files.
+2025-07-08T04:03:01.391Z: Deletion check at 2025-07-08T04:03:01.391Z: Within working hours. Deleting files.
+[2025-07-08T04:53:14.457Z] Deletion check at 2025-07-08T04:53:14.457Z: Within working hours. Deleting files.
+2025-07-08T05:03:01.413Z: Deletion check at 2025-07-08T05:03:01.413Z: Within working hours. Deleting files.
+[2025-07-08T05:53:14.485Z] Deletion check at 2025-07-08T05:53:14.485Z: Within working hours. Deleting files.
+2025-07-08T06:02:46.135Z: Received file: HKAPP Client Information Form - AY_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751954566133-878617504.csv
+2025-07-08T06:02:46.726Z: Successfully listed clients from HKAPP Client Information Form - AY_CSV.csv.
+2025-07-08T06:02:48.532Z: Converting client 0 from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751954566133-878617504.csv to FDF in directory: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads
+2025-07-08T06:02:49.066Z: Successfully converted client 0 to FDF: Name_SETTLOR_1751954569058.fdf
+2025-07-08T06:02:49.138Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\Name_SETTLOR_1751954569058.fdf deleted successfully.
+2025-07-08T06:03:01.433Z: Deletion check at 2025-07-08T06:03:01.433Z: Within working hours. Deleting files.
+2025-07-08T06:03:01.434Z: Deleted file: csvFile-1751954566133-878617504.csv
+[2025-07-08T06:53:14.490Z] Deletion check at 2025-07-08T06:53:14.490Z: Within working hours. Deleting files.
+2025-07-08T07:03:01.445Z: Deletion check at 2025-07-08T07:03:01.445Z: Within working hours. Deleting files.
+[2025-07-08T07:53:14.502Z] Deletion check at 2025-07-08T07:53:14.502Z: Within working hours. Deleting files.
+2025-07-08T07:54:02.446Z: Received file: HKAPP Client Information Form - AY_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751961242445-235306368.csv
+2025-07-08T07:54:03.020Z: Successfully listed clients from HKAPP Client Information Form - AY_CSV.csv.
+2025-07-08T07:54:10.437Z: Converting client 0 from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751961242445-235306368.csv to FDF in directory: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads
+2025-07-08T07:54:10.987Z: Successfully converted client 0 to FDF: Name_SETTLOR_1751961250986.fdf
+2025-07-08T07:54:11.010Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\Name_SETTLOR_1751961250986.fdf deleted successfully.
+2025-07-08T08:01:08.456Z: Received file: HKAPP Client Information Form - CLEAR_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751961668455-463214715.csv
+2025-07-08T08:01:09.042Z: Successfully listed clients from HKAPP Client Information Form - CLEAR_CSV.csv.
+2025-07-08T08:01:10.318Z: Generating empty FDF template from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751961668455-463214715.csv
+2025-07-08T08:01:10.840Z: Successfully created empty FDF: empty_fdf_template_1751961670846.fdf
+2025-07-08T08:01:10.858Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\empty_fdf_template_1751961670846.fdf deleted successfully.
+2025-07-08T08:03:01.467Z: Deletion check at 2025-07-08T08:03:01.467Z: Within working hours. Deleting files.
+2025-07-08T08:03:01.469Z: Deleted file: csvFile-1751961242445-235306368.csv
+2025-07-08T08:03:01.469Z: Deleted file: csvFile-1751961668455-463214715.csv
+2025-07-08T08:19:18.774Z: Received file: HKAPP Client Information Form - AY_CSV (1).csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751962758773-900366029.csv
+2025-07-08T08:19:19.335Z: Successfully listed clients from HKAPP Client Information Form - AY_CSV (1).csv.
+2025-07-08T08:19:21.109Z: Converting client 0 from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751962758773-900366029.csv to FDF in directory: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads
+2025-07-08T08:19:21.648Z: Successfully converted client 0 to FDF: Name_SETTLOR_1751962761649.fdf
+2025-07-08T08:19:22.767Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\Name_SETTLOR_1751962761649.fdf deleted successfully.
+[2025-07-08T08:53:14.525Z] Deletion check at 2025-07-08T08:53:14.525Z: Within working hours. Deleting files.
+[2025-07-08T08:53:14.526Z] Deleted file: csvFile-1751962758773-900366029.csv
+2025-07-08T09:03:01.495Z: Deletion check at 2025-07-08T09:03:01.495Z: Within working hours. Deleting files.
+2025-07-08T09:07:39.526Z: Server running on port 2000
+2025-07-08T09:07:39.529Z: Deletion check at 2025-07-08T09:07:39.529Z: Within working hours. Deleting files.
+2025-07-08T09:09:03.477Z: Received file: HKAPP Client Information Form - AY_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751965743474-57512360.csv
+2025-07-08T09:09:03.995Z: Python script stderr (list_clients): C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\)'
+  s = s.replace(')', '\)').replace('(', '\(')
+
+2025-07-08T09:09:03.995Z: Python script stderr (list_clients): C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\('
+  s = s.replace(')', '\)').replace('(', '\(')
+
+2025-07-08T09:09:04.054Z: Successfully listed clients from HKAPP Client Information Form - AY_CSV.csv.
+2025-07-08T09:09:08.113Z: Converting client 0 from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751965743474-57512360.csv to FDF in directory: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads
+2025-07-08T09:09:08.566Z: Python script stderr (convert_client): C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\)'
+  s = s.replace(')', '\)').replace('(', '\(')
+C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\('
+  s = s.replace(')', '\)').replace('(', '\(')
+
+2025-07-08T09:09:08.602Z: Successfully converted client 0 to FDF: Name_SETTLOR_1751965748592.fdf
+2025-07-08T09:09:08.676Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\Name_SETTLOR_1751965748592.fdf deleted successfully.
+2025-07-08T09:09:53.130Z: Received file: HKAPP Client Information Form - CLEAR_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751965793129-504864157.csv
+2025-07-08T09:09:53.596Z: Python script stderr (list_clients): C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\)'
+  s = s.replace(')', '\)').replace('(', '\(')
+
+2025-07-08T09:09:53.596Z: Python script stderr (list_clients): C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\('
+  s = s.replace(')', '\)').replace('(', '\(')
+
+2025-07-08T09:09:53.630Z: Successfully listed clients from HKAPP Client Information Form - CLEAR_CSV.csv.
+2025-07-08T09:09:54.481Z: Generating empty FDF template from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751965793129-504864157.csv
+2025-07-08T09:09:54.937Z: Python script stderr (generate_empty_fdf): C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\)'
+  s = s.replace(')', '\)').replace('(', '\(')
+C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\('
+  s = s.replace(')', '\)').replace('(', '\(')
+
+2025-07-08T09:09:54.974Z: Successfully created empty FDF: empty_fdf_template_1751965794964.fdf
+2025-07-08T09:09:55.040Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\empty_fdf_template_1751965794964.fdf deleted successfully.
+2025-07-08T09:10:42.531Z: Received file: Test.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751965842530-909395385.csv
+2025-07-08T09:10:42.992Z: Python script stderr (list_clients): C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\)'
+  s = s.replace(')', '\)').replace('(', '\(')
+C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\('
+  s = s.replace(')', '\)').replace('(', '\(')
+
+2025-07-08T09:10:43.028Z: Successfully listed clients from Test.csv.
+2025-07-08T09:10:48.005Z: Converting client 0 from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751965842530-909395385.csv to FDF in directory: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads
+2025-07-08T09:10:48.476Z: Python script stderr (convert_client): C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\)'
+  s = s.replace(')', '\)').replace('(', '\(')
+
+2025-07-08T09:10:48.477Z: Python script stderr (convert_client): C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\('
+  s = s.replace(')', '\)').replace('(', '\(')
+
+2025-07-08T09:10:48.513Z: Successfully converted client 0 to FDF: Wong_JasonWONG_1751965848511.fdf
+2025-07-08T09:10:48.532Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\Wong_JasonWONG_1751965848511.fdf deleted successfully.
+2025-07-08T09:16:33.202Z: Received file: HKAPP Client Information Form - CLEAR_CSV.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751966193201-986568640.csv
+2025-07-08T09:16:33.729Z: Python script stderr (list_clients): C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\)'
+  s = s.replace(')', '\)').replace('(', '\(')
+C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\('
+  s = s.replace(')', '\)').replace('(', '\(')
+
+2025-07-08T09:16:33.782Z: Successfully listed clients from HKAPP Client Information Form - CLEAR_CSV.csv.
+2025-07-08T09:16:40.025Z: Generating empty FDF template from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751966193201-986568640.csv
+2025-07-08T09:16:40.484Z: Python script stderr (generate_empty_fdf): C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\)'
+  s = s.replace(')', '\)').replace('(', '\(')
+
+2025-07-08T09:16:40.484Z: Python script stderr (generate_empty_fdf): C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\('
+  s = s.replace(')', '\)').replace('(', '\(')
+
+2025-07-08T09:16:40.521Z: Successfully created empty FDF: empty_fdf_template_1751966200524.fdf
+2025-07-08T09:16:40.552Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\empty_fdf_template_1751966200524.fdf deleted successfully.
+2025-07-08T09:17:28.592Z: Server running on port 2000
+2025-07-08T09:17:28.594Z: Deletion check at 2025-07-08T09:17:28.594Z: Within working hours. Deleting files.
+2025-07-08T09:17:28.595Z: Deleted file: csvFile-1751965793129-504864157.csv
+2025-07-08T09:17:28.595Z: Deleted file: csvFile-1751965743474-57512360.csv
+2025-07-08T09:17:28.595Z: Deleted file: csvFile-1751966193201-986568640.csv
+2025-07-08T09:17:28.595Z: Deleted file: csvFile-1751965842530-909395385.csv
+2025-07-08T09:17:37.637Z: CSV file not found for conversion: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751965842530-909395385.csv
+2025-07-08T09:17:39.187Z: CSV file not found for conversion: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751965842530-909395385.csv
+2025-07-08T09:17:39.507Z: CSV file not found for conversion: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751965842530-909395385.csv
+2025-07-08T09:17:44.218Z: Received file: Test.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751966264215-114821504.csv
+2025-07-08T09:17:44.698Z: Python script stderr (list_clients): C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\)'
+  s = s.replace(')', '\)').replace('(', '\(')
+C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\('
+  s = s.replace(')', '\)').replace('(', '\(')
+
+2025-07-08T09:17:44.735Z: Successfully listed clients from Test.csv.
+2025-07-08T09:17:47.892Z: Converting client 0 from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751966264215-114821504.csv to FDF in directory: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads
+2025-07-08T09:17:48.359Z: Python script stderr (convert_client): C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\)'
+  s = s.replace(')', '\)').replace('(', '\(')
+C:\Users\AS 53\Documents\VScode\PDFConverter\fdf_converter.py:20: SyntaxWarning: invalid escape sequence '\('
+  s = s.replace(')', '\)').replace('(', '\(')
+
+2025-07-08T09:17:48.393Z: Successfully converted client 0 to FDF: Wong_JasonWONG_1751966268386.fdf
+2025-07-08T09:17:48.419Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\Wong_JasonWONG_1751966268386.fdf deleted successfully.
+2025-07-08T09:25:14.860Z: Server running on port 2000
+2025-07-08T09:25:14.862Z: Deletion check at 2025-07-08T09:25:14.862Z: Within working hours. Deleting files.
+2025-07-08T09:25:14.863Z: Deleted file: csvFile-1751966264215-114821504.csv
+2025-07-08T09:25:29.848Z: Received file: Test.csv at C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751966729846-999136106.csv
+2025-07-08T09:25:30.362Z: Successfully listed clients from Test.csv.
+2025-07-08T09:25:32.195Z: Converting client 0 from C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\csvFile-1751966729846-999136106.csv to FDF in directory: C:\Users\AS 53\Documents\VScode\PDFConverter\uploads
+2025-07-08T09:25:32.682Z: Successfully converted client 0 to FDF: Wong_JasonWONG_1751966732673.fdf
+2025-07-08T09:25:32.704Z: File C:\Users\AS 53\Documents\VScode\PDFConverter\uploads\Wong_JasonWONG_1751966732673.fdf deleted successfully.
+2025-07-08T09:26:22.427Z: Server running on port 2000
+2025-07-08T09:26:22.430Z: Deletion check at 2025-07-08T09:26:22.430Z: Within working hours. Deleting files.
+2025-07-08T09:26:22.431Z: Deleted file: csvFile-1751966729846-999136106.csv
